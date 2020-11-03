@@ -14,19 +14,21 @@ func _ready():
 	pass # Replace with function body.
 
 
+func will_drop():
+	return is_on_wall() or is_on_ceiling()
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	move_vec = Vector2(100, 0)
+	move_vec.x = 100
 	if drop:
 		move_vec.x = 0
-		move_vec.y += 100
-	move_and_slide(move_vec, Vector2(0,0))
-	if get_slide_count() == 0:
+		move_vec.y += 5
+	move_and_slide(move_vec, Vector2.UP)
+	if get_slide_count() == 0 or will_drop():
 		drop = true
-		return
 	for i in range(get_slide_count()):
 		var collider = get_slide_collision(i).get_collider()
-		if collider.is_in_group("Crash"):
+		if collider.is_in_group("Crash") and !will_drop():
 			drop = false
 			move_vec.y = 0
 		if collider.is_in_group("Checkpoint"):
