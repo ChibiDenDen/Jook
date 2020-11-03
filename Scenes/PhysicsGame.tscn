@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objects/Obstacles/Walls/Wall1.tscn" type="PackedScene" id=2]
+
+[node name="PhysicsGame" type="Node2D"]
+
+[node name="Wall1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 198, 246 )
+rotation = 0.415329
+
+[node name="Wall2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 879, 297 )
+rotation = -0.316772
+scale = Vector2( 0.914041, 15.7497 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 535, 302 )
