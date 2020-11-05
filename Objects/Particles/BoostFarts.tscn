@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+flag_disable_z = true
+direction = Vector3( 0, 1, 0 )
+spread = 90.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 150.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 10.0
+angle_random = 1.0
+scale = 5.0
+color = Color( 0.831373, 0.831373, 0.831373, 0.792157 )
+
+[node name="BoostFarts" type="Particles2D"]
+position = Vector2( 0.297302, 30.3248 )
+amount = 50
+lifetime = 0.2
+one_shot = true
+process_material = SubResource( 1 )

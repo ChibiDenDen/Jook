@@ -8,21 +8,23 @@
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1739, 854 )
+thrust = Vector2( 0, -300 )
+torque = 2500
 
 [node name="Walls" type="Node" parent="."]
 
 [node name="Wall" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2431.05, 943.617 )
+position = Vector2( 145.564, 596.113 )
 rotation = 1.5708
 scale = Vector2( 1, 4.08 )
 
 [node name="Wall7" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1679.05, 955.617 )
+position = Vector2( 897.564, 608.113 )
 rotation = 1.5708
 scale = Vector2( 1, 4.08 )
 
 [node name="Wall8" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2035.05, 951.617 )
+position = Vector2( 541.564, 604.113 )
 rotation = 1.5708
 scale = Vector2( 1, 4.08 )
 
@@ -37,57 +39,57 @@ rotation = 1.5708
 scale = Vector2( 0.890297, -42.5497 )
 
 [node name="Wall9" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -3055.05, 843.617 )
+position = Vector2( -478.436, 496.113 )
 rotation = 1.03733
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall10" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2731.05, 713.617 )
+position = Vector2( -154.436, 366.113 )
 rotation = 1.41778
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall11" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2473.05, 517.617 )
+position = Vector2( 103.564, 170.113 )
 rotation = 0.408893
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall18" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1643.05, 1121.62 )
+position = Vector2( 933.564, 774.116 )
 rotation = 0.408893
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall19" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2119.05, 809.617 )
+position = Vector2( 457.564, 462.113 )
 rotation = 0.408893
 scale = Vector2( 0.890297, -3.97771 )
 
 [node name="Wall20" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2083.05, 1051.62 )
+position = Vector2( 493.564, 704.116 )
 rotation = -0.561094
 scale = Vector2( 0.890297, -3.54148 )
 
 [node name="Wall12" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2223.05, 295.617 )
+position = Vector2( 353.564, -51.8867 )
 rotation = 1.2811
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall13" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1867.05, 273.617 )
+position = Vector2( 709.564, -73.8867 )
 rotation = 1.72664
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall15" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1257.05, 609.617 )
+position = Vector2( 1319.56, 262.113 )
 rotation = 1.72664
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall16" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -921.053, 663.617 )
+position = Vector2( 1655.56, 316.113 )
 rotation = 1.72664
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall14" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1539.05, 433.617 )
+position = Vector2( 1037.56, 86.1134 )
 rotation = 2.42566
 scale = Vector2( 0.890297, -6.26425 )
 
@@ -100,22 +102,22 @@ position = Vector2( 1836.12, -42.0096 )
 scale = Vector2( 0.890297, -42.5497 )
 
 [node name="Wall2" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2000.49, 458.093 )
+position = Vector2( 576.124, 110.589 )
 rotation = 1.5708
 scale = Vector2( 1, 5.47166 )
 
 [node name="Wall17" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2022.49, 672.093 )
+position = Vector2( 554.124, 324.589 )
 rotation = 1.5708
 scale = Vector2( 1, 5.47166 )
 
 [node name="Checkpoints" type="Node" parent="."]
 
 [node name="Checkpoint" parent="Checkpoints" instance=ExtResource( 3 )]
-position = Vector2( -1680.86, 890.902 )
+position = Vector2( 895.754, 543.398 )
 
 [node name="Checkpoint4" parent="Checkpoints" instance=ExtResource( 3 )]
-position = Vector2( -1762.86, 1200.9 )
+position = Vector2( 813.754, 853.396 )
 
 [node name="Checkpoint3" parent="Checkpoints" instance=ExtResource( 3 )]
 position = Vector2( 1770.31, 851.275 )

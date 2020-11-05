@@ -36,6 +36,8 @@ func _process(delta):
 			move_vec.y = 0
 		if collider.is_in_group("Checkpoint"):
 			player.global_position = global_position - Vector2(0, 5)
+			player.set_process(true)
+			player.set_camera_zoom($Camera2D.zoom)
 			player.crashed = false
 			player.visible = true
 			player.sleeping = false
