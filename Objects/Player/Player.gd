@@ -23,6 +23,8 @@ export var max_camera_zoom := 3
 var last_camera_zoom : Vector2
 var target_camera_zoom : float
 var last_applied_force : Vector2
+var last_linear_velocity : Vector2
+const survivable_hit_force := 100.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -38,6 +40,7 @@ func _process(delta):
 
 	$Camera2D.zoom.x = min(max(min_camera_zoom, $Camera2D.zoom.x + zoom_step), max_camera_zoom)
 	$Camera2D.zoom.y = min(max(min_camera_zoom, $Camera2D.zoom.y + zoom_step), max_camera_zoom)
+	last_linear_velocity = linear_velocity
 
 func _integrate_forces(state):
 	if crashed:
@@ -67,7 +70,8 @@ func _integrate_forces(state):
 	last_camera_zoom = $Camera2D.zoom
 
 func _on_Player_body_entered(body):
-	if body.is_in_group("Crash") and crashed_player == null:
+	print_debug((last_linear_velocity - linear_velocity).length())
+	if body.is_in_group("Crash") and crashed_player == null and (last_linear_velocity - linear_velocity).length() > survivable_hit_force:
 		crashed_player = CrashedPlayerScene.instance()
 		crashed_player.player = self
 		crashed_player.global_position = global_position
