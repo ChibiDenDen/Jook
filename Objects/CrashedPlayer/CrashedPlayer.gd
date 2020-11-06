@@ -21,7 +21,7 @@ func will_drop():
 	return is_on_wall() or is_on_ceiling()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	move_vec.x = walking_speed
 	if drop:
 		move_vec.x = 0
