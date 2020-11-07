@@ -18,3 +18,7 @@ func _ready():
 
 func _on_PlayButton_pressed():
 	get_tree().change_scene("res://Scenes/PhysicsGame.tscn")
+
+
+func _on_CustomizeButton_pressed():
+	get_tree().change_scene("res://Scenes/Customize/Customize.tscn")
