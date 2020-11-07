@@ -1,14 +1,15 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Objects/Obstacles/Repulser/Repulser.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Objects/UI/UI.tscn" type="PackedScene" id=5]
 
 [node name="PhysicsGame" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1712, 832 )
+position = Vector2( 1720, 824 )
 thrust = Vector2( 0, -300 )
 torque = 2500
 
@@ -166,3 +167,5 @@ position = Vector2( -1848, 184 )
 [node name="Obstacles" type="Node" parent="."]
 
 [node name="Repulser" parent="Obstacles" instance=ExtResource( 4 )]
+
+[node name="UI" parent="." instance=ExtResource( 5 )]

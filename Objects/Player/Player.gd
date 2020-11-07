@@ -26,9 +26,24 @@ var last_applied_force : Vector2
 var last_linear_velocity : Vector2
 const survivable_hit_force := 100.0
 
+export var use_fuel := true
+export var max_fuel := 50.0
+export var fuel_empty_time := 1.0
+export var fuel_fill_time := 0.5
+var filling_fuel := false
+var cur_fuel := 50.0
+
+var fuel_progress : ProgressBar
+const RED_COLOR := Color(0.67, 0.14, 0.14)
+const BLUE_COLOR := Color(0.14, 0.14, 0.67)
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	fuel_progress = get_tree().current_scene.get_node("UI").get_fuel()
+	if use_fuel:
+		fuel_progress.max_value = max_fuel
+	else:
+		fuel_progress.visible = false
 
 func set_camera_zoom(zoom : Vector2):
 	$Camera2D.zoom = zoom
@@ -42,12 +57,21 @@ func _process(delta):
 	$Camera2D.zoom.y = min(max(min_camera_zoom, $Camera2D.zoom.y + zoom_step), max_camera_zoom)
 	last_linear_velocity = linear_velocity
 
+	fuel_progress.value = cur_fuel
+	if use_fuel and $BoostTimer.is_stopped() and !filling_fuel:
+		fuel_progress.get_stylebox("fg").set_bg_color(BLUE_COLOR)
+
 func _integrate_forces(state):
 	if crashed:
 		return
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("ui_up") and cur_fuel > 0 and !filling_fuel:
+		if use_fuel:
+			cur_fuel = max(0, cur_fuel - (max_fuel * state.get_step()) / fuel_empty_time)
 		var cur_thrust = thrust
 		if last_applied_force == Vector2() and $BoostTimer.is_stopped():
+			if use_fuel:
+				cur_fuel = max_fuel
+				fuel_progress.get_stylebox("fg").set_bg_color(RED_COLOR)
 			$BoostTimer.start()
 			cur_thrust *= boost_thrust
 			var farts = BoostFartsScene.instance()
@@ -57,6 +81,9 @@ func _integrate_forces(state):
 		applied_force = cur_thrust.rotated(rotation)
 		$Particles2D.emitting = true
 	else:
+		if use_fuel:
+			cur_fuel = min(max_fuel, cur_fuel + (max_fuel * state.get_step()) / fuel_fill_time)
+			filling_fuel = cur_fuel != max_fuel
 		applied_force = Vector2()
 		$Particles2D.emitting = false
 	last_applied_force = applied_force
