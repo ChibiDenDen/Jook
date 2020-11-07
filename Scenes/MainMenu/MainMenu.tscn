@@ -28,10 +28,11 @@ margin_bottom = 14.0
 
 [node name="PlayButton" type="TextureButton" parent="."]
 self_modulate = Color( 0, 0, 0, 1 )
-margin_left = 54.0
+margin_left = 60.6072
 margin_top = 70.0
-margin_right = 218.0
+margin_right = 224.607
 margin_bottom = 147.0
+rect_pivot_offset = Vector2( 124.214, 67.321 )
 texture_normal = ExtResource( 2 )
 expand = true
 __meta__ = {
@@ -44,6 +45,30 @@ margin_top = 30.218
 margin_right = 106.352
 margin_bottom = 44.218
 text = "Play"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CustomizeButton" type="TextureButton" parent="."]
+modulate = Color( 0.701961, 0.133333, 0.133333, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 777.008
+margin_top = 65.2806
+margin_right = 941.008
+margin_bottom = 142.281
+rect_pivot_offset = Vector2( 124.214, 67.321 )
+texture_normal = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="CustomizeButton"]
+margin_left = 51.2498
+margin_top = 32.1058
+margin_right = 119.25
+margin_bottom = 46.1058
+text = "Customize"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -81,3 +106,4 @@ margin_right = 64.0
 margin_bottom = 64.0
 texture = ExtResource( 2 )
 [connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="CustomizeButton" to="." method="_on_CustomizeButton_pressed"]
