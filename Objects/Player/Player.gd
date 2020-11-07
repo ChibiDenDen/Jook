@@ -52,7 +52,7 @@ func _integrate_forces(state):
 			cur_thrust *= boost_thrust
 			var farts = BoostFartsScene.instance()
 			add_child(farts)
-			$Tween.interpolate_callback(farts, 0.2, "queue_free")
+			$Tween.interpolate_callback(farts, 1, "queue_free")
 			$Tween.start()
 		applied_force = cur_thrust.rotated(rotation)
 		$Particles2D.emitting = true
@@ -76,7 +76,7 @@ func _on_Player_body_entered(body):
 		crashed_player.player = self
 		crashed_player.global_position = global_position
 		crashed_player.camera_zoom = last_camera_zoom
-		get_parent().call_deferred("add_child",crashed_player)
+		get_parent().call_deferred("add_child", crashed_player)
 		crashed_player.call_deferred("on_start")
 		crashed = true
 		applied_force = Vector2(0, 0)
