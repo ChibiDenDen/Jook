@@ -1,0 +1,163 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="Animation" id=3]
+resource_name = "Idle"
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("StaticBody/Skeleton2D/Bone2D/Bone2D2:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 10, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 6.6, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3/Bone2D4:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 94.9, -0.25, 0, 0.25, 0, 103, -0.25, 0, 0.25, 0, 94.9, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+
+[node name="Grass" type="Node2D"]
+position = Vector2( 24.5407, 336.019 )
+
+[node name="StaticBody" type="StaticBody2D" parent="."]
+input_pickable = true
+
+[node name="Col1" type="CollisionPolygon2D" parent="StaticBody"]
+rotation = -1.43815
+polygon = PoolVector2Array( -0.393925, -8.15103, -0.0212402, 11.543, 166.203, 10.5834, 169.279, -8.77006 )
+
+[node name="Col2" type="CollisionPolygon2D" parent="StaticBody"]
+position = Vector2( 22.1, -165.563 )
+rotation = -1.43815
+polygon = PoolVector2Array( 1.29099, -8.69527, -2.40147, 10.7842, 109.936, 62.056, 121.458, 51.7412 )
+
+[node name="Col3" type="CollisionPolygon2D" parent="StaticBody"]
+position = Vector2( 92.895, -275.314 )
+rotation = -1.43815
+polygon = PoolVector2Array( 2.996, -4.91907, -7.34812, 6.8832, 24.3769, 75.1167, 38.7868, 72.7811 )
+
+[node name="Col4" type="CollisionPolygon2D" parent="StaticBody"]
+position = Vector2( 170.432, -299.287 )
+rotation = -1.42244
+polygon = PoolVector2Array( 4.21582, -0.277435, -9.42029, 1.55284, -7.05356, 77.296 )
+
+[node name="Skeleton2D" type="Skeleton2D" parent="StaticBody"]
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
+
+[node name="Bone2D" type="Bone2D" parent="StaticBody/Skeleton2D"]
+rotation = -1.43815
+rest = Transform2D( 0.132256, -0.991216, 0.991216, 0.132256, 0, 0 )
+default_length = 165.0
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="StaticBody/Skeleton2D/Bone2D"]
+remote_path = NodePath("../../../Col1")
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D"]
+color = Color( 0, 0.643137, 0.129412, 1 )
+polygon = PoolVector2Array( -0.393925, -8.15103, 1.41712, 8.42273, 167.392, 7.09601, 169.279, -8.77006 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D"]
+position = Vector2( -1.72726, 3.72595 )
+color = Color( 0.258824, 0.784314, 0.184314, 1 )
+polygon = PoolVector2Array( -0.393925, -8.15103, 1.41712, 8.42273, 167.392, 7.09601, 169.279, -8.77006 )
+
+[node name="Bone2D2" type="Bone2D" parent="StaticBody/Skeleton2D/Bone2D"]
+position = Vector2( 167.031, 0.0091362 )
+rest = Transform2D( 1, 0, 0, 1, 167.031, 0.0091362 )
+default_length = 165.0
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="RemoteTransform2D2" type="RemoteTransform2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2"]
+remote_path = NodePath("../../../../Col2")
+
+[node name="Polygon2D4" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2"]
+position = Vector2( 0.163528, 0.303064 )
+color = Color( 0, 0.643137, 0.129412, 1 )
+polygon = PoolVector2Array( 1.29099, -8.69527, -1.40872, 7.07907, 114.286, 59.5044, 121.458, 51.7412 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2"]
+position = Vector2( -2.42056, 3.19318 )
+color = Color( 0.258824, 0.784314, 0.184314, 1 )
+polygon = PoolVector2Array( 1.29099, -8.69527, -1.40872, 7.07907, 114.286, 59.5044, 121.458, 51.7412 )
+
+[node name="Bone2D3" type="Bone2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2"]
+position = Vector2( 118.15, 55.6578 )
+rest = Transform2D( 1, 0, 0, 1, 118.15, 55.6578 )
+default_length = 165.0
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="RemoteTransform2D3" type="RemoteTransform2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3"]
+remote_path = NodePath("../../../../../Col3")
+
+[node name="Polygon2D5" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3"]
+position = Vector2( -0.0229874, 0.571297 )
+color = Color( 0, 0.643137, 0.129412, 1 )
+polygon = PoolVector2Array( 2.996, -4.91907, -4.51663, 3.28991, 29.0314, 74.6833, 38.7868, 72.7811 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3"]
+position = Vector2( -3.17783, 2.96711 )
+color = Color( 0.258824, 0.784314, 0.184314, 1 )
+polygon = PoolVector2Array( 2.996, -4.91907, -4.51663, 3.28991, 29.0314, 74.6833, 38.7868, 72.7811 )
+
+[node name="Bone2D4" type="Bone2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3"]
+position = Vector2( 34.0172, 73.6857 )
+rotation = 1.65632
+rest = Transform2D( -0.133986, 0.990983, -0.990983, -0.133986, 34.0172, 73.6857 )
+default_length = 77.0
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="RemoteTransform2D4" type="RemoteTransform2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3/Bone2D4"]
+rotation = -1.64061
+remote_path = NodePath("../../../../../../Col4")
+
+[node name="Polygon2D6" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3/Bone2D4"]
+position = Vector2( -0.316681, 0.336761 )
+rotation = -1.65632
+scale = Vector2( 1, 1 )
+color = Color( 0, 0.643137, 0.129412, 1 )
+polygon = PoolVector2Array( 4.21582, -0.277435, -5.78873, 1.25764, -7.05356, 77.296 )
+
+[node name="Polygon2D5" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3/Bone2D4"]
+position = Vector2( 0.0742493, 3.79129 )
+rotation = -1.65632
+scale = Vector2( 1, 1 )
+color = Color( 0.258824, 0.784314, 0.184314, 1 )
+polygon = PoolVector2Array( 4.21582, -0.277435, -5.78873, 1.25764, -4.5997, 75.7371 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Idle"
+playback_speed = 0.15
+anims/Idle = SubResource( 3 )
+[connection signal="mouse_entered" from="StaticBody" to="StaticBody" method="_on_StaticBody_mouse_entered"]
+[connection signal="mouse_exited" from="StaticBody" to="StaticBody" method="_on_StaticBody_mouse_exited"]

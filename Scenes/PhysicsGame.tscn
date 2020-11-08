@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Objects/Obstacles/Repulser/Repulser.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Objects/UI/UI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Objects/Obstacles/Walls/Grass.tscn" type="PackedScene" id=6]
 
 [node name="PhysicsGame" type="Node2D"]
 
@@ -167,5 +168,29 @@ position = Vector2( -1848, 184 )
 [node name="Obstacles" type="Node" parent="."]
 
 [node name="Repulser" parent="Obstacles" instance=ExtResource( 4 )]
+
+[node name="Grass" parent="Obstacles" instance=ExtResource( 6 )]
+position = Vector2( 1460.74, 909.178 )
+z_index = -1
+
+[node name="Grass2" parent="Obstacles" instance=ExtResource( 6 )]
+position = Vector2( 1435.74, 916.178 )
+scale = Vector2( 0.984557, 0.908871 )
+z_index = -1
+
+[node name="Grass3" parent="Obstacles" instance=ExtResource( 6 )]
+position = Vector2( 1419.74, 903.178 )
+scale = Vector2( 0.887965, 0.84241 )
+z_index = -1
+
+[node name="Grass4" parent="Obstacles" instance=ExtResource( 6 )]
+position = Vector2( 1391.74, 904.178 )
+scale = Vector2( 0.617211, 0.825007 )
+z_index = -1
+
+[node name="Grass5" parent="Obstacles" instance=ExtResource( 6 )]
+position = Vector2( 1406.74, 916.178 )
+scale = Vector2( 0.815912, 0.9331 )
+z_index = -1
 
 [node name="UI" parent="." instance=ExtResource( 5 )]
