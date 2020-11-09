@@ -200,4 +200,4 @@ z_index = -1
 [node name="PowerUps" type="Node2D" parent="."]
 
 [node name="Fuel" parent="PowerUps" instance=ExtResource( 7 )]
-position = Vector2( 1688.6, 453.869 )
+position = Vector2( 638.288, 212.642 )
