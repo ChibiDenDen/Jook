@@ -13,7 +13,6 @@ export var thrust = Vector2.UP * 500
 export var boost_thrust = 25
 export var torque = 5000
 
-var crashed_player : CrashedPlayer = null
 var crashed := false
 
 export var camera_zoom_scale := 100
@@ -21,7 +20,7 @@ export var camera_zoom_speed := 1
 export var min_camera_zoom := 1
 export var max_camera_zoom := 3
 var last_camera_zoom : Vector2
-var target_camera_zoom : float
+var target_camera_zoom : float = 1.0
 var last_applied_force : Vector2
 var last_linear_velocity : Vector2
 const survivable_hit_force := 100.0
@@ -39,6 +38,7 @@ const BLUE_COLOR := Color(0.14, 0.14, 0.67)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	gravity_scale = 0
 	fuel_progress = get_tree().current_scene.get_node("UI").get_fuel()
 	if use_fuel:
 		fuel_progress.max_value = max_fuel
@@ -53,8 +53,8 @@ func _process(delta):
 	if ($Camera2D.zoom.x > target_camera_zoom):
 		zoom_step *= -1
 
-	$Camera2D.zoom.x = min(max(min_camera_zoom, $Camera2D.zoom.x + zoom_step), max_camera_zoom)
-	$Camera2D.zoom.y = min(max(min_camera_zoom, $Camera2D.zoom.y + zoom_step), max_camera_zoom)
+	var zoom_target = clamp($Camera2D.zoom.x + zoom_step, min_camera_zoom, max_camera_zoom) * Vector2.ONE
+	$Camera2D.zoom = lerp($Camera2D.zoom, Vector2.ONE * zoom_target, 0.25)
 	last_linear_velocity = linear_velocity
 
 	fuel_progress.value = cur_fuel
@@ -64,7 +64,9 @@ func _process(delta):
 func _integrate_forces(state):
 	if crashed:
 		return
+
 	if Input.is_action_pressed("ui_up") and cur_fuel > 0 and !filling_fuel:
+		gravity_scale = 1
 		if use_fuel:
 			cur_fuel = max(0, cur_fuel - (max_fuel * state.get_step()) / fuel_empty_time)
 		var cur_thrust = thrust
@@ -97,15 +99,18 @@ func _integrate_forces(state):
 	last_camera_zoom = $Camera2D.zoom
 
 func _on_Player_body_entered(body):
-	print_debug((last_linear_velocity - linear_velocity).length())
-	if body.is_in_group("Crash") and crashed_player == null and (last_linear_velocity - linear_velocity).length() > survivable_hit_force:
-		crashed_player = CrashedPlayerScene.instance()
+	if crashed:
+		return
+
+	if (last_linear_velocity - linear_velocity).length() > survivable_hit_force:
+		var crashed_player = CrashedPlayerScene.instance()
 		crashed_player.player = self
+		get_parent().call_deferred("add_child", crashed_player)
 		crashed_player.global_position = global_position
 		crashed_player.camera_zoom = last_camera_zoom
-		get_parent().call_deferred("add_child", crashed_player)
 		crashed_player.call_deferred("on_start")
 		crashed = true
+		gravity_scale = 0
 		applied_force = Vector2(0, 0)
 		applied_torque = 0
 		rotation = 0
