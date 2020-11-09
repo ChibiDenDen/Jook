@@ -46,5 +46,4 @@ local_coords = false
 process_material = SubResource( 2 )
 
 [node name="Tween" type="Tween" parent="."]
-
 [connection signal="body_entered" from="." to="." method="_on_Player_body_entered"]

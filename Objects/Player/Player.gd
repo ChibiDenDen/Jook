@@ -97,8 +97,11 @@ func _integrate_forces(state):
 	applied_torque = rotation_dir * torque
 	target_camera_zoom = linear_velocity.length() / camera_zoom_scale
 	last_camera_zoom = $Camera2D.zoom
+	
+func pickup_fuel():
+	cur_fuel = 50.0
 
-func _on_Player_body_entered(body):
+func _on_Player_body_entered(body: Node2D):
 	if crashed:
 		return
 
