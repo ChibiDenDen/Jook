@@ -168,6 +168,7 @@ position = Vector2( -1848, 184 )
 [node name="Obstacles" type="Node" parent="."]
 
 [node name="Repulser" parent="Obstacles" instance=ExtResource( 4 )]
+position = Vector2( -914.212, 535.922 )
 
 [node name="Grass" parent="Obstacles" instance=ExtResource( 6 )]
 position = Vector2( 1460.74, 909.178 )
