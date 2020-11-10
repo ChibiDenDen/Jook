@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=2]
@@ -7,11 +7,12 @@
 [ext_resource path="res://Objects/UI/UI.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Objects/Obstacles/Walls/Grass.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Objects/PowerUps/Fuel/Fuel.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Objects/RotatingObstacles.gd" type="Script" id=8]
 
 [node name="PhysicsGame" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1048, -40 )
+position = Vector2( -408, -488 )
 thrust = Vector2( 0, -300 )
 torque = 2500
 
@@ -1006,366 +1007,6 @@ position = Vector2( 223, -1387 )
 scale = Vector2( 0.815912, -0.909 )
 z_index = -1
 
-[node name="Grass77" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -843, -810 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass78" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -868, -803 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass79" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -884, -816 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass80" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -912, -815 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass81" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -897, -803 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass82" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -835, -866 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass83" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -860, -859 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass84" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -876, -872 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass85" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -904, -871 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass86" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -889, -859 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass87" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -835, -834 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass88" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -860, -827 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass89" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -876, -840 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass90" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -904, -839 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass91" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -889, -827 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass92" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -843, -730 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass93" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -868, -723 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass94" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -884, -736 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass95" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -912, -735 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass96" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -897, -723 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass97" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -835, -786 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass98" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -860, -779 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass99" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -876, -792 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass100" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -904, -791 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass101" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -889, -779 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass102" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -835, -754 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass103" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -860, -747 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass104" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -876, -760 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass105" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -904, -759 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass106" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -889, -747 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass107" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -843, -730 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass108" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -868, -723 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass109" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -884, -736 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass110" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -912, -735 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass111" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -897, -723 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass112" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -835, -786 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass113" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -860, -779 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass114" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -876, -792 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass115" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -904, -791 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass116" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -889, -779 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass117" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -835, -754 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass118" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -860, -747 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass119" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -876, -760 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass120" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -904, -759 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass121" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -889, -747 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass122" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -859, -658 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass123" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -884, -651 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass124" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -900, -664 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass125" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -928, -663 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass126" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -913, -651 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass127" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -851, -714 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass128" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -876, -707 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass129" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -892, -720 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass130" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -920, -719 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass131" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -905, -707 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
-[node name="Grass132" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -851, -682 )
-rotation = 1.5708
-scale = Vector2( 1, 0.909 )
-z_index = -1
-
-[node name="Grass133" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -876, -675 )
-rotation = 1.5708
-scale = Vector2( 0.984557, 0.909 )
-z_index = -1
-
-[node name="Grass134" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -892, -688 )
-rotation = 1.5708
-scale = Vector2( 0.887965, 0.909 )
-z_index = -1
-
-[node name="Grass135" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -920, -687 )
-rotation = 1.5708
-scale = Vector2( 0.617211, 0.909 )
-z_index = -1
-
-[node name="Grass136" parent="Obstacles" instance=ExtResource( 6 )]
-position = Vector2( -905, -675 )
-rotation = 1.5708
-scale = Vector2( 0.815912, 0.909 )
-z_index = -1
-
 [node name="Grass6" parent="Obstacles" instance=ExtResource( 6 )]
 position = Vector2( 1429, -554 )
 z_index = -1
@@ -1521,6 +1162,99 @@ z_index = -1
 position = Vector2( 183, -467 )
 rotation = -0.696024
 scale = Vector2( 0.815912, 0.9331 )
+z_index = -1
+
+[node name="RotatingObstacles" type="Node" parent="."]
+script = ExtResource( 8 )
+
+[node name="Grass77" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -883, -834 )
+rotation = 1.5708
+scale = Vector2( 1, 0.909 )
+z_index = -1
+
+[node name="Grass78" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -908, -827 )
+rotation = 1.5708
+scale = Vector2( 0.984557, 0.909 )
+z_index = -1
+
+[node name="Grass79" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -924, -840 )
+rotation = 1.5708
+scale = Vector2( 0.887965, 0.909 )
+z_index = -1
+
+[node name="Grass80" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -952, -839 )
+rotation = 1.5708
+scale = Vector2( 0.617211, 0.909 )
+z_index = -1
+
+[node name="Grass81" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -937, -827 )
+rotation = 1.5708
+scale = Vector2( 0.815912, 0.909 )
+z_index = -1
+
+[node name="Grass82" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -875, -890 )
+rotation = 1.5708
+scale = Vector2( 1, 0.909 )
+z_index = -1
+
+[node name="Grass83" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -900, -883 )
+rotation = 1.5708
+scale = Vector2( 0.984557, 0.909 )
+z_index = -1
+
+[node name="Grass84" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -916, -896 )
+rotation = 1.5708
+scale = Vector2( 0.887965, 0.909 )
+z_index = -1
+
+[node name="Grass85" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -944, -895 )
+rotation = 1.5708
+scale = Vector2( 0.617211, 0.909 )
+z_index = -1
+
+[node name="Grass86" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -929, -883 )
+rotation = 1.5708
+scale = Vector2( 0.815912, 0.909 )
+z_index = -1
+
+[node name="Grass87" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -875, -858 )
+rotation = 1.5708
+scale = Vector2( 1, 0.909 )
+z_index = -1
+
+[node name="Grass88" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -900, -851 )
+rotation = 1.5708
+scale = Vector2( 0.984557, 0.909 )
+z_index = -1
+
+[node name="Grass89" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -916, -864 )
+rotation = 1.5708
+scale = Vector2( 0.887965, 0.909 )
+z_index = -1
+
+[node name="Grass90" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -944, -863 )
+rotation = 1.5708
+scale = Vector2( 0.617211, 0.909 )
+z_index = -1
+
+[node name="Grass91" parent="RotatingObstacles" instance=ExtResource( 6 )]
+position = Vector2( -929, -851 )
+rotation = 1.5708
+scale = Vector2( 0.815912, 0.909 )
 z_index = -1
 
 [node name="UI" parent="." instance=ExtResource( 5 )]
