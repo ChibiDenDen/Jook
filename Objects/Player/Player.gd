@@ -23,7 +23,7 @@ var last_camera_zoom : Vector2
 var target_camera_zoom : float = 1.0
 var last_applied_force : Vector2
 var last_linear_velocity : Vector2
-const survivable_hit_force := 100.0
+export var survivable_hit_force := 80.0
 
 export var use_fuel := true
 export var max_fuel := 50.0

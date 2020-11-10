@@ -12,9 +12,10 @@
 [node name="PhysicsGame" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( -408, -488 )
+position = Vector2( 1760, 784 )
 thrust = Vector2( 0, -300 )
 torque = 2500
+fuel_fill_time = 0.75
 
 [node name="Walls" type="Node" parent="."]
 
