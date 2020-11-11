@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=2]
@@ -9,31 +9,32 @@
 [ext_resource path="res://Objects/PowerUps/Fuel/Fuel.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Objects/RotatingObstacles.gd" type="Script" id=8]
 [ext_resource path="res://Resources/sewerbackground-01.png" type="Texture" id=9]
+[ext_resource path="res://Objects/Obstacles/Water/Water.tscn" type="PackedScene" id=10]
 
 [node name="PhysicsGame" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 570, 250 )
-z_index = -1
+z_index = -10
 texture = ExtResource( 9 )
 
 [node name="Background2" type="Sprite" parent="."]
 position = Vector2( -1984, 248 )
-z_index = -1
+z_index = -10
 texture = ExtResource( 9 )
 
 [node name="Background3" type="Sprite" parent="."]
 position = Vector2( -1984, -1192 )
-z_index = -1
+z_index = -10
 texture = ExtResource( 9 )
 
 [node name="Background4" type="Sprite" parent="."]
 position = Vector2( 570, -1192 )
-z_index = -1
+z_index = -10
 texture = ExtResource( 9 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1760, 784 )
+position = Vector2( 1754.52, 768.933 )
 thrust = Vector2( 0, -300 )
 torque = 2500
 fuel_fill_time = 0.75
@@ -96,12 +97,12 @@ rotation = 1.56423
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall49" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -2080, -408 )
+position = Vector2( -1094.67, -614.689 )
 rotation = 1.56423
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall50" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1928, -408 )
+position = Vector2( -1920.87, -539.853 )
 rotation = 1.56423
 scale = Vector2( 0.890297, -6.26425 )
 
@@ -124,6 +125,7 @@ scale = Vector2( 0.890297, -6.26425 )
 position = Vector2( -2104, -56 )
 rotation = 1.56423
 scale = Vector2( 0.890297, -6.26425 )
+z_index = 11
 
 [node name="Wall37" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( -608, 24 )
@@ -190,30 +192,31 @@ rotation = 2.82944
 scale = Vector2( 0.89, 5 )
 
 [node name="Wall27" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1736, -424 )
+position = Vector2( -1725.31, -199.494 )
 scale = Vector2( 0.89, 5 )
+z_index = 11
 
 [node name="Wall31" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -912, -1040 )
-scale = Vector2( 0.872, 14 )
+position = Vector2( -922.691, -1097.02 )
+scale = Vector2( 1.03314, 8.9922 )
+
+[node name="Wall32" parent="Walls" instance=ExtResource( 2 )]
+position = Vector2( -666.112, -423.498 )
+rotation = -0.923211
+scale = Vector2( 0.969845, 10.2302 )
 
 [node name="Wall28" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1648, -624 )
-rotation = 0.86633
+position = Vector2( -1644.44, -577.673 )
+rotation = 1.23435
 scale = Vector2( 0.874825, 3.96021 )
 
 [node name="Wall29" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1440, -704 )
+position = Vector2( -1422.18, -613.128 )
 rotation = 1.5708
 scale = Vector2( 0.89, 5 )
 
 [node name="Wall30" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1256, -704 )
-rotation = 1.5708
-scale = Vector2( 0.89, 5 )
-
-[node name="Wall32" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1072, -864 )
+position = Vector2( -1238.18, -613.128 )
 rotation = 1.5708
 scale = Vector2( 0.89, 5 )
 
@@ -265,6 +268,7 @@ scale = Vector2( 0.890297, -6.26425 )
 [node name="Wall4" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( -2296, -32 )
 scale = Vector2( 0.890297, -42.5497 )
+z_index = 11
 
 [node name="Wall5" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 1836.12, -42.0096 )
@@ -298,7 +302,7 @@ position = Vector2( -488, -16 )
 position = Vector2( -591.689, 843.275 )
 
 [node name="Checkpoint5" parent="Checkpoints" instance=ExtResource( 3 )]
-position = Vector2( -1800, -480 )
+position = Vector2( -1880.18, -602.944 )
 
 [node name="Obstacles" type="Node" parent="."]
 
@@ -1186,6 +1190,11 @@ rotation = -0.696024
 scale = Vector2( 0.815912, 0.9331 )
 z_index = -1
 
+[node name="Water" parent="Obstacles" instance=ExtResource( 10 )]
+position = Vector2( -2021.74, -204.405 )
+scale = Vector2( 9.27363, 4.36202 )
+z_index = 10
+
 [node name="RotatingObstacles" type="Node" parent="."]
 script = ExtResource( 8 )
 
@@ -1296,7 +1305,7 @@ position = Vector2( 120, -384 )
 position = Vector2( -64, -1232 )
 
 [node name="Fuel5" parent="PowerUps" instance=ExtResource( 7 )]
-position = Vector2( -1048, -840 )
+position = Vector2( -1153.13, -766.946 )
 
 [node name="Fuel6" parent="PowerUps" instance=ExtResource( 7 )]
 position = Vector2( -968, 288 )
