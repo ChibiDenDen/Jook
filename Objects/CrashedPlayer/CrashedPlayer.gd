@@ -12,7 +12,7 @@ var camera_zoom := Vector2()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	$AnimationPlayer.play("walk")
 
 func on_start():
 	$Tween.interpolate_property($Camera2D, "zoom", camera_zoom, Vector2(1, 1), 1)
@@ -25,9 +25,12 @@ func will_drop():
 func _process(delta):
 	move_vec += Vector2.DOWN * falling_acc * delta
 	if is_on_floor():
+		$AnimationPlayer.play("walk")
 		move_vec += Vector2.RIGHT * acc * delta
 		if move_vec.length() > walking_speed:
 			move_vec = move_vec.normalized() * walking_speed
+	else:
+		$AnimationPlayer.stop()
 	move_vec = move_and_slide(move_vec, Vector2.UP)
 	if get_slide_count() == 0 or will_drop():
 		drop = true

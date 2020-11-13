@@ -4,7 +4,7 @@
 [ext_resource path="res://Objects/Obstacles/Water/water_uv_offset.png" type="Texture" id=2]
 [ext_resource path="res://Objects/Obstacles/Water/Water.shader" type="Shader" id=4]
 
-[sub_resource type="ShaderMaterial" id=2]
+[sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 4 )
 shader_param/shadow_color = null
 shader_param/tile_factor = 10.0
@@ -19,5 +19,5 @@ shader_param/scale = Vector2( 9.274, 4.362 )
 shader_param/texture_offset_uv = ExtResource( 2 )
 
 [node name="ColorRect" type="Sprite"]
-material = SubResource( 2 )
+material = SubResource( 1 )
 texture = ExtResource( 1 )

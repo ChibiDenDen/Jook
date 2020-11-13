@@ -17,7 +17,7 @@ var crashed := false
 
 export var camera_zoom_scale := 100
 export var camera_zoom_speed := 1
-export var min_camera_zoom := 1
+export var min_camera_zoom := 0.7
 export var max_camera_zoom := 3
 var last_camera_zoom : Vector2
 var target_camera_zoom : float = 1.0
@@ -66,6 +66,7 @@ func _integrate_forces(state):
 		return
 
 	if Input.is_action_pressed("ui_up") and cur_fuel > 0 and !filling_fuel:
+		$AnimationPlayer.play("fly")
 		gravity_scale = 1
 		if use_fuel:
 			cur_fuel = max(0, cur_fuel - (max_fuel * state.get_step()) / fuel_empty_time)
@@ -83,6 +84,7 @@ func _integrate_forces(state):
 		applied_force = cur_thrust.rotated(rotation)
 		$Particles2D.emitting = true
 	else:
+		$AnimationPlayer.stop()
 		if use_fuel:
 			cur_fuel = min(max_fuel, cur_fuel + (max_fuel * state.get_step()) / fuel_fill_time)
 			filling_fuel = cur_fuel != max_fuel
