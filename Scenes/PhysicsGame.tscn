@@ -34,7 +34,7 @@ z_index = -10
 texture = ExtResource( 9 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1752, 784 )
+position = Vector2( 1776, 784 )
 thrust = Vector2( 0, -300 )
 torque = 2500
 fuel_fill_time = 0.75

@@ -18,7 +18,7 @@ var crashed := false
 export var camera_zoom_scale := 100
 export var camera_zoom_speed := 1
 export var min_camera_zoom := 0.7
-export var max_camera_zoom := 3
+export var max_camera_zoom := 2
 var last_camera_zoom : Vector2
 var target_camera_zoom : float = 1.0
 var last_applied_force : Vector2
