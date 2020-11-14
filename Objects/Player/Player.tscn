@@ -72,8 +72,7 @@ tracks/3/keys = {
 "values": [ 0, 7 ]
 }
 
-[node name="Player" type="RigidBody2D"]
-position = Vector2( 472, 265 )
+[node name="PlayerFly" type="RigidBody2D"]
 collision_mask = 2147483649
 contacts_reported = 10
 contact_monitor = true
@@ -87,10 +86,6 @@ scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 3 )
 vframes = 2
 hframes = 4
-
-[node name="Camera2D" type="Camera2D" parent="."]
-current = true
-zoom = Vector2( 0.7, 0.7 )
 
 [node name="BoostTimer" type="Timer" parent="."]
 wait_time = 3.0
