@@ -34,6 +34,7 @@ export var fuel_empty_time := 1.0
 export var fuel_fill_time := 0.5
 var filling_fuel := false
 var cur_fuel := 50.0
+var shield_timer := 0.0
 
 var fuel_progress : ProgressBar
 const RED_COLOR := Color(0.67, 0.14, 0.14)
@@ -52,6 +53,11 @@ func set_camera_zoom(zoom : Vector2):
 	camera.zoom = zoom
 
 func _process(delta):
+	if shield_timer > 0:
+		shield_timer -= delta
+		modulate = Color.blue
+	else:
+		modulate = Color.white
 	var zoom_step = camera_zoom_speed * delta
 	if (camera.zoom.x > target_camera_zoom):
 		zoom_step *= -1
@@ -107,6 +113,9 @@ func _integrate_forces(state):
 func pickup_fuel():
 	cur_fuel = 50.0
 
+func pickup_shield():
+	shield_timer = 5.0
+
 func get_hit():
 	var crashed_player = CrashedPlayerScene.instance()
 	crashed_player.player = self
@@ -127,6 +136,9 @@ func get_hit():
 
 func _on_Player_body_entered(body: Node2D):
 	if crashed:
+		return
+
+	if shield_timer > 0:
 		return
 
 	if (last_linear_velocity - linear_velocity).length() > survivable_hit_force:
