@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Resources/sewerbackground-01.png" type="Texture" id=9]
 [ext_resource path="res://Objects/Obstacles/Water/Water.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Objects/Player/Anchor.gd" type="Script" id=11]
+[ext_resource path="res://Objects/Obstacles/Lurker/Lurker.tscn" type="PackedScene" id=12]
 
 [node name="PhysicsGame" type="Node2D"]
 
@@ -35,7 +36,7 @@ z_index = -10
 texture = ExtResource( 9 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 1760, 768 )
+position = Vector2( 1747.92, 762.441 )
 
 [node name="PlayerFly" parent="Player" instance=ExtResource( 1 )]
 
@@ -1203,6 +1204,24 @@ z_index = -1
 position = Vector2( -2021.74, -204.405 )
 scale = Vector2( 9.27363, 4.36202 )
 z_index = 10
+
+[node name="Lurker" parent="Obstacles" instance=ExtResource( 12 )]
+position = Vector2( 706.13, 785.045 )
+
+[node name="Lurker2" parent="Obstacles" instance=ExtResource( 12 )]
+position = Vector2( 1655.67, -117.299 )
+
+[node name="Lurker3" parent="Obstacles" instance=ExtResource( 12 )]
+position = Vector2( 515.468, -179.594 )
+
+[node name="Lurker4" parent="Obstacles" instance=ExtResource( 12 )]
+position = Vector2( -426.519, 167.752 )
+
+[node name="Lurker5" parent="Obstacles" instance=ExtResource( 12 )]
+position = Vector2( -894.681, -117.299 )
+
+[node name="Lurker6" parent="Obstacles" instance=ExtResource( 12 )]
+position = Vector2( -426.519, -1268.83 )
 
 [node name="RotatingObstacles" type="Node" parent="."]
 script = ExtResource( 8 )

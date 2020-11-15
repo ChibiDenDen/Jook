@@ -107,24 +107,27 @@ func _integrate_forces(state):
 func pickup_fuel():
 	cur_fuel = 50.0
 
+func get_hit():
+	var crashed_player = CrashedPlayerScene.instance()
+	crashed_player.player = self
+	get_tree().current_scene.call_deferred("add_child", crashed_player)
+	crashed_player.global_position = global_position
+	crashed_player.camera_zoom = last_camera_zoom
+	crashed_player.call_deferred("on_start")
+	cur_fuel = max_fuel
+	fuel_progress.value = max_fuel
+	crashed = true
+	gravity_scale = 0
+	applied_force = Vector2(0, 0)
+	applied_torque = 0
+	rotation = 0
+	set_process(false)
+	sleeping = true
+	visible = false
+
 func _on_Player_body_entered(body: Node2D):
 	if crashed:
 		return
 
 	if (last_linear_velocity - linear_velocity).length() > survivable_hit_force:
-		var crashed_player = CrashedPlayerScene.instance()
-		crashed_player.player = self
-		get_tree().current_scene.call_deferred("add_child", crashed_player)
-		crashed_player.global_position = global_position
-		crashed_player.camera_zoom = last_camera_zoom
-		crashed_player.call_deferred("on_start")
-		cur_fuel = max_fuel
-		fuel_progress.value = max_fuel
-		crashed = true
-		gravity_scale = 0
-		applied_force = Vector2(0, 0)
-		applied_torque = 0
-		rotation = 0
-		set_process(false)
-		sleeping = true
-		visible = false
+		get_hit()
