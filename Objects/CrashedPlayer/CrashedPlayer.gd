@@ -9,6 +9,7 @@ var player : Node2D
 var drop := false
 var move_vec := Vector2()
 var camera_zoom := Vector2()
+var slide_down := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -26,12 +27,22 @@ func _process(delta):
 	move_vec += Vector2.DOWN * falling_acc * delta
 	if is_on_floor():
 		$AnimationPlayer.play("walk")
-		move_vec += Vector2.RIGHT * acc * delta
+		# Make sure we keep sliding down
+		var dir = 1
+		if slide_down:
+			dir = -1
+		move_vec += Vector2.RIGHT * acc * delta * dir
 		if move_vec.length() > walking_speed:
 			move_vec = move_vec.normalized() * walking_speed
 	else:
+		# After falling backwards, keep going to the right
+		if slide_down:
+			move_vec.x = 0
+		slide_down = false
 		$AnimationPlayer.stop()
-	move_vec = move_and_slide(move_vec, Vector2.UP)
+	move_vec = move_and_slide_with_snap(move_vec, Vector2(0, 32), Vector2.UP)
+	if move_vec.x < 0:
+		slide_down = true
 	if get_slide_count() == 0 or will_drop():
 		drop = true
 	for i in range(get_slide_count()):
