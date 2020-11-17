@@ -49,6 +49,21 @@ func _ready():
 	else:
 		fuel_progress.visible = false
 
+func reset():
+	cur_fuel = max_fuel
+	fuel_progress.value = max_fuel
+	gravity_scale = 0
+	applied_force = Vector2(0, 0)
+	applied_torque = 0
+	rotation = 0
+
+func move_to(pos : Vector2):
+	global_position = pos
+	gravity_scale = 0
+	sleeping = true
+	reset()
+	sleeping = false
+
 func set_camera_zoom(zoom : Vector2):
 	camera.zoom = zoom
 
@@ -123,13 +138,8 @@ func get_hit():
 	crashed_player.global_position = global_position
 	crashed_player.camera_zoom = last_camera_zoom
 	crashed_player.call_deferred("on_start")
-	cur_fuel = max_fuel
-	fuel_progress.value = max_fuel
 	crashed = true
-	gravity_scale = 0
-	applied_force = Vector2(0, 0)
-	applied_torque = 0
-	rotation = 0
+	reset()
 	set_process(false)
 	sleeping = true
 	visible = false

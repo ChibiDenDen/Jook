@@ -1,0 +1,31 @@
+extends Sprite
+
+var player_in := false
+var player : Node2D
+export var connection_path : NodePath
+var connection : Node2D
+var unlocked := false
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	connection = get_node(connection_path)
+	print(connection)
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	if !connection.unlocked:
+		return
+	if player_in and Input.is_action_pressed("action"):
+		print(player.name)
+		print(connection.global_position)
+		player.move_to(connection.global_position)
+
+func _on_Area2D_body_entered(body):
+	player = body
+	unlocked = true
+	player_in = true
+
+
+func _on_Area2D_body_exited(body):
+	player_in = false
