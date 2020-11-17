@@ -24,6 +24,10 @@ func will_drop():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Input.is_action_pressed("speedup"):
+		Engine.time_scale = 4
+	else:
+		Engine.time_scale = 1
 	move_vec += Vector2.DOWN * falling_acc * delta
 	if is_on_floor():
 		$AnimationPlayer.play("walk")
@@ -54,4 +58,5 @@ func _process(delta):
 			player.crashed = false
 			player.visible = true
 			player.sleeping = false
+			Engine.time_scale = 1
 			queue_free()
