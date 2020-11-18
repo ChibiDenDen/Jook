@@ -29,6 +29,7 @@ texture = ExtResource( 9 )
 
 [node name="Background3" type="Sprite" parent="."]
 position = Vector2( -1984, -1192 )
+scale = Vector2( -1, -1 )
 z_index = -10
 texture = ExtResource( 9 )
 
@@ -38,7 +39,7 @@ z_index = -10
 texture = ExtResource( 9 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( -320.609, -529.696 )
+position = Vector2( 1768, 768 )
 
 [node name="PlayerFly" parent="Player" instance=ExtResource( 1 )]
 
@@ -58,7 +59,7 @@ position = Vector2( -2040, -168 )
 connection_path = NodePath("../Teleporter2")
 
 [node name="Teleporter2" parent="Teleporters" instance=ExtResource( 14 )]
-position = Vector2( 592, 472 )
+position = Vector2( 1224, 640 )
 connection_path = NodePath("../Teleporter")
 
 [node name="Walls" type="Node" parent="."]
@@ -142,7 +143,6 @@ scale = Vector2( 0.890297, -6.26425 )
 position = Vector2( -2104, -56 )
 rotation = 1.56423
 scale = Vector2( 0.890297, -6.26425 )
-z_index = 11
 
 [node name="Wall37" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( -608, 24 )
@@ -208,11 +208,6 @@ position = Vector2( -1208, 384 )
 rotation = 2.82944
 scale = Vector2( 0.89, 5 )
 
-[node name="Wall27" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1725.31, -199.494 )
-scale = Vector2( 0.89, 5 )
-z_index = 11
-
 [node name="Wall50" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( -1185.41, -210.719 )
 scale = Vector2( 0.89, 5 )
@@ -258,7 +253,7 @@ scale = Vector2( 0.89, 5 )
 [node name="Wall35" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( -1968, -472 )
 rotation = 1.22173
-scale = Vector2( 0.89, 6 )
+scale = Vector2( 0.89, 7.8 )
 
 [node name="Wall11" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 103.564, 170.113 )
@@ -1228,8 +1223,8 @@ scale = Vector2( 0.815912, 0.9331 )
 z_index = -1
 
 [node name="Water" parent="Obstacles" instance=ExtResource( 10 )]
-position = Vector2( -2021.74, -204.405 )
-scale = Vector2( 9.27363, 4.36202 )
+position = Vector2( -1759.25, -204.405 )
+scale = Vector2( 17.4765, 4.36202 )
 z_index = 10
 
 [node name="Lurker" parent="Obstacles" instance=ExtResource( 12 )]
@@ -1245,7 +1240,7 @@ position = Vector2( 1656, -1552 )
 position = Vector2( 520, -1624 )
 
 [node name="Lurker12" parent="Obstacles" instance=ExtResource( 12 )]
-position = Vector2( -896, -1552 )
+position = Vector2( -992, -1112 )
 
 [node name="Lurker3" parent="Obstacles" instance=ExtResource( 12 )]
 position = Vector2( 515.468, -179.594 )
@@ -1260,10 +1255,10 @@ position = Vector2( -894.681, -117.299 )
 position = Vector2( -426.519, -1268.83 )
 
 [node name="Lurker8" parent="Obstacles" instance=ExtResource( 12 )]
-position = Vector2( -1848, -656 )
+position = Vector2( -1936, -760 )
 
 [node name="Lurker7" parent="Obstacles" instance=ExtResource( 12 )]
-position = Vector2( -2032, -1624 )
+position = Vector2( -2120, -1728 )
 
 [node name="RotatingObstacles" type="Node" parent="."]
 script = ExtResource( 8 )
