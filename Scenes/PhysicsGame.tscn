@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Objects/Obstacles/Lurker/Lurker.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Objects/PowerUps/Shield/Shield.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Objects/Teleport/Teleporter.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Objects/Obstacles/Walls/BreakableWall.tscn" type="PackedScene" id=15]
 
 [node name="PhysicsGame" type="Node2D"]
 
@@ -39,7 +40,7 @@ z_index = -10
 texture = ExtResource( 9 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 1768, 768 )
+position = Vector2( -1216, -920 )
 
 [node name="PlayerFly" parent="Player" instance=ExtResource( 1 )]
 
@@ -85,7 +86,7 @@ rotation = 1.5708
 scale = Vector2( 0.89, -200 )
 
 [node name="Wall6" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -296, -2400 )
+position = Vector2( -296, -2600 )
 rotation = 1.5708
 scale = Vector2( 0.89, -200 )
 
@@ -223,7 +224,7 @@ rotation = 1.5708
 scale = Vector2( 1.033, 60 )
 
 [node name="Wall52" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1880, -1864 )
+position = Vector2( -1880, -1904 )
 scale = Vector2( 0.9, 16 )
 
 [node name="Wall53" parent="Walls" instance=ExtResource( 2 )]
@@ -318,6 +319,10 @@ scale = Vector2( 1, 5.47166 )
 position = Vector2( 554.124, 324.589 )
 rotation = 1.5708
 scale = Vector2( 1, 5.47166 )
+
+[node name="BreakableWall" parent="Walls" instance=ExtResource( 15 )]
+position = Vector2( -2088, -2376 )
+rotation = 1.5708
 
 [node name="Checkpoints" type="Node" parent="."]
 

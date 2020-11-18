@@ -151,5 +151,12 @@ func _on_Player_body_entered(body: Node2D):
 	if shield_timer > 0:
 		return
 
-	if (last_linear_velocity - linear_velocity).length() > survivable_hit_force:
+	var force := (last_linear_velocity - linear_velocity).length()
+
+	if body.is_in_group("Breakable"):
+		if force > survivable_hit_force * 2:
+			body.will_break()
+		return
+
+	if force > survivable_hit_force:
 		get_hit()
