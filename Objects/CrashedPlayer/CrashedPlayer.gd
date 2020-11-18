@@ -45,7 +45,7 @@ func _process(delta):
 		slide_down = false
 		$AnimationPlayer.stop()
 	move_vec = move_and_slide_with_snap(move_vec, Vector2(0, 32), Vector2.UP)
-	if move_vec.x < 0:
+	if move_vec.x < -3:
 		slide_down = true
 	if get_slide_count() == 0 or will_drop():
 		drop = true
@@ -60,3 +60,5 @@ func _process(delta):
 			player.sleeping = false
 			Engine.time_scale = 1
 			queue_free()
+	if is_on_wall():
+		slide_down = not slide_down

@@ -88,7 +88,7 @@ vframes = 2
 hframes = 4
 
 [node name="BoostTimer" type="Timer" parent="."]
-wait_time = 3.0
+wait_time = 8.0
 one_shot = true
 
 [node name="Particles2D" type="Particles2D" parent="."]

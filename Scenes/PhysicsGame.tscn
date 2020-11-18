@@ -38,7 +38,7 @@ z_index = -10
 texture = ExtResource( 9 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( -2144, -208 )
+position = Vector2( -320.609, -529.696 )
 
 [node name="PlayerFly" parent="Player" instance=ExtResource( 1 )]
 
@@ -119,7 +119,7 @@ rotation = 1.56423
 scale = Vector2( 0.890297, -6.26425 )
 
 [node name="Wall49" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( -1094.67, -614.689 )
+position = Vector2( -1107.67, -615.189 )
 rotation = 1.56423
 scale = Vector2( 0.890297, -6.26425 )
 
@@ -210,6 +210,11 @@ scale = Vector2( 0.89, 5 )
 
 [node name="Wall27" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( -1725.31, -199.494 )
+scale = Vector2( 0.89, 5 )
+z_index = 11
+
+[node name="Wall50" parent="Walls" instance=ExtResource( 2 )]
+position = Vector2( -1185.41, -210.719 )
 scale = Vector2( 0.89, 5 )
 z_index = 11
 

@@ -11,7 +11,7 @@ onready var camera := get_node("../Anchor/Camera2D")
 # var a = 2
 # var b = "text"
 
-export var thrust = Vector2.UP * 500
+export var thrust = Vector2.UP * 300
 export var boost_thrust = 25
 export var torque = 5000
 
