@@ -157,7 +157,7 @@ func _on_Player_body_entered(body: Node2D):
 	var force := (last_linear_velocity - linear_velocity).length()
 
 	if body.is_in_group("Breakable"):
-		if force > survivable_hit_force * 2:
+		if force > body.break_force:
 			body.will_break()
 		return
 
