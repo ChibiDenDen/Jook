@@ -25,7 +25,8 @@ func lurk():
 	($Area2D/CollisionShape2D.shape as CircleShape2D).radius = 100.0
 
 func _on_Area2D_body_entered(body):
-	# assume body is the player
+	if !body.is_in_group("Player"):
+		return
 	player = body
 	if lurking:
 		lurking = false

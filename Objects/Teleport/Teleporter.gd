@@ -9,16 +9,13 @@ var unlocked := false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	connection = get_node(connection_path)
-	print(connection)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if !connection.unlocked:
 		return
-	if player_in and Input.is_action_pressed("action"):
-		print(player.name)
-		print(connection.global_position)
+	if player_in and Input.is_action_just_pressed("action"):
 		player.move_to(connection.global_position)
 
 func _on_Area2D_body_entered(body):

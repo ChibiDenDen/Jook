@@ -72,7 +72,9 @@ tracks/3/keys = {
 "values": [ 0, 7 ]
 }
 
-[node name="PlayerFly" type="RigidBody2D"]
+[node name="PlayerFly" type="RigidBody2D" groups=[
+"Player",
+]]
 collision_mask = 2147483649
 contacts_reported = 10
 contact_monitor = true

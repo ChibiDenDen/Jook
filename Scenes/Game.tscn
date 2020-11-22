@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -15,6 +15,8 @@
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Objects/Obstacles/Walls/BreakableWall.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Objects/Obstacles/Water/Water.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Objects/Obstacles/Lurker/Lurker.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Objects/Teleport/Teleporter.tscn" type="PackedScene" id=17]
 
 [node name="PhysicsGame" type="Node2D"]
 
@@ -76,7 +78,10 @@ position = Vector2( 1288.57, -575.156 )
 position = Vector2( 2302.57, -588.376 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2164.47, 1120 )
+position = Vector2( 2166.85, 1143.64 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="PlayerFly" parent="Player" instance=ExtResource( 1 )]
 
@@ -272,4 +277,25 @@ rotation = 3.14159
 [node name="BreakableWall" parent="World" instance=ExtResource( 14 )]
 position = Vector2( 1817.55, -176.513 )
 rotation = 1.0472
-scale = Vector2( 1.96, 6.96 )
+
+[node name="Lurker" parent="World" instance=ExtResource( 16 )]
+position = Vector2( 279.998, 634.333 )
+
+[node name="Lurker2" parent="World" instance=ExtResource( 16 )]
+position = Vector2( 1233.07, 300.623 )
+
+[node name="Lurker3" parent="World" instance=ExtResource( 16 )]
+position = Vector2( 2367.69, 354.017 )
+
+[node name="Lurker4" parent="World" instance=ExtResource( 16 )]
+position = Vector2( 1414.61, -195.937 )
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Teleporter" parent="Node" instance=ExtResource( 17 )]
+position = Vector2( 2167.78, -616.696 )
+connection_path = NodePath("../Teleporter2")
+
+[node name="Teleporter2" parent="Node" instance=ExtResource( 17 )]
+position = Vector2( 477.554, 1074.83 )
+connection_path = NodePath("../Teleporter")
