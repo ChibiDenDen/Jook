@@ -51,6 +51,7 @@ centered = false
 
 [node name="background-05" type="Sprite" parent="BG"]
 position = Vector2( 0, -5764 )
+scale = Vector2( 1, 1.00368 )
 texture = ExtResource( 12 )
 centered = false
 
@@ -86,7 +87,7 @@ position = Vector2( 1288.57, -575.156 )
 position = Vector2( 2302.57, -588.376 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2169.21, 1130.22 )
+position = Vector2( 882.488, -1545.5 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -376,13 +377,8 @@ scale = Vector2( -1, 1 )
 position = Vector2( 2382.05, -2898.2 )
 scale = Vector2( -1, -1 )
 
-[node name="Grass4" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2757.83, -1822.22 )
-rotation = 1.5708
-scale = Vector2( -1, -1 )
-
 [node name="Grass17" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2557.82, -1569.82 )
+position = Vector2( 2599.86, -1616.91 )
 rotation = 1.5708
 scale = Vector2( -1, -1 )
 
