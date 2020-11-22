@@ -108,194 +108,211 @@ scale = Vector2( 13.1759, 13.7382 )
 
 [node name="World" type="Node2D" parent="."]
 
-[node name="Wall" parent="World" instance=ExtResource( 13 )]
+[node name="Walls" type="Node2D" parent="World"]
+
+[node name="Wall" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, 1172.44 )
 
-[node name="Wall14" parent="World" instance=ExtResource( 13 )]
+[node name="Wall14" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, 286.668 )
 
-[node name="Wall28" parent="World" instance=ExtResource( 13 )]
+[node name="Wall28" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 430.862, -56.8304 )
 
-[node name="Wall35" parent="World" instance=ExtResource( 13 )]
+[node name="Wall35" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 142.688, 505.246 )
 
-[node name="Wall36" parent="World" instance=ExtResource( 13 )]
+[node name="Wall36" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 142.688, 63.9483 )
 
-[node name="Wall37" parent="World" instance=ExtResource( 13 )]
+[node name="Wall37" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 142.688, -365.656 )
 
-[node name="Wall29" parent="World" instance=ExtResource( 13 )]
+[node name="Wall29" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2099.47, -461.312 )
 rotation = 1.57079
 
-[node name="Wall30" parent="World" instance=ExtResource( 13 )]
+[node name="Wall30" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1942.99, -620.232 )
 rotation = 3.14159
 
-[node name="Wall31" parent="World" instance=ExtResource( 13 )]
+[node name="Wall31" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1241.3, -463.431 )
 rotation = 1.57079
 
-[node name="Wall32" parent="World" instance=ExtResource( 13 )]
+[node name="Wall32" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1402.57, -635.064 )
 rotation = 3.14159
 
-[node name="Wall33" parent="World" instance=ExtResource( 13 )]
+[node name="Wall33" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1040.23, -302.393 )
 rotation = 3.14159
 
-[node name="Wall34" parent="World" instance=ExtResource( 13 )]
+[node name="Wall34" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1040.23, 79.7845 )
 rotation = 3.14159
 
-[node name="Wall2" parent="World" instance=ExtResource( 13 )]
+[node name="Wall2" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, 727.966 )
 
-[node name="Wall3" parent="World" instance=ExtResource( 13 )]
+[node name="Wall3" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, 727.966 )
 
-[node name="Wall4" parent="World" instance=ExtResource( 13 )]
+[node name="Wall4" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1880.27, 1174.44 )
 
-[node name="Wall19" parent="World" instance=ExtResource( 13 )]
+[node name="Wall19" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 770.291, 862.988 )
 
-[node name="Wall6" parent="World" instance=ExtResource( 13 )]
+[node name="Wall6" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1562.42, 597.265 )
 
-[node name="Wall9" parent="World" instance=ExtResource( 13 )]
+[node name="Wall9" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1656.78, 1116 )
 rotation = 1.0472
+scale = Vector2( 1.96, 6.96 )
 
-[node name="Wall10" parent="World" instance=ExtResource( 13 )]
+[node name="Wall10" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1310.3, 1316.24 )
 rotation = 1.0472
+scale = Vector2( 1.96, 6.96 )
 
-[node name="Wall5" parent="World" instance=ExtResource( 13 )]
+[node name="Wall5" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2166.86, 1332.21 )
 rotation = 1.57079
 
-[node name="Wall11" parent="World" instance=ExtResource( 13 )]
+[node name="Wall11" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1047.74, 1348.08 )
 rotation = 1.57079
 
-[node name="Wall12" parent="World" instance=ExtResource( 13 )]
+[node name="Wall12" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1310, 757.569 )
 rotation = 1.57079
 
-[node name="Wall13" parent="World" instance=ExtResource( 13 )]
+[node name="Wall13" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 776.762, 867.203 )
 rotation = 1.57079
 
-[node name="Wall20" parent="World" instance=ExtResource( 13 )]
+[node name="Wall20" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 610.265, 403.028 )
 rotation = 1.57079
 
-[node name="Wall21" parent="World" instance=ExtResource( 13 )]
+[node name="Wall21" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 996.501, 302.136 )
 rotation = 1.0472
+scale = Vector2( 1.96, 6.96 )
 
-[node name="Wall22" parent="World" instance=ExtResource( 13 )]
+[node name="Wall22" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1353.62, 92.5155 )
 rotation = 1.0472
+scale = Vector2( 1.96, 6.96 )
 
-[node name="Wall23" parent="World" instance=ExtResource( 13 )]
+[node name="Wall23" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1562.42, -25.2101 )
 rotation = 1.0472
+scale = Vector2( 1.96, 6.96 )
 
-[node name="Wall24" parent="World" instance=ExtResource( 13 )]
+[node name="Wall24" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2095.54, -339.705 )
 rotation = 1.0472
+scale = Vector2( 1.96, 6.96 )
 
-[node name="Wall27" parent="World" instance=ExtResource( 13 )]
+[node name="Wall27" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2292.31, -454.067 )
 rotation = 1.0472
+scale = Vector2( 1.96, 6.96 )
 
-[node name="Wall25" parent="World" instance=ExtResource( 13 )]
+[node name="Wall25" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, -142.936 )
 
-[node name="Wall26" parent="World" instance=ExtResource( 13 )]
+[node name="Wall26" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, -575.156 )
 
-[node name="Wall44" parent="World" instance=ExtResource( 13 )]
+[node name="Wall44" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, -993.156 )
 
-[node name="Wall45" parent="World" instance=ExtResource( 13 )]
+[node name="Wall45" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2099.47, -1181.16 )
 rotation = -1.57079
 
-[node name="Wall15" parent="World" instance=ExtResource( 13 )]
+[node name="Wall15" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 611.946, 1348.2 )
 rotation = 1.57079
 
-[node name="Wall16" parent="World" instance=ExtResource( 13 )]
+[node name="Wall16" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 283.997, 1206.92 )
 rotation = 2.35619
+scale = Vector2( 1.96, 6.96 )
 
-[node name="Wall17" parent="World" instance=ExtResource( 13 )]
+[node name="Wall17" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 142.726, 878.975 )
 rotation = 3.14159
 
-[node name="Wall18" parent="World" instance=ExtResource( 13 )]
+[node name="Wall18" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 493.582, 403.497 )
-rotation = 4.71238
+rotation = -1.57081
 
-[node name="Wall7" parent="World" instance=ExtResource( 13 )]
+[node name="Wall7" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 2110.71, 441.362 )
 rotation = 1.57079
 
-[node name="Wall8" parent="World" instance=ExtResource( 13 )]
+[node name="Wall8" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1846.37, 441.362 )
 rotation = 1.57079
 
-[node name="Wall38" parent="World" instance=ExtResource( 13 )]
+[node name="Wall38" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1710.37, -1182.64 )
 rotation = 1.57079
 
-[node name="Wall39" parent="World" instance=ExtResource( 13 )]
+[node name="Wall39" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1268.57, -1184.64 )
 rotation = 1.57079
 
-[node name="Wall40" parent="World" instance=ExtResource( 13 )]
+[node name="Wall40" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 833.011, -1186.64 )
 rotation = 1.57079
 
-[node name="Wall41" parent="World" instance=ExtResource( 13 )]
+[node name="Wall41" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 582.569, -1026.64 )
-rotation = 3.40339
+rotation = -2.8798
 
-[node name="Wall42" parent="World" instance=ExtResource( 13 )]
+[node name="Wall42" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 493.582, -704.638 )
-rotation = 3.40339
+rotation = -2.8798
 
-[node name="Wall43" parent="World" instance=ExtResource( 13 )]
+[node name="Wall43" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 430.862, -497.55 )
 rotation = 3.14159
 
-[node name="BreakableWall" parent="World" instance=ExtResource( 14 )]
+[node name="BreakableWalls" type="Node2D" parent="World"]
+
+[node name="BreakableWall" parent="World/BreakableWalls" instance=ExtResource( 14 )]
 position = Vector2( 1817.55, -176.513 )
 rotation = 1.0472
+scale = Vector2( 1.96, 6.96 )
 
-[node name="Lurker" parent="World" instance=ExtResource( 16 )]
+[node name="Lurkers" type="Node2D" parent="World"]
+
+[node name="Lurker" parent="World/Lurkers" instance=ExtResource( 16 )]
 position = Vector2( 279.998, 634.333 )
 
-[node name="Lurker2" parent="World" instance=ExtResource( 16 )]
+[node name="Lurker2" parent="World/Lurkers" instance=ExtResource( 16 )]
 position = Vector2( 1233.07, 300.623 )
 
-[node name="Lurker3" parent="World" instance=ExtResource( 16 )]
+[node name="Lurker3" parent="World/Lurkers" instance=ExtResource( 16 )]
 position = Vector2( 2367.69, 354.017 )
 
-[node name="Lurker4" parent="World" instance=ExtResource( 16 )]
+[node name="Lurker4" parent="World/Lurkers" instance=ExtResource( 16 )]
 position = Vector2( 1414.61, -195.937 )
 
-[node name="Node" type="Node" parent="."]
+[node name="Teleporters" type="Node2D" parent="World"]
 
-[node name="Teleporter" parent="Node" instance=ExtResource( 17 )]
+[node name="Teleporter" parent="World/Teleporters" instance=ExtResource( 17 )]
 position = Vector2( 2167.78, -616.696 )
-connection_path = NodePath("../Teleporter2")
+connection_path = NodePath("../../Teleporters/Teleporter2")
 
-[node name="Teleporter2" parent="Node" instance=ExtResource( 17 )]
+[node name="Teleporter2" parent="World/Teleporters" instance=ExtResource( 17 )]
 position = Vector2( 477.554, 1074.83 )
-connection_path = NodePath("../Teleporter")
+connection_path = NodePath("../../Teleporters/Teleporter")
+
+[node name="Grass" type="Node2D" parent="World"]
