@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://Resources/background-05.png" type="Texture" id=12]
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Objects/Obstacles/Walls/BreakableWall.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Objects/Obstacles/Water/Water.tscn" type="PackedScene" id=15]
 
 [node name="PhysicsGame" type="Node2D"]
 
@@ -68,6 +69,38 @@ position = Vector2( 2164.47, 1222.66 )
 [node name="Checkpoint2" parent="Checkpoints" instance=ExtResource( 2 )]
 position = Vector2( 1434.57, 640.268 )
 
+[node name="Checkpoint3" parent="Checkpoints" instance=ExtResource( 2 )]
+position = Vector2( 1288.57, -575.156 )
+
+[node name="Checkpoint4" parent="Checkpoints" instance=ExtResource( 2 )]
+position = Vector2( 2302.57, -588.376 )
+
+[node name="Player" type="Node2D" parent="."]
+position = Vector2( 2164.47, 1120 )
+
+[node name="PlayerFly" parent="Player" instance=ExtResource( 1 )]
+
+[node name="Anchor" type="Position2D" parent="Player"]
+script = ExtResource( 11 )
+
+[node name="Camera2D" type="Camera2D" parent="Player/Anchor"]
+current = true
+zoom = Vector2( 0.75, 0.75 )
+limit_left = 0
+limit_top = -10087
+limit_right = 2565
+limit_bottom = 1441
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+editor_draw_limits = true
+
+[node name="Water2" type="Node2D" parent="."]
+
+[node name="Water" parent="Water2" instance=ExtResource( 15 )]
+position = Vector2( 570.862, -56.8304 )
+rotation = 1.57079
+scale = Vector2( 13.1759, 13.7382 )
+
 [node name="World" type="Node2D" parent="."]
 
 [node name="Wall" parent="World" instance=ExtResource( 13 )]
@@ -75,6 +108,42 @@ position = Vector2( 2450.2, 1172.44 )
 
 [node name="Wall14" parent="World" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, 286.668 )
+
+[node name="Wall28" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 430.862, -56.8304 )
+
+[node name="Wall35" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 142.688, 505.246 )
+
+[node name="Wall36" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 142.688, 63.9483 )
+
+[node name="Wall37" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 142.688, -365.656 )
+
+[node name="Wall29" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 2099.47, -461.312 )
+rotation = 1.57079
+
+[node name="Wall30" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 1942.99, -620.232 )
+rotation = 3.14159
+
+[node name="Wall31" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 1241.3, -463.431 )
+rotation = 1.57079
+
+[node name="Wall32" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 1402.57, -635.064 )
+rotation = 3.14159
+
+[node name="Wall33" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 1040.23, -302.393 )
+rotation = 3.14159
+
+[node name="Wall34" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 1040.23, 79.7845 )
+rotation = 3.14159
 
 [node name="Wall2" parent="World" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, 727.966 )
@@ -120,7 +189,7 @@ position = Vector2( 610.265, 403.028 )
 rotation = 1.57079
 
 [node name="Wall21" parent="World" instance=ExtResource( 13 )]
-position = Vector2( 995.395, 299.376 )
+position = Vector2( 996.501, 302.136 )
 rotation = 1.0472
 
 [node name="Wall22" parent="World" instance=ExtResource( 13 )]
@@ -145,6 +214,13 @@ position = Vector2( 2450.2, -142.936 )
 [node name="Wall26" parent="World" instance=ExtResource( 13 )]
 position = Vector2( 2450.2, -575.156 )
 
+[node name="Wall44" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 2450.2, -993.156 )
+
+[node name="Wall45" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 2099.47, -1181.16 )
+rotation = -1.57079
+
 [node name="Wall15" parent="World" instance=ExtResource( 13 )]
 position = Vector2( 611.946, 1348.2 )
 rotation = 1.57079
@@ -158,8 +234,8 @@ position = Vector2( 142.726, 878.975 )
 rotation = 3.14159
 
 [node name="Wall18" parent="World" instance=ExtResource( 13 )]
-position = Vector2( 278.952, 546.332 )
-rotation = 3.92699
+position = Vector2( 493.582, 403.497 )
+rotation = 4.71238
 
 [node name="Wall7" parent="World" instance=ExtResource( 13 )]
 position = Vector2( 2110.71, 441.362 )
@@ -169,25 +245,31 @@ rotation = 1.57079
 position = Vector2( 1846.37, 441.362 )
 rotation = 1.57079
 
+[node name="Wall38" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 1710.37, -1182.64 )
+rotation = 1.57079
+
+[node name="Wall39" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 1268.57, -1184.64 )
+rotation = 1.57079
+
+[node name="Wall40" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 833.011, -1186.64 )
+rotation = 1.57079
+
+[node name="Wall41" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 582.569, -1026.64 )
+rotation = 3.40339
+
+[node name="Wall42" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 493.582, -704.638 )
+rotation = 3.40339
+
+[node name="Wall43" parent="World" instance=ExtResource( 13 )]
+position = Vector2( 430.862, -497.55 )
+rotation = 3.14159
+
 [node name="BreakableWall" parent="World" instance=ExtResource( 14 )]
 position = Vector2( 1817.55, -176.513 )
 rotation = 1.0472
-
-[node name="Player" type="Node2D" parent="."]
-position = Vector2( 2164.47, 286.668 )
-
-[node name="PlayerFly" parent="Player" instance=ExtResource( 1 )]
-
-[node name="Anchor" type="Position2D" parent="Player"]
-script = ExtResource( 11 )
-
-[node name="Camera2D" type="Camera2D" parent="Player/Anchor"]
-current = true
-zoom = Vector2( 0.75, 0.75 )
-limit_left = 0
-limit_top = -10087
-limit_right = 2565
-limit_bottom = 1441
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-editor_draw_limits = true
+scale = Vector2( 1.96, 6.96 )
