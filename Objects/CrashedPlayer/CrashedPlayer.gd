@@ -8,16 +8,11 @@ export var acc := 500
 var player : Node2D
 var drop := false
 var move_vec := Vector2()
-var camera_zoom := Vector2()
 var slide_down := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$AnimationPlayer.play("walk")
-
-func on_start():
-	$Tween.interpolate_property($Camera2D, "zoom", camera_zoom, Vector2(1, 1), 1)
-	$Tween.start()
 
 func will_drop():
 	return is_on_wall() or is_on_ceiling()
@@ -54,7 +49,6 @@ func _process(delta):
 		if collider.is_in_group("Checkpoint"):
 			player.global_position = global_position - Vector2(0, 5)
 			player.set_process(true)
-			player.set_camera_zoom($Camera2D.zoom)
 			player.crashed = false
 			player.visible = true
 			player.sleeping = false
@@ -62,3 +56,4 @@ func _process(delta):
 			queue_free()
 	if is_on_wall():
 		slide_down = not slide_down
+	player.global_position = global_position - Vector2(0, 5)

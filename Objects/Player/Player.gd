@@ -20,7 +20,7 @@ var crashed := false
 export var camera_zoom_scale := 100
 export var camera_zoom_speed := 1
 export var min_camera_zoom := 0.7
-export var max_camera_zoom := 2
+export var max_camera_zoom := 4.0/3.0
 export var zoom_step_thresh := 0.4
 var last_camera_zoom : Vector2
 var target_camera_zoom : float = 1.0
@@ -68,6 +68,12 @@ func set_camera_zoom(zoom : Vector2):
 	camera.zoom = zoom
 
 func _process(delta):
+	if Input.is_key_pressed(KEY_ESCAPE):
+		get_tree().quit()
+	if crashed:
+		camera.zoom = lerp(camera.zoom, Vector2.ONE, 0.25)
+		return
+
 	if shield_timer > 0:
 		shield_timer -= delta
 		modulate = Color.blue
@@ -136,11 +142,8 @@ func get_hit():
 	crashed_player.player = self
 	get_tree().current_scene.call_deferred("add_child", crashed_player)
 	crashed_player.global_position = global_position
-	crashed_player.camera_zoom = last_camera_zoom
-	crashed_player.call_deferred("on_start")
 	crashed = true
 	reset()
-	set_process(false)
 	sleeping = true
 	visible = false
 
