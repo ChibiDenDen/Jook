@@ -45,7 +45,7 @@ texture = ExtResource( 9 )
 centered = false
 
 [node name="background-04" type="Sprite" parent="BG"]
-position = Vector2( 0, -4320.17 )
+position = Vector2( 0, -4319.17 )
 texture = ExtResource( 6 )
 centered = false
 
@@ -81,13 +81,13 @@ position = Vector2( 2164.47, 1222.66 )
 position = Vector2( 1434.57, 640.268 )
 
 [node name="Checkpoint3" parent="Checkpoints" instance=ExtResource( 2 )]
-position = Vector2( 1288.57, -575.156 )
+position = Vector2( 1288.57, -593.156 )
 
 [node name="Checkpoint4" parent="Checkpoints" instance=ExtResource( 2 )]
-position = Vector2( 2302.57, -588.376 )
+position = Vector2( 2302.57, -606.376 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 1776.21, -4428.8 )
+position = Vector2( 1776.21, -4427.8 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -145,7 +145,7 @@ position = Vector2( 2099.47, -461.312 )
 rotation = 1.57079
 
 [node name="Wall30" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1942.99, -620.232 )
+position = Vector2( 1942.99, -638.232 )
 rotation = 3.14159
 
 [node name="Wall31" parent="World/Walls" instance=ExtResource( 13 )]
@@ -153,7 +153,7 @@ position = Vector2( 1241.3, -463.431 )
 rotation = 1.57079
 
 [node name="Wall32" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1402.57, -635.064 )
+position = Vector2( 1402.57, -653.064 )
 rotation = 3.14159
 
 [node name="Wall33" parent="World/Walls" instance=ExtResource( 13 )]
@@ -185,7 +185,7 @@ position = Vector2( 1656.78, 1116 )
 rotation = 1.0472
 
 [node name="Wall10" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1310.3, 1316.24 )
+position = Vector2( 1427.3, 1248.24 )
 rotation = 1.0472
 
 [node name="Wall5" parent="World/Walls" instance=ExtResource( 13 )]
@@ -232,17 +232,17 @@ rotation = 1.0472
 position = Vector2( 2450.2, -142.936 )
 
 [node name="Wall26" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 2450.2, -575.156 )
+position = Vector2( 2450.2, -593.156 )
 
 [node name="Wall44" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 2450.2, -993.156 )
+position = Vector2( 2450.2, -1011.16 )
 
 [node name="Wall45" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 2099.47, -1181.16 )
+position = Vector2( 2099.47, -1199.16 )
 rotation = -1.57079
 
 [node name="Wall15" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 611.946, 1348.2 )
+position = Vector2( 608.949, 1345.2 )
 rotation = 1.57079
 
 [node name="Wall16" parent="World/Walls" instance=ExtResource( 13 )]
@@ -266,23 +266,23 @@ position = Vector2( 1846.37, 441.362 )
 rotation = 1.57079
 
 [node name="Wall38" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1710.37, -1182.64 )
+position = Vector2( 1710.37, -1200.64 )
 rotation = 1.57079
 
 [node name="Wall39" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1268.57, -1184.64 )
+position = Vector2( 1268.57, -1202.64 )
 rotation = 1.57079
 
 [node name="Wall40" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 833.011, -1186.64 )
+position = Vector2( 833.011, -1204.64 )
 rotation = 1.57079
 
 [node name="Wall41" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 582.569, -1026.64 )
+position = Vector2( 582.569, -1044.64 )
 rotation = -2.8798
 
 [node name="Wall42" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 493.582, -704.638 )
+position = Vector2( 498.339, -774.963 )
 rotation = -2.8798
 
 [node name="Wall43" parent="World/Walls" instance=ExtResource( 13 )]
@@ -312,15 +312,15 @@ position = Vector2( 1414.61, -195.937 )
 [node name="Teleporters" type="Node2D" parent="World"]
 
 [node name="Teleporter" parent="World/Teleporters" instance=ExtResource( 17 )]
-position = Vector2( 2167.78, -616.696 )
+position = Vector2( 2167.78, -634.696 )
 connection_path = NodePath("../../Teleporters/Teleporter2")
 
 [node name="Teleporter3" parent="World/Teleporters" instance=ExtResource( 17 )]
-position = Vector2( 699.579, -1327.63 )
+position = Vector2( 699.579, -1345.63 )
 connection_path = NodePath("../Teleporter4")
 
 [node name="Teleporter4" parent="World/Teleporters" instance=ExtResource( 17 )]
-position = Vector2( 652.963, -2882.92 )
+position = Vector2( 652.963, -2899.92 )
 connection_path = NodePath("../Teleporter3")
 
 [node name="Teleporter2" parent="World/Teleporters" instance=ExtResource( 17 )]
@@ -330,656 +330,847 @@ connection_path = NodePath("../../Teleporters/Teleporter")
 [node name="Grass" type="Node2D" parent="World"]
 
 [node name="Grass" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2183.45, -1995.53 )
+position = Vector2( 2183.45, -2013.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass4" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1575.32, -2434.15 )
+position = Vector2( 1575.32, -2452.15 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass36" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1505.39, -2376.94 )
+position = Vector2( 1505.39, -2394.94 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass37" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1621.93, -2478.65 )
+position = Vector2( 1621.93, -2496.65 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass38" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1549.89, -2408.72 )
+position = Vector2( 1549.89, -2426.72 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass27" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 433.45, -2243.53 )
+position = Vector2( 433.45, -2261.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass35" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 444.204, -2893.04 )
+position = Vector2( 444.204, -2910.04 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass28" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 409.45, -2225.53 )
+position = Vector2( 409.45, -2243.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass29" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 377.45, -2237.53 )
+position = Vector2( 377.45, -2255.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass30" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 341.45, -2251.53 )
+position = Vector2( 341.45, -2269.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass31" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 325.45, -2237.53 )
+position = Vector2( 325.45, -2255.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass32" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 305.45, -2245.53 )
+position = Vector2( 305.45, -2263.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass33" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 281.45, -2227.53 )
+position = Vector2( 281.45, -2245.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass34" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 273.45, -2227.53 )
+position = Vector2( 273.45, -2245.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass43" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 417.287, -1736.09 )
+position = Vector2( 417.287, -1754.09 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass2" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2267.88, -2002.98 )
+position = Vector2( 2267.88, -2020.98 )
 rotation = 0.349066
 scale = Vector2( -1, 1 )
 
 [node name="Grass3" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2382.05, -2896.08 )
+position = Vector2( 2382.05, -2913.08 )
 scale = Vector2( -1, -1 )
 
 [node name="Grass17" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2599.86, -1616.91 )
-rotation = 1.5708
-scale = Vector2( -1, -1 )
+position = Vector2( 2533.86, -1630.91 )
+rotation = 1.98269
+scale = Vector2( -0.5, -1 )
 
 [node name="Grass16" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1929.21, -1282.5 )
+position = Vector2( 1929.21, -1300.5 )
 
 [node name="Grass25" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 469.21, -2234.5 )
+position = Vector2( 469.21, -2252.5 )
 
 [node name="Grass26" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 481.21, -2218.5 )
+position = Vector2( 481.21, -2236.5 )
 
 [node name="Grass39" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 921.947, -2570.24 )
+position = Vector2( 921.947, -2588.24 )
 
 [node name="Grass40" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 911.352, -2587.19 )
+position = Vector2( 911.352, -2605.19 )
 
 [node name="Grass41" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 904.995, -2602.03 )
+position = Vector2( 904.995, -2620.03 )
 
 [node name="Grass42" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 934.66, -2546.93 )
+position = Vector2( 934.66, -2564.93 )
 
 [node name="Grass18" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2243.71, -1151.32 )
+position = Vector2( 2243.71, -1169.32 )
 
 [node name="Grass19" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2221.84, -1159.73 )
+position = Vector2( 2221.84, -1177.73 )
 
 [node name="Grass20" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2196.62, -1168.14 )
+position = Vector2( 2196.62, -1186.14 )
 
 [node name="Grass21" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2262.21, -1142.91 )
+position = Vector2( 2262.21, -1160.91 )
 
 [node name="Grass22" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2174.75, -1181.59 )
+position = Vector2( 2174.75, -1199.59 )
 
 [node name="Grass23" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2154.57, -1196.73 )
+position = Vector2( 2154.57, -1214.73 )
 
 [node name="Grass24" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 2154.57, -1196.73 )
+position = Vector2( 2154.57, -1214.73 )
 
 [node name="Grass5" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1025.98, -1301.55 )
+position = Vector2( 1025.98, -1319.55 )
 scale = Vector2( -1, -1 )
 
 [node name="Grass11" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 711.675, -1080.9 )
+position = Vector2( 711.675, -1098.9 )
 rotation = 1.91986
 scale = Vector2( 1, -1 )
 
 [node name="Grass12" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 722.786, -1052.33 )
+position = Vector2( 722.786, -1070.33 )
 rotation = 1.91986
 scale = Vector2( 1, -1 )
 
 [node name="Grass13" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 719.612, -1009.47 )
+position = Vector2( 719.612, -1027.47 )
 rotation = 1.91986
 scale = Vector2( 1, -1 )
 
 [node name="Grass14" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 732.311, -980.897 )
+position = Vector2( 732.311, -998.897 )
 rotation = 1.91986
 scale = Vector2( 1, -1 )
 
 [node name="Grass15" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 729.136, -1030.11 )
+position = Vector2( 729.136, -1048.11 )
 rotation = 1.91986
 scale = Vector2( 1, -1 )
 
 [node name="Grass6" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1067.25, -1274.57 )
+position = Vector2( 1067.25, -1292.57 )
 scale = Vector2( -1, -1 )
 
 [node name="Grass44" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 728.222, -2261.99 )
+position = Vector2( 728.222, -2279.99 )
 scale = Vector2( -1, -1 )
 
 [node name="Grass7" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1113.29, -1265.04 )
+position = Vector2( 1113.29, -1283.04 )
 scale = Vector2( -1, -1 )
 
 [node name="Grass8" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1133.92, -1242.82 )
+position = Vector2( 1133.92, -1260.82 )
 scale = Vector2( -1, -1 )
 
 [node name="Grass9" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1083.13, -1265.04 )
+position = Vector2( 1083.13, -1283.04 )
 scale = Vector2( -1, -1 )
 
 [node name="Grass10" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 1046.62, -1288.85 )
+position = Vector2( 1046.62, -1306.85 )
 scale = Vector2( -1, -1 )
 
 [node name="Tree" type="Node2D" parent="World"]
 position = Vector2( 1483.01, 1226.27 )
 
 [node name="Wall97" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -961.383, -3493.15 )
+position = Vector2( -961.383, -3511.15 )
 rotation = 1.5708
 scale = Vector2( 1.033, 12 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall98" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1434.38, -2291.77 )
+position = Vector2( -1392.38, -2183.77 )
 rotation = -0.174533
 scale = Vector2( 1.033, 12 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall104" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 495.22, -3376 )
+position = Vector2( 495.22, -3394 )
 rotation = 1.5708
 scale = Vector2( 1.033, 6 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall105" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 768, -3949.15 )
+position = Vector2( 689.427, -3964.9 )
 rotation = 1.5708
-scale = Vector2( 1.033, 15 )
+scale = Vector2( 1, 12 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall157" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 211.798, -5742.06 )
+rotation = 1.5708
+scale = Vector2( 1, 12 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall107" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 733.063, -4755.5 )
+position = Vector2( 697.144, -4754.5 )
 rotation = 1.5708
-scale = Vector2( 1.033, 15 )
+scale = Vector2( 1.033, 12 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall85" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -568.838, -3272.79 )
+position = Vector2( -568.838, -3290.79 )
 scale = Vector2( 0.9, 7.5 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall132" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1225.1, -3000.1 )
+position = Vector2( -1225.1, -3018.1 )
 rotation = -1.22173
 scale = Vector2( 0.9, 6 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall86" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 288, -3154.75 )
+position = Vector2( 288, -3172.75 )
 scale = Vector2( 0.9, 10 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall92" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 288, -4061.15 )
+position = Vector2( 288, -4091.62 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall99" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 121.69, -4983.41 )
+position = Vector2( 121.69, -4982.41 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall112" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 432.129, -5814.02 )
+position = Vector2( 432.129, -5813.02 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall117" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 432.129, -5488.32 )
-scale = Vector2( 0.9, 8 )
-physics_material_override = SubResource( 1 )
-
-[node name="Wall130" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 1108.13, -5034.32 )
+position = Vector2( 432.129, -5487.32 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall134" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 1108.13, -5241.65 )
-scale = Vector2( 0.9, 200 )
+position = Vector2( 1056.07, -5589.9 )
+scale = Vector2( 0.9, 175 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall135" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1514.68, -5196.75 )
-scale = Vector2( 0.9, 200 )
-physics_material_override = SubResource( 1 )
-
-[node name="Wall131" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 1108.13, -4364.23 )
-scale = Vector2( 0.9, 12 )
+position = Vector2( -1461.35, -6844.57 )
+scale = Vector2( 0.9, 135 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall113" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 432.129, -6312.39 )
+position = Vector2( 432.129, -6311.39 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall100" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 121.69, -4509.68 )
+position = Vector2( 121.69, -4508.68 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall101" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -132.814, -4514.72 )
+position = Vector2( -132.814, -4513.72 )
 rotation = 1.5708
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall106" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -963.619, -4768.67 )
+position = Vector2( -963.619, -4767.67 )
 rotation = 1.5708
 scale = Vector2( 0.9, 11 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall102" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 111.436, -5050.3 )
+position = Vector2( 111.436, -5049.3 )
 rotation = 1.5708
 scale = Vector2( 0.9, 12 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall103" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -408.263, -5689.8 )
+position = Vector2( -408.263, -5688.8 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall108" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -408.263, -5275.4 )
+position = Vector2( -408.263, -5274.4 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall119" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -992.817, -5049.58 )
+position = Vector2( -992.817, -5048.58 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall120" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1210.82, -5577.58 )
+position = Vector2( -1207.99, -5576.58 )
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall152" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -720.138, -8566.13 )
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall153" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -472.865, -8870 )
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall154" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -170.959, -9179.69 )
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall155" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 164.823, -9486.11 )
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall156" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 449.433, -9755.21 )
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall159" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 681.433, -10109.9 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall125" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -850.257, -6049.52 )
+position = Vector2( -850.257, -6048.52 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall121" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1210.82, -6347.58 )
+position = Vector2( -1210.82, -6346.58 )
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall130" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -759.59, -6780.57 )
+scale = Vector2( 0.9, 6 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall148" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -1062.23, -7385.86 )
+rotation = 1.5708
+scale = Vector2( 0.9, 12 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall147" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -984.083, -6591.28 )
+rotation = 1.5708
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall131" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 181.033, -7177.2 )
+scale = Vector2( 0.9, 7 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall146" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 436.954, -7089.65 )
+rotation = 1.5708
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall145" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 661.447, -6959.44 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall127" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -378.32, -6428.79 )
+position = Vector2( -378.32, -6427.79 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall109" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -806.767, -5561.42 )
+position = Vector2( -806.767, -5560.42 )
 rotation = 1.5708
 scale = Vector2( 0.9, 12 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall116" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1033.27, -5050.78 )
+position = Vector2( -1033.27, -5049.78 )
 rotation = 1.5708
 scale = Vector2( 0.9, 10 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall110" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -177.055, -5924.3 )
+position = Vector2( -177.055, -5923.3 )
 rotation = 1.5708
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall137" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -63.055, -5629.11 )
+position = Vector2( -63.0551, -5628.11 )
+rotation = 1.5708
+scale = Vector2( 0.9, 6 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall151" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 185.847, -7407.19 )
+rotation = 1.5708
+scale = Vector2( 0.9, 6 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall149" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -1120.89, -6804.74 )
 rotation = 1.5708
 scale = Vector2( 0.9, 6 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall140" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -7.05499, -5584.3 )
+position = Vector2( -7.05493, -5583.3 )
 scale = Vector2( 0.9, 6 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall142" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 664.644, -5143.56 )
+position = Vector2( 664.644, -5142.56 )
 scale = Vector2( 0.9, 4 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall143" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 882.894, -4904.12 )
+position = Vector2( 882.894, -4903.12 )
 scale = Vector2( 0.9, 4 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall144" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 986.721, -5007.95 )
+position = Vector2( 986.721, -4997.97 )
 rotation = 1.5708
-scale = Vector2( 0.9, 4 )
+scale = Vector2( 0.9, 3 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall111" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 438.991, -5489.87 )
+position = Vector2( 438.991, -5488.87 )
 rotation = 1.5708
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall141" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 608.505, -5261.03 )
+position = Vector2( 608.505, -5260.03 )
 rotation = 1.5708
 scale = Vector2( 0.9, 6 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall122" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1298.71, -6345.87 )
+position = Vector2( -1298.71, -6344.87 )
 rotation = 1.5708
 scale = Vector2( 0.9, 2 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall133" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1298.71, -5355.19 )
+position = Vector2( -1298.71, -5354.19 )
 rotation = 1.5708
 scale = Vector2( 0.9, 2 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall139" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 1016.48, -6488.44 )
+position = Vector2( 1016.48, -6487.44 )
 rotation = 1.5708
 scale = Vector2( 0.9, 2 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall138" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 864.308, -6016.79 )
+position = Vector2( 864.308, -6015.79 )
 scale = Vector2( 0.9, 2 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall123" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1421.01, -6444.09 )
+position = Vector2( -1421.01, -6443.09 )
 rotation = 1.5708
 scale = Vector2( 0.9, 2 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall118" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 867.474, -5804.86 )
+position = Vector2( 867.474, -5803.86 )
 rotation = 1.5708
 scale = Vector2( 0.9, 7 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall129" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 668.432, -6065.01 )
+position = Vector2( 668.432, -6064.01 )
+rotation = 1.5708
+scale = Vector2( 0.9, 7 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall150" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -751.438, -6966.28 )
 rotation = 1.5708
 scale = Vector2( 0.9, 7 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall136" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 926.235, -6597.72 )
+position = Vector2( 926.235, -6596.72 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall114" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 377.005, -6316.54 )
+position = Vector2( 377.005, -6315.54 )
 rotation = 1.5708
 scale = Vector2( 0.9, 10 )
 physics_material_override = SubResource( 1 )
 
+[node name="Wall158" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 377.005, -6315.54 )
+rotation = 1.5708
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall160" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -1007.83, -8807.83 )
+rotation = 1.5708
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall168" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 977.81, -9342.03 )
+rotation = 1.5708
+scale = Vector2( 0.9, 3 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall178" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -1370.68, -8807.83 )
+rotation = 1.5708
+scale = Vector2( 0.9, 3 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall161" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -470.946, -9421.16 )
+rotation = 1.5708
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall164" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 159.596, -10021.8 )
+rotation = 1.5708
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall165" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 403.596, -10353.8 )
+rotation = 1.5708
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall163" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -140.498, -9734.55 )
+rotation = 1.5708
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall162" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -765.309, -9101.61 )
+rotation = 1.5708
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall166" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 340.633, -9060.83 )
+rotation = 1.5708
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall167" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 383.364, -9250.55 )
+rotation = 1.5708
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall169" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -558.217, -10023.6 )
+rotation = 1.5708
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall170" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -825.397, -10340.3 )
+rotation = 1.5708
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall171" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 643.378, -8758.93 )
+rotation = 1.5708
+scale = Vector2( 0.9, 8 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall172" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 81.4868, -8769.78 )
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall173" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 875.237, -9050.12 )
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall174" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -1058.15, -10059.9 )
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall175" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( 398.839, -8470.14 )
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall176" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -782.671, -9720.28 )
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
+[node name="Wall177" parent="World/Tree" instance=ExtResource( 13 )]
+position = Vector2( -127.895, -10338.4 )
+scale = Vector2( 0.9, 10 )
+physics_material_override = SubResource( 1 )
+
 [node name="Wall115" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 765.437, -6715.66 )
+position = Vector2( 765.437, -6714.66 )
 rotation = 1.5708
 scale = Vector2( 0.9, 10 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall128" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -108.456, -6443.62 )
+position = Vector2( -108.456, -6442.62 )
 rotation = 1.5708
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall124" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -933.403, -6296.94 )
+position = Vector2( -933.403, -6295.94 )
 rotation = 1.5708
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall126" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -479.575, -6185.69 )
+position = Vector2( -479.575, -6184.69 )
 rotation = 1.5708
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall87" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -552, -4013.15 )
+position = Vector2( -552, -4031.15 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall88" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -352, -2840 )
+position = Vector2( -352, -2858 )
 rotation = 0.785398
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall90" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -423, -3149.15 )
+position = Vector2( -423, -3167.15 )
 rotation = 0.785398
 scale = Vector2( 0.9, 5.5 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall93" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 112, -3304 )
+position = Vector2( 112, -3322 )
 rotation = 0.785398
 scale = Vector2( 0.9, 7 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall94" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 40.0001, -3605.15 )
+position = Vector2( 53.4696, -3632.13 )
 rotation = 0.785398
 scale = Vector2( 0.9, 10 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall89" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 24, -2784 )
+position = Vector2( 24, -2802 )
 rotation = 2.35619
 scale = Vector2( 0.9, 9 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall95" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -446.272, -3378.44 )
+position = Vector2( -446.272, -3396.44 )
 rotation = 2.35619
 scale = Vector2( 0.9, 5 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall96" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -360, -3597.15 )
+position = Vector2( -360, -3615.15 )
 rotation = 2.35619
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall91" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 132.527, -2998.29 )
+position = Vector2( 132.527, -3016.29 )
 rotation = 2.35619
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall60" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -723.886, -2648 )
+position = Vector2( -723.886, -2666 )
 rotation = 1.5708
 scale = Vector2( 0.89, -5.5 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall66" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -328, -2568 )
+position = Vector2( -328, -2586 )
 rotation = -1.22173
 scale = Vector2( 0.89, 7.8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall68" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 408, -2664.81 )
+position = Vector2( 408, -2682.81 )
 rotation = 1.23435
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall75" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 640.984, -2726.24 )
+position = Vector2( 640.984, -2744.24 )
 rotation = 1.39626
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall77" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 1102.76, -3049.41 )
+position = Vector2( 992.105, -2691.96 )
 rotation = 0.174533
-scale = Vector2( 0.875, 20 )
+scale = Vector2( 0.875, 10 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall71" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 981.423, -3040.88 )
+position = Vector2( 955.996, -3052.52 )
 rotation = 1.39626
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall74" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 577.309, -3073.85 )
+position = Vector2( 577.309, -3091.85 )
 rotation = -0.349066
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall76" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1009.77, -3599.34 )
+position = Vector2( -1009.77, -3617.34 )
 rotation = -0.349066
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall78" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1134.78, -4078.22 )
+position = Vector2( -1134.78, -4095.22 )
 rotation = 1.0472
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall79" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -615.29, -4060.63 )
+position = Vector2( -615.29, -4077.63 )
 rotation = -0.698132
 scale = Vector2( 0.875, 4 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall81" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -749.139, -4027.37 )
+position = Vector2( -749.139, -4044.37 )
 rotation = 0.523599
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall82" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -880.513, -4006.18 )
+position = Vector2( -880.513, -4024.18 )
 rotation = -0.872665
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall83" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1022.48, -4124.84 )
+position = Vector2( -1022.48, -4141.84 )
 rotation = -0.872665
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall73" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 565.322, -3216.19 )
+position = Vector2( 565.322, -3234.19 )
 rotation = 1.39626
 scale = Vector2( 0.875, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall69" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 416.98, -3864.99 )
+position = Vector2( 416.98, -3882.99 )
 rotation = -1.0472
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall72" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 782.902, -3392.17 )
+position = Vector2( 782.902, -3410.17 )
 rotation = 1.39626
 scale = Vector2( 0.874825, 3.96021 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall70" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 120, -2560.81 )
+position = Vector2( 120, -2578.81 )
 rotation = 1.22173
 scale = Vector2( 0.89, 7.8 )
 physics_material_override = SubResource( 1 )
 
 [node name="BreakableWall3" parent="World/Tree" instance=ExtResource( 14 )]
-position = Vector2( -232, -3325.15 )
+position = Vector2( -232, -3343.15 )
 rotation = 0.785398
 scale = Vector2( 0.7, 3 )
 physics_material_override = SubResource( 2 )
 break_force = 300.0
 
 [node name="BreakableWall5" parent="World/Tree" instance=ExtResource( 14 )]
-position = Vector2( -118.2, -3092.47 )
+position = Vector2( -118.2, -3110.47 )
 rotation = 0.785398
 scale = Vector2( 0.7, 3 )
 physics_material_override = SubResource( 2 )
 break_force = 300.0
 
 [node name="Checkpoint9" parent="World/Tree" instance=ExtResource( 2 )]
-position = Vector2( -684.869, -2709.42 )
+position = Vector2( -684.869, -2727.42 )
 physics_material_override = SubResource( 3 )
 
 [node name="Checkpoint16" parent="World/Tree" instance=ExtResource( 2 )]
-position = Vector2( -1146.35, -3048.04 )
+position = Vector2( -1146.35, -3066.04 )
 physics_material_override = SubResource( 3 )
 
 [node name="Checkpoint10" parent="World/Tree" instance=ExtResource( 2 )]
-position = Vector2( 240.039, -2673.5 )
+position = Vector2( 240.039, -2691.5 )
 physics_material_override = SubResource( 3 )
 
 [node name="Checkpoint11" parent="World/Tree" instance=ExtResource( 2 )]
-position = Vector2( -820.13, -4054.39 )
+position = Vector2( -820.13, -4071.39 )
 physics_material_override = SubResource( 3 )
 
 [node name="Checkpoint13" parent="World/Tree" instance=ExtResource( 2 )]
-position = Vector2( -839.2, -5622.39 )
+position = Vector2( -839.2, -5621.39 )
 physics_material_override = SubResource( 3 )
 
 [node name="Checkpoint14" parent="World/Tree" instance=ExtResource( 2 )]
-position = Vector2( 614.97, -5550.48 )
+position = Vector2( 614.97, -5549.48 )
 physics_material_override = SubResource( 3 )
 
 [node name="Checkpoint12" parent="World/Tree" instance=ExtResource( 2 )]
-position = Vector2( -167.501, -3514.06 )
+position = Vector2( -167.501, -3532.06 )
 physics_material_override = SubResource( 3 )
 
 [node name="Checkpoint15" parent="World/Tree" instance=ExtResource( 2 )]
-position = Vector2( 1041.86, -4018.63 )
+position = Vector2( 1041.86, -4036.63 )
 physics_material_override = SubResource( 3 )
