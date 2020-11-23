@@ -1,14 +1,18 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Objects/UI/UI.gd" type="Script" id=1]
+[ext_resource path="res://Menus/MainMenu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Menus/SettingsMenu.tscn" type="PackedScene" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.67451, 0.141176, 0.141176, 1 )
 
-[node name="UI" type="CanvasLayer"]
+[node name="UI" type="Node2D"]
 script = ExtResource( 1 )
 
-[node name="Control" type="Control" parent="."]
+[node name="hud" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="hud"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = 40.0
@@ -17,7 +21,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Fuel" type="ProgressBar" parent="Control"]
+[node name="Fuel" type="ProgressBar" parent="hud/Control"]
 margin_right = 240.0
 margin_bottom = 20.0
 custom_styles/fg = SubResource( 1 )
@@ -25,3 +29,14 @@ percent_visible = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="menus" type="CanvasLayer" parent="hud"]
+
+[node name="MainMenu" parent="hud/menus" instance=ExtResource( 2 )]
+visible = false
+SettingsPath = NodePath("../SettingsMenu")
+UiPath = NodePath("../../..")
+
+[node name="SettingsMenu" parent="hud/menus" instance=ExtResource( 3 )]
+visible = false
+UiPath = NodePath("../../..")

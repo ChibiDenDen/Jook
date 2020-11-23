@@ -3,16 +3,17 @@ extends Control
 var target_position = Vector2.ZERO
 var noise := OpenSimplexNoise.new()
 var time := 0.0
-onready var play_button := get_parent().find_node("PlayButton")
 
 func _process(delta):
 	var speed = 400
 	time += delta
 	target_position = get_viewport().get_mouse_position()
-	if play_button.get_rect().has_point(target_position):
-		target_position = play_button.rect_position + play_button.rect_size * Vector2.RIGHT
-		if (rect_position - target_position).length() < 100:
-			speed = 200
+
+	for item in get_parent().get_node("Menu").get_children():
+		if item is Button and item.get_rect().has_point(target_position):
+			target_position = item.rect_position + item.rect_size * Vector2.RIGHT
+			if (rect_position - target_position).length() < 100:
+				speed = 200
 
 	var rotation_speed =600
 	if (rect_position - target_position).length() < 60:

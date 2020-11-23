@@ -40,6 +40,10 @@ var fuel_progress : ProgressBar
 const RED_COLOR := Color(0.67, 0.14, 0.14)
 const BLUE_COLOR := Color(0.14, 0.14, 0.67)
 
+func stop_fly():
+	sleeping = true
+	visible = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	gravity_scale = 0
@@ -48,6 +52,7 @@ func _ready():
 		fuel_progress.max_value = max_fuel
 	else:
 		fuel_progress.visible = false
+	stop_fly()
 
 func reset():
 	cur_fuel = max_fuel
@@ -69,7 +74,8 @@ func set_camera_zoom(zoom : Vector2):
 
 func _process(delta):
 	if Input.is_key_pressed(KEY_ESCAPE):
-		get_tree().quit()
+		get_tree().current_scene.get_node("UI").show()
+		stop_fly()
 	if crashed:
 		camera.zoom = lerp(camera.zoom, Vector2.ONE, 0.25)
 		return
@@ -144,8 +150,7 @@ func get_hit():
 	crashed_player.global_position = global_position
 	crashed = true
 	reset()
-	sleeping = true
-	visible = false
+	stop_fly()
 
 func _on_Player_body_entered(body: Node2D):
 	if crashed:

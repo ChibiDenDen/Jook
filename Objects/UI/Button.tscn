@@ -1,0 +1,23 @@
+[gd_scene format=2]
+
+[node name="Button" type="Button"]
+margin_left = 1360.0
+margin_top = 136.0
+margin_right = 1776.0
+margin_bottom = 256.0
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 208.0
+margin_bottom = 60.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "StartGame"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

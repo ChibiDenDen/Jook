@@ -1,0 +1,134 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Objects/UI/Button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Menus/Menu.gd" type="Script" id=3]
+[ext_resource path="res://Menus/MenuSlider.tscn" type="PackedScene" id=4]
+
+[sub_resource type="Animation" id=1]
+resource_name = "cry"
+length = 0.5
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.08, 0.16, 0.24, 0.32, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ null, null, null, null, null, null ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "idle"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 4.43828 ),
+"update": 1,
+"values": [ null ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.5
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ null, null, null, null ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.5
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 20.393 ),
+"update": 1,
+"values": [ null, null ]
+}
+
+[node name="SettingsMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 0.00012207
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1880.0
+margin_bottom = -1040.0
+
+[node name="Menu" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="MusicVolume" parent="Menu" instance=ExtResource( 4 )]
+margin_left = 1408.0
+margin_top = 208.0
+margin_right = 1730.0
+margin_bottom = 224.0
+
+[node name="Label" parent="Menu/MusicVolume" index="0"]
+text = "Music Volume"
+
+[node name="SfxVolume" parent="Menu" instance=ExtResource( 4 )]
+margin_left = 1416.0
+margin_top = 408.0
+margin_right = 1738.0
+margin_bottom = 424.0
+
+[node name="Label" parent="Menu/SfxVolume" index="0"]
+text = "Sfx Volume"
+
+[node name="BackButton" parent="Menu" instance=ExtResource( 2 )]
+margin_top = 536.0
+margin_bottom = 656.0
+
+[node name="Label" parent="Menu/BackButton" index="0"]
+text = "Back"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 568, 208 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/cry = SubResource( 1 )
+anims/idle = SubResource( 2 )
+anims/nod = SubResource( 3 )
+anims/stressed = SubResource( 4 )
+
+[node name="dbg" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+
+[editable path="Menu/MusicVolume"]
+
+[editable path="Menu/SfxVolume"]
+
+[editable path="Menu/BackButton"]

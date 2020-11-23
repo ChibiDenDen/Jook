@@ -1,14 +1,15 @@
-extends CanvasLayer
+extends Node2D
 
+var BackMenu : Control
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$hud/menus/MainMenu.visible = true
+
+func _process(_delta):
+	pass
 
 func get_fuel():
-	return $Control/Fuel
+	return $hud/Control/Fuel
+
+func show():
+	$hud/menus/MainMenu.visible = true
