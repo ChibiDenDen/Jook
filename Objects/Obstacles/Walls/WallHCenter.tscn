@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Objects/Obstacles/Walls/PIpeH.png" type="Texture" id=1]
+
+[sub_resource type="PhysicsMaterial" id=1]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 61.957, 26.436 )
+
+[node name="WallHCenter" type="StaticBody2D" groups=[
+"Crash",
+]]
+collision_mask = 3
+physics_material_override = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 75, 0, 124, 78 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 1.5 )
+shape = SubResource( 2 )
