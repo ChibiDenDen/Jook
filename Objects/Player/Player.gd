@@ -40,9 +40,10 @@ var fuel_progress : ProgressBar
 const RED_COLOR := Color(0.67, 0.14, 0.14)
 const BLUE_COLOR := Color(0.14, 0.14, 0.67)
 
+var active_input := true
+
 func stop_fly():
 	sleeping = true
-	visible = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -73,6 +74,7 @@ func set_camera_zoom(zoom : Vector2):
 	camera.zoom = zoom
 
 func _process(delta):
+	active_input = !get_tree().current_scene.get_node("UI").is_shown()
 	if Input.is_key_pressed(KEY_ESCAPE):
 		get_tree().current_scene.get_node("UI").show()
 		stop_fly()
@@ -102,7 +104,7 @@ func _integrate_forces(state):
 	if crashed:
 		return
 
-	if Input.is_action_pressed("ui_up") and cur_fuel > 0 and !filling_fuel:
+	if active_input and Input.is_action_pressed("ui_up") and cur_fuel > 0 and !filling_fuel:
 		$AnimationPlayer.play("fly")
 		gravity_scale = 1
 		if use_fuel:
@@ -129,9 +131,9 @@ func _integrate_forces(state):
 		$Particles2D.emitting = false
 	last_applied_force = applied_force
 	var rotation_dir = 0
-	if Input.is_action_pressed("ui_right"):
+	if active_input and Input.is_action_pressed("ui_right"):
 		rotation_dir += 1
-	if Input.is_action_pressed("ui_left"):
+	if active_input and Input.is_action_pressed("ui_left"):
 		rotation_dir -= 1
 	applied_torque = rotation_dir * torque
 	target_camera_zoom = linear_velocity.length() / camera_zoom_scale
@@ -149,6 +151,7 @@ func get_hit():
 	get_tree().current_scene.call_deferred("add_child", crashed_player)
 	crashed_player.global_position = global_position
 	crashed = true
+	visible = false
 	reset()
 	stop_fly()
 

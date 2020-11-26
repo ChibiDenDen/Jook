@@ -13,3 +13,6 @@ func get_fuel():
 
 func show():
 	$hud/menus/MainMenu.visible = true
+
+func is_shown():
+	return $hud/menus/MainMenu.visible
