@@ -31,6 +31,7 @@
 rough = true
 
 [node name="PhysicsGame" type="Node2D"]
+script = ExtResource( 19 )
 
 [node name="BG" type="Node2D" parent="."]
 
@@ -49,7 +50,7 @@ texture = ExtResource( 9 )
 centered = false
 
 [node name="background-04" type="Sprite" parent="BG"]
-position = Vector2( 0, -4319.17 )
+position = Vector2( 1.78174, -4319.17 )
 texture = ExtResource( 6 )
 centered = false
 
@@ -91,7 +92,7 @@ position = Vector2( 1288.57, -593.156 )
 position = Vector2( 2302.57, -606.376 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2221.84, 1190.66 )
+position = Vector2( 2104, 344 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -462,9 +463,9 @@ scale = Vector2( 1, 12 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall157" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( 211.798, -5742.06 )
+position = Vector2( 207.303, -5742.06 )
 rotation = 1.5708
-scale = Vector2( 1, 12 )
+scale = Vector2( 1, 7 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall107" parent="World/Tree" instance=ExtResource( 13 )]
@@ -634,9 +635,9 @@ scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall137" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -63.0551, -5628.11 )
+position = Vector2( -87.1279, -5479.78 )
 rotation = 1.5708
-scale = Vector2( 0.9, 6 )
+scale = Vector2( 0.9, 5 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall151" parent="World/Tree" instance=ExtResource( 13 )]
@@ -652,8 +653,8 @@ scale = Vector2( 0.9, 6 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall140" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -7.05493, -5583.3 )
-scale = Vector2( 0.9, 6 )
+position = Vector2( -31.1277, -5434.97 )
+scale = Vector2( 0.9, 5 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall142" parent="World/Tree" instance=ExtResource( 13 )]
@@ -994,14 +995,14 @@ scale = Vector2( 4.038, 1 )
 position = Vector2( -343.968, -922.633 )
 
 [node name="WallH1Side" parent="World/Sewer/P3" instance=ExtResource( 19 )]
-position = Vector2( 2560, 1384.73 )
+position = Vector2( 2536, 1384 )
 
 [node name="WallH1Side2" parent="World/Sewer/P3" instance=ExtResource( 19 )]
 position = Vector2( 1782.59, 1387.23 )
 rotation = 3.14159
 
 [node name="WallHCenter" parent="World/Sewer/P3" instance=ExtResource( 20 )]
-position = Vector2( 2200, 1384.73 )
+position = Vector2( 2200, 1384 )
 scale = Vector2( 5.879, 1 )
 
 [node name="P4" type="Node2D" parent="World/Sewer"]
