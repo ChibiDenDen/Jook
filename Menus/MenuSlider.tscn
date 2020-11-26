@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Menus/MenuSlider.gd" type="Script" id=1]
+[ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 42
+font_data = ExtResource( 2 )
 
 [node name="HSlider" type="HSlider"]
-margin_right = 322.0
-margin_bottom = 16.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 0, 80 )
 max_value = 10.0
 value = 10.0
 ticks_on_borders = true
@@ -14,11 +20,15 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="."]
-margin_left = 64.0
-margin_top = -24.0
-margin_right = 104.0
-margin_bottom = -4.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 40.0
+margin_bottom = 40.0
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Abc"
+align = 1
+valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }

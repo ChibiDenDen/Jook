@@ -33,7 +33,7 @@ func _process(delta):
 		print_debug(target_position)
 		print_debug(rect_position)
 		print_debug(target_rotation)
-	get_parent().find_node("dbg").text = str(target_position) + ":" + str(rect_rotation) + ">" + str(target_rotation)+ ">" + str(max_rotation)
+
 	rect_rotation = rect_rotation - min(abs(max_rotation), rotation_speed * delta) * sign(max_rotation)
 	var lateral_movement = \
 		delta*speed*Vector2.RIGHT.rotated(deg2rad(rect_rotation)) * noise.get_noise_1d(time*200)

@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Menus/Cursor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/UI/Button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Menus/Menu.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Customize/Customize.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Menus/MenuBackground.tscn" type="PackedScene" id=5]
 
 [node name="MainMenu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 0.00012207
+margin_left = 1.5874
+margin_right = 1.58752
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -19,37 +22,69 @@ anchor_bottom = 1.0
 margin_right = -1880.0
 margin_bottom = -1040.0
 
-[node name="Menu" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+[node name="ColorRect" parent="." instance=ExtResource( 5 )]
+margin_left = 1457.0
+margin_top = 1.0
+margin_right = 1919.0
+margin_bottom = 683.0
+
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_left = 1435.0
+margin_top = 3.0
+margin_right = 1916.0
+margin_bottom = 644.0
+custom_constants/separation = 100
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="StartButton" parent="Menu" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 481.0
+margin_bottom = 80.0
+
+[node name="CustomizeButton" parent="Menu" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 180.0
+margin_right = 481.0
+margin_bottom = 260.0
+
+[node name="Label" parent="Menu/CustomizeButton" index="0"]
+text = "Customize"
 
 [node name="SettingsButton" parent="Menu" instance=ExtResource( 2 )]
-margin_top = 336.0
-margin_bottom = 456.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 360.0
+margin_right = 481.0
+margin_bottom = 440.0
 
 [node name="Label" parent="Menu/SettingsButton" index="0"]
 text = "Settings"
 
 [node name="QuitButton" parent="Menu" instance=ExtResource( 2 )]
-margin_top = 536.0
-margin_bottom = 656.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 540.0
+margin_right = 481.0
+margin_bottom = 620.0
 
 [node name="Label" parent="Menu/QuitButton" index="0"]
+size_flags_vertical = 1
 text = "Quit"
 
-[node name="dbg" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="Cursor" parent="." instance=ExtResource( 1 )]
+
+[node name="Customize" parent="." instance=ExtResource( 4 )]
+visible = false
+position = Vector2( 165.997, 190.063 )
 [connection signal="mouse_exited" from="Menu/StartButton" to="." method="_on_StartButton_mouse_exited"]
 
 [editable path="Menu/StartButton"]
+
+[editable path="Menu/CustomizeButton"]
 
 [editable path="Menu/SettingsButton"]
 

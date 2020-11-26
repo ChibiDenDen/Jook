@@ -27,7 +27,7 @@ func change_menu(menu : Control):
 
 func _on_pressed(text):
 	match text:
-		"StartGame":
+		"Start Game":
 			player.sleeping = false
 			player.visible = true
 			visible = false
@@ -35,6 +35,8 @@ func _on_pressed(text):
 			change_menu(Settings)
 		"Back":
 			change_menu(Ui.BackMenu)
+		"Customize":
+			pass
 		"Quit":
 			get_tree().quit()
 
