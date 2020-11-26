@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Objects/UI/UI.gd" type="Script" id=1]
 [ext_resource path="res://Menus/MainMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Menus/SettingsMenu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Customize/Customize.tscn" type="PackedScene" id=4]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.67451, 0.141176, 0.141176, 1 )
@@ -35,8 +36,19 @@ __meta__ = {
 [node name="MainMenu" parent="hud/menus" instance=ExtResource( 2 )]
 visible = false
 SettingsPath = NodePath("../SettingsMenu")
+CustomizePath = NodePath("../CustomizeMenu")
 UiPath = NodePath("../../..")
 
 [node name="SettingsMenu" parent="hud/menus" instance=ExtResource( 3 )]
 visible = false
+UiPath = NodePath("../../..")
+
+[node name="CustomizeMenu" parent="hud/menus" instance=ExtResource( 4 )]
+visible = false
+margin_left = 791.961
+margin_top = 257.387
+margin_right = 791.961
+margin_bottom = 257.387
+SettingsPath = NodePath("../SettingsMenu")
+CustomizePath = NodePath(".")
 UiPath = NodePath("../../..")
