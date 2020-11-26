@@ -7,6 +7,7 @@ func _ready():
 	self.connect("value_changed", self, "_on_value_changed", [])
 	for i in AudioServer.get_bus_count():
 		OrigVolumes.append(AudioServer.get_bus_volume_db(i))
+	_on_value_changed(5.0)
 
 func _on_value_changed(value : float):
 	_volume_changed(value)

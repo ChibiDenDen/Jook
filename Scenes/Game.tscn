@@ -98,7 +98,7 @@ position = Vector2( 1288.57, -593.156 )
 position = Vector2( 2302.57, -606.376 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2168, 1144 )
+position = Vector2( 736, -24 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -205,7 +205,7 @@ position = Vector2( 142.726, 878.975 )
 rotation = 3.14159
 
 [node name="Wall18" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 493.582, 403.497 )
+position = Vector2( 528, 403.497 )
 rotation = -1.57081
 
 [node name="Wall38" parent="World/Walls" instance=ExtResource( 13 )]
@@ -1070,7 +1070,7 @@ bus = "Sfx"
 [node name="Events" type="Node2D" parent="."]
 
 [node name="EventTrigger" parent="Events" instance=ExtResource( 24 )]
-position = Vector2( 1240, -1160 )
+position = Vector2( 1264, -528 )
 scale = Vector2( 10, 1 )
 in_stream = ExtResource( 25 )
 out_stream = ExtResource( 23 )
