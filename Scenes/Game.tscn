@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -20,6 +20,8 @@
 [ext_resource path="res://Objects/Obstacles/Walls/Grass.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Objects/Obstacles/Walls/WallH1Side.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Objects/Obstacles/Walls/WallHCenter.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Objects/Obstacles/Walls/WallV.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Objects/Obstacles/Walls/WallH.tscn" type="PackedScene" id=22]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -114,7 +116,6 @@ editor_draw_limits = true
 
 [node name="Water" parent="Water2" instance=ExtResource( 15 )]
 position = Vector2( 570.862, -56.8304 )
-rotation = 1.57079
 scale = Vector2( 13.1759, 13.7382 )
 
 [node name="World" type="Node2D" parent="."]
@@ -136,22 +137,6 @@ position = Vector2( 142.688, -365.656 )
 [node name="Wall46" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 142.688, -471.167 )
 
-[node name="Wall29" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 2099.47, -461.312 )
-rotation = 1.57079
-
-[node name="Wall30" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1942.99, -638.232 )
-rotation = 3.14159
-
-[node name="Wall31" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1241.3, -463.431 )
-rotation = 1.57079
-
-[node name="Wall32" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1402.57, -653.064 )
-rotation = 3.14159
-
 [node name="Wall33" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1040.23, -302.393 )
 rotation = 3.14159
@@ -160,30 +145,12 @@ rotation = 3.14159
 position = Vector2( 1040.23, 79.7845 )
 rotation = 3.14159
 
-[node name="Wall4" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1880.27, 1174.44 )
-
 [node name="Wall19" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 770.291, 862.988 )
 rotation = 0.785398
 
-[node name="Wall6" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1562.42, 597.265 )
-
-[node name="Wall9" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1656.78, 1116 )
-rotation = 1.0472
-
-[node name="Wall10" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1427.3, 1248.24 )
-rotation = 1.0472
-
 [node name="Wall11" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1047.74, 1348.08 )
-rotation = 1.57079
-
-[node name="Wall12" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1310, 757.569 )
 rotation = 1.57079
 
 [node name="Wall13" parent="World/Walls" instance=ExtResource( 13 )]
@@ -233,14 +200,6 @@ rotation = 3.14159
 [node name="Wall18" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 493.582, 403.497 )
 rotation = -1.57081
-
-[node name="Wall7" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 2110.71, 441.362 )
-rotation = 1.57079
-
-[node name="Wall8" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 1846.37, 441.362 )
-rotation = 1.57079
 
 [node name="Wall38" parent="World/Walls" instance=ExtResource( 13 )]
 position = Vector2( 1710.37, -1200.64 )
@@ -1031,6 +990,32 @@ rotation = 3.14159
 position = Vector2( 2094.78, 1384.73 )
 scale = Vector2( 4.038, 1 )
 
+[node name="P3" type="Node2D" parent="World/Sewer"]
+position = Vector2( -343.968, -922.633 )
+
+[node name="WallH1Side" parent="World/Sewer/P3" instance=ExtResource( 19 )]
+position = Vector2( 2560, 1384.73 )
+
+[node name="WallH1Side2" parent="World/Sewer/P3" instance=ExtResource( 19 )]
+position = Vector2( 1782.59, 1387.23 )
+rotation = 3.14159
+
+[node name="WallHCenter" parent="World/Sewer/P3" instance=ExtResource( 20 )]
+position = Vector2( 2200, 1384.73 )
+scale = Vector2( 5.879, 1 )
+
+[node name="P4" type="Node2D" parent="World/Sewer"]
+position = Vector2( -1128.97, 1007.37 )
+rotation = -0.523598
+
+[node name="WallH1Side2" parent="World/Sewer/P4" instance=ExtResource( 19 )]
+position = Vector2( 1782.59, 1387.23 )
+rotation = 3.14159
+
+[node name="WallHCenter" parent="World/Sewer/P4" instance=ExtResource( 20 )]
+position = Vector2( 2200, 1384.73 )
+scale = Vector2( 5.879, 1 )
+
 [node name="P2" type="Node2D" parent="World/Sewer"]
 position = Vector2( 3733.03, -1058.63 )
 rotation = 1.57079
@@ -1045,3 +1030,24 @@ rotation = 3.14159
 [node name="WallHCenter" parent="World/Sewer/P2" instance=ExtResource( 20 )]
 position = Vector2( 1133.55, 1384.73 )
 scale = Vector2( 19.654, 1 )
+
+[node name="Wall" parent="World/Sewer" instance=ExtResource( 22 )]
+position = Vector2( 1256.03, 789.367 )
+
+[node name="Wall2" parent="World/Sewer" instance=ExtResource( 22 )]
+position = Vector2( 1153.1, -434.633 )
+
+[node name="Wall3" parent="World/Sewer" instance=ExtResource( 22 )]
+position = Vector2( 2072.03, -434.633 )
+
+[node name="Wall4" parent="World/Sewer" instance=ExtResource( 21 )]
+position = Vector2( 1336.03, -642.633 )
+
+[node name="Wall5" parent="World/Sewer" instance=ExtResource( 21 )]
+position = Vector2( 1872.03, -637.329 )
+
+[node name="Wall6" parent="World/Sewer" instance=ExtResource( 21 )]
+position = Vector2( 1456.03, 589.367 )
+
+[node name="Wall7" parent="World/Sewer" instance=ExtResource( 21 )]
+position = Vector2( 1800.03, 1169.03 )

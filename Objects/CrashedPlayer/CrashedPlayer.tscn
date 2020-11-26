@@ -4,7 +4,7 @@
 [ext_resource path="res://Resources/Jook/Anims/SIDE.png" type="Texture" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 21.4561
+radius = 35.7718
 
 [sub_resource type="Animation" id=2]
 resource_name = "walk"
@@ -73,7 +73,7 @@ vframes = 5
 hframes = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 5 )
+position = Vector2( 1.75, -10.75 )
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
