@@ -13,7 +13,6 @@ func _on_value_changed(value : float):
 
 func _volume_changed(value : float):
 	var index := AudioServer.get_bus_index($Label.text.trim_suffix(" Volume"))
-	print(index)
 	var db_step = (OrigVolumes[index] + MUTE_VALUE) / max_value
 	if value == 0:
 		AudioServer.set_bus_mute(index, true)

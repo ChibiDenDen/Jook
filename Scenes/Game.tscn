@@ -98,7 +98,7 @@ position = Vector2( 1288.57, -593.156 )
 position = Vector2( 2302.57, -606.376 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2160, 1144 )
+position = Vector2( 2168, 1144 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -189,7 +189,7 @@ position = Vector2( 2292.31, -454.067 )
 rotation = 1.0472
 
 [node name="Wall45" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 2099.47, -1199.16 )
+position = Vector2( 2056, -1199.16 )
 rotation = -1.57079
 
 [node name="Wall15" parent="World/Walls" instance=ExtResource( 13 )]

@@ -43,7 +43,8 @@ func _on_pressed(text):
 		"Quit":
 			get_tree().quit()
 
-# func _on_enter(text):
+func _on_enter(text):
+	pass
 # 	match text:
 # 		"StartGame":
 # 			$Sprite/AnimationPlayer.play("nod")
@@ -52,5 +53,6 @@ func _on_pressed(text):
 # 		"Quit":
 # 			$Sprite/AnimationPlayer.play("cry")
 
-# func _on_exit(_text):
+func _on_exit(_text):
+	pass
 # 	$Sprite/AnimationPlayer.play("idle")
