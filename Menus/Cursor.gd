@@ -29,10 +29,10 @@ func _process(delta):
 	var max_rotation = wrapf(wrapf(rect_rotation, 0, 360) - wrapf(target_rotation, 0, 360), 0, 360)
 	if max_rotation > 180.0:
 		max_rotation -= 360.0
-	if Input.get_mouse_button_mask() == BUTTON_LEFT:
-		print_debug(target_position)
-		print_debug(rect_position)
-		print_debug(target_rotation)
+	# if Input.get_mouse_button_mask() == BUTTON_LEFT:
+	# 	# print_debug(target_position)
+	# 	# print_debug(rect_position)
+	# 	# print_debug(target_rotation)
 
 	rect_rotation = rect_rotation - min(abs(max_rotation), rotation_speed * delta) * sign(max_rotation)
 	var lateral_movement = \

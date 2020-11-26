@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -22,6 +22,12 @@
 [ext_resource path="res://Objects/Obstacles/Walls/WallHCenter.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Objects/Obstacles/Walls/WallV.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Objects/Obstacles/Walls/WallH.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Music/Focus on This.ogg" type="AudioStream" id=23]
+[ext_resource path="res://Objects/EventTrigger/EventTrigger.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Music/PP_Mellow_Garden_noPer_Loop.ogg" type="AudioStream" id=25]
+[ext_resource path="res://Scenes/Game.gd" type="Script" id=26]
+[ext_resource path="res://Music/Deal with those Pieces.ogg" type="AudioStream" id=27]
+[ext_resource path="res://Music/Waiting for your Answer.ogg" type="AudioStream" id=28]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -31,7 +37,7 @@
 rough = true
 
 [node name="PhysicsGame" type="Node2D"]
-script = ExtResource( 19 )
+script = ExtResource( 26 )
 
 [node name="BG" type="Node2D" parent="."]
 
@@ -92,7 +98,7 @@ position = Vector2( 1288.57, -593.156 )
 position = Vector2( 2302.57, -606.376 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2104, 344 )
+position = Vector2( 2160, 1144 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -564,7 +570,7 @@ scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall120" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1207.99, -5576.58 )
+position = Vector2( -1187.01, -5576.58 )
 scale = Vector2( 0.9, 8 )
 physics_material_override = SubResource( 1 )
 
@@ -692,7 +698,7 @@ scale = Vector2( 0.9, 2 )
 physics_material_override = SubResource( 1 )
 
 [node name="Wall133" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1298.71, -5354.19 )
+position = Vector2( -1251.01, -5354.19 )
 rotation = 1.5708
 scale = Vector2( 0.9, 2 )
 physics_material_override = SubResource( 1 )
@@ -1052,3 +1058,33 @@ position = Vector2( 1456.03, 589.367 )
 
 [node name="Wall7" parent="World/Sewer" instance=ExtResource( 21 )]
 position = Vector2( 1800.03, 1169.03 )
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 23 )
+autoplay = true
+bus = "Music"
+
+[node name="Sfx" type="AudioStreamPlayer" parent="."]
+bus = "Sfx"
+
+[node name="Events" type="Node2D" parent="."]
+
+[node name="EventTrigger" parent="Events" instance=ExtResource( 24 )]
+position = Vector2( 1240, -1160 )
+scale = Vector2( 10, 1 )
+in_stream = ExtResource( 25 )
+out_stream = ExtResource( 23 )
+
+[node name="EventTrigger2" parent="Events" instance=ExtResource( 24 )]
+position = Vector2( 1240, -3680 )
+scale = Vector2( 10, 1 )
+in_stream = ExtResource( 27 )
+out_stream = ExtResource( 25 )
+
+[node name="EventTrigger3" parent="Events" instance=ExtResource( 24 )]
+position = Vector2( 1264, -6264 )
+scale = Vector2( 11, 1 )
+in_stream = ExtResource( 28 )
+out_stream = ExtResource( 27 )
+
+[node name="Tween" type="Tween" parent="."]
