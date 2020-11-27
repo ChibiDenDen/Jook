@@ -185,7 +185,7 @@ position = Vector2( 1414.61, -195.937 )
 [node name="Teleporters" type="Node2D" parent="World"]
 
 [node name="Teleporter" parent="World/Teleporters" instance=ExtResource( 17 )]
-position = Vector2( 2167.78, -634.696 )
+position = Vector2( 2166.84, -634.696 )
 connection_path = NodePath("../../Teleporters/Teleporter2")
 
 [node name="Teleporter3" parent="World/Teleporters" instance=ExtResource( 17 )]
@@ -197,7 +197,7 @@ position = Vector2( 652.963, -2899.92 )
 connection_path = NodePath("../Teleporter3")
 
 [node name="Teleporter2" parent="World/Teleporters" instance=ExtResource( 17 )]
-position = Vector2( 477.554, 1074.83 )
+position = Vector2( 416.151, 1189.63 )
 connection_path = NodePath("../../Teleporters/Teleporter")
 
 [node name="Grass" type="Node2D" parent="World"]
