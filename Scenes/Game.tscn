@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -40,6 +40,15 @@
 
 [sub_resource type="PhysicsMaterial" id=3]
 rough = true
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 1400, 800 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 1400, 400 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 1400, 800 )
 
 [node name="PhysicsGame" type="Node2D"]
 script = ExtResource( 26 )
@@ -103,7 +112,7 @@ position = Vector2( 1315.51, -544 )
 position = Vector2( 2065.98, -552 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 336, -248 )
+position = Vector2( 1048, -6400 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -859,6 +868,40 @@ position = Vector2( 1456.03, 589.367 )
 
 [node name="Wall7" parent="World/Sewer" instance=ExtResource( 21 )]
 position = Vector2( 1800.03, 1169.03 )
+
+[node name="Space" type="Node2D" parent="World"]
+
+[node name="LowGravityZones" type="Node2D" parent="World/Space"]
+
+[node name="Area2D" type="Area2D" parent="World/Space/LowGravityZones"]
+position = Vector2( 1304, -7408 )
+space_override = 3
+gravity = 60.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/LowGravityZones/Area2D"]
+visible = false
+position = Vector2( -37.7212, 48 )
+shape = SubResource( 4 )
+
+[node name="Area2D2" type="Area2D" parent="World/Space/LowGravityZones"]
+position = Vector2( 1304, -9008 )
+space_override = 3
+gravity = 40.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/LowGravityZones/Area2D2"]
+visible = false
+position = Vector2( -40, 448 )
+shape = SubResource( 5 )
+
+[node name="Area2D3" type="Area2D" parent="World/Space/LowGravityZones"]
+position = Vector2( 1304, -10208 )
+space_override = 3
+gravity = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/LowGravityZones/Area2D3"]
+visible = false
+position = Vector2( -40, 448 )
+shape = SubResource( 6 )
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 23 )
