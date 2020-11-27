@@ -10,7 +10,7 @@ extents = Vector2( 232.364, 26.436 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16.5, 32 )
 
-[node name="WallV" type="StaticBody2D" groups=[
+[node name="PipeV" type="StaticBody2D" groups=[
 "Crash",
 ]]
 collision_mask = 3

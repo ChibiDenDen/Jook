@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 61.957, 26.436 )
 
-[node name="WallHCenter" type="StaticBody2D" groups=[
+[node name="PipeHCenter" type="StaticBody2D" groups=[
 "Crash",
 ]]
 collision_mask = 3
