@@ -26,6 +26,7 @@ func play_second():
 	tween.start()
 
 func finish_cutscenes():
+	tween.stop_all()
 	$hud/Control/SecondPlayer.visible = false
 	$hud/menus/MainMenu.visible = true
 	$hud/Control/Button.visible = false
