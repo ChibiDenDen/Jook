@@ -3349,8 +3349,7 @@ position = Vector2( 272.032, 422.118 )
 
 [node name="Node2D2" parent="World/Sewer" instance=ExtResource( 54 )]
 position = Vector2( 120.032, 381.367 )
-amount = 2
-lifetime = 0.44
+lifetime = 0.5
 
 [node name="Clutter" type="Node2D" parent="World"]
 
