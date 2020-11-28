@@ -31,7 +31,7 @@ func _process(delta):
 		$Sprite.scale.x = abs($Sprite.scale.x)
 		if slide_down:
 			dir = -1
-			$Sprite.scale.x *= -1
+			$Sprite.scale.x = -1
 		move_vec += Vector2.RIGHT * acc * delta * dir
 		if move_vec.length() > walking_speed:
 			move_vec = move_vec.normalized() * walking_speed

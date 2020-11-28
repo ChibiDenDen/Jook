@@ -1,4 +1,4 @@
-[gd_scene load_steps=125 format=2]
+[gd_scene load_steps=142 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -54,6 +54,11 @@
 [ext_resource path="res://Resources/World/sneil.png" type="Texture" id=52]
 [ext_resource path="res://Resources/World/moon.png" type="Texture" id=53]
 [ext_resource path="res://Objects/Particles/WaterDrops.tscn" type="PackedScene" id=54]
+[ext_resource path="res://Objects/SpaceObj/SpaceObj.tscn" type="PackedScene" id=55]
+[ext_resource path="res://Resources/World/comet.png" type="Texture" id=56]
+[ext_resource path="res://Resources/World/astronaut.png" type="Texture" id=57]
+[ext_resource path="res://Resources/World/planet.png" type="Texture" id=58]
+[ext_resource path="res://Resources/World/satelite.png" type="Texture" id=59]
 
 [sub_resource type="Animation" id=1]
 resource_name = "apple"
@@ -2471,6 +2476,642 @@ radius = 698.5
 [sub_resource type="CircleShape2D" id=70]
 radius = 423.0
 
+[sub_resource type="CircleShape2D" id=71]
+radius = 77.4912
+
+[sub_resource type="CircleShape2D" id=72]
+radius = 98.0387
+
+[sub_resource type="Animation" id=75]
+resource_name = "astronaut"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 57 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D2:shape")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.9967, -125.858 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.49835, 44.9492 ) ]
+}
+
+[sub_resource type="Animation" id=76]
+resource_name = "comet"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 56 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -58.4339, 76.4137 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D2:shape")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 99.6375, -46.4476 ) ]
+}
+
+[sub_resource type="Animation" id=77]
+resource_name = "planet"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 6.49802 ),
+"update": 1,
+"values": [ ExtResource( 58 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -3.27954, 2.16743 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D2:shape")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -5.01428, -3.31406 ) ]
+}
+
+[sub_resource type="Animation" id=78]
+resource_name = "satelite"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 36.7584 ),
+"update": 1,
+"values": [ ExtResource( 59 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 6.82874, -0.805588 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D2:shape")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -39.5013, -15.2061 ) ]
+}
+
+[sub_resource type="Animation" id=73]
+resource_name = "astronaut"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 57 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D2:shape")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.9967, -125.858 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.49835, 44.9492 ) ]
+}
+
+[sub_resource type="Animation" id=74]
+resource_name = "comet"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 56 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -58.4339, 76.4137 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D2:shape")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 99.6375, -46.4476 ) ]
+}
+
+[sub_resource type="Animation" id=79]
+resource_name = "astronaut"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 57 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D2:shape")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.9967, -125.858 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.49835, 44.9492 ) ]
+}
+
+[sub_resource type="Animation" id=80]
+resource_name = "comet"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 56 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -58.4339, 76.4137 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D2:shape")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 99.6375, -46.4476 ) ]
+}
+
+[sub_resource type="Animation" id=81]
+resource_name = "planet"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 6.49802 ),
+"update": 1,
+"values": [ ExtResource( 58 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -3.27954, 2.16743 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D2:shape")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -5.01428, -3.31406 ) ]
+}
+
+[sub_resource type="Animation" id=82]
+resource_name = "satelite"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 36.7584 ),
+"update": 1,
+"values": [ ExtResource( 59 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionShape2D:shape")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 71 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 6.82874, -0.805588 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("CollisionShape2D2:shape")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 72 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("CollisionShape2D2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -39.5013, -15.2061 ) ]
+}
+
 [node name="PhysicsGame" type="Node2D"]
 script = ExtResource( 26 )
 
@@ -2534,7 +3175,7 @@ position = Vector2( 1315.51, -544 )
 position = Vector2( 2065.98, -552 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2153.92, 1152.09 )
+position = Vector2( 1071.37, -6908.2 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -3625,6 +4266,96 @@ gravity = 20.0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/Moon/Area2D4"]
 shape = SubResource( 70 )
 
+[node name="Wall136" parent="World/Space" instance=ExtResource( 13 )]
+position = Vector2( -707.892, -8491.98 )
+scale = Vector2( 0.9, 135 )
+collision_layer = 8
+collision_mask = 8
+physics_material_override = SubResource( 6 )
+
+[node name="Wall138" parent="World/Space" instance=ExtResource( 13 )]
+position = Vector2( 3165.27, -8491.98 )
+scale = Vector2( 0.9, 135 )
+collision_layer = 8
+collision_mask = 8
+physics_material_override = SubResource( 6 )
+
+[node name="Wall137" parent="World/Space" instance=ExtResource( 13 )]
+position = Vector2( 1507.65, -10691.5 )
+rotation = 1.5708
+scale = Vector2( 0.9, 135 )
+collision_layer = 8
+collision_mask = 8
+physics_material_override = SubResource( 6 )
+
+[node name="Wall139" parent="World/Space" instance=ExtResource( 13 )]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 1507.65, -6614.39 )
+rotation = 1.5708
+scale = Vector2( 0.9, 135 )
+collision_layer = 8
+collision_mask = 8
+physics_material_override = SubResource( 6 )
+
+[node name="SpaceObj" parent="World/Space" instance=ExtResource( 55 )]
+position = Vector2( 444.06, -7302.35 )
+Dir = Vector2( 1, -1 )
+
+[node name="Sprite" parent="World/Space/SpaceObj" index="0"]
+texture = ExtResource( 56 )
+
+[node name="CollisionShape2D" parent="World/Space/SpaceObj" index="1"]
+position = Vector2( -58.4339, 76.4137 )
+
+[node name="CollisionShape2D2" parent="World/Space/SpaceObj" index="2"]
+position = Vector2( 99.6375, -46.4476 )
+
+[node name="SpaceObj3" parent="World/Space" instance=ExtResource( 55 )]
+position = Vector2( 581, -9724.63 )
+Dir = Vector2( -1, 1 )
+
+[node name="Sprite" parent="World/Space/SpaceObj3" index="0"]
+texture = ExtResource( 58 )
+
+[node name="CollisionShape2D" parent="World/Space/SpaceObj3" index="1"]
+position = Vector2( -3.27954, 2.16743 )
+
+[node name="CollisionShape2D2" parent="World/Space/SpaceObj3" index="2"]
+position = Vector2( -5.01428, -3.31406 )
+
+[node name="AnimationPlayer" parent="World/Space/SpaceObj3" index="3"]
+anims/astronaut = SubResource( 75 )
+anims/comet = SubResource( 76 )
+anims/planet = SubResource( 77 )
+anims/satelite = SubResource( 78 )
+
+[node name="SpaceObj2" parent="World/Space" instance=ExtResource( 55 )]
+position = Vector2( 1880.69, -7213.36 )
+Dir = Vector2( -1, 1 )
+
+[node name="Sprite" parent="World/Space/SpaceObj2" index="0"]
+texture = ExtResource( 57 )
+
+[node name="CollisionShape2D" parent="World/Space/SpaceObj2" index="1"]
+position = Vector2( 2.9967, -125.858 )
+
+[node name="CollisionShape2D2" parent="World/Space/SpaceObj2" index="2"]
+position = Vector2( 1.49835, 44.9492 )
+
+[node name="AnimationPlayer" parent="World/Space/SpaceObj2" index="3"]
+anims/astronaut = SubResource( 73 )
+anims/comet = SubResource( 74 )
+
+[node name="SpaceObj4" parent="World/Space" instance=ExtResource( 55 )]
+position = Vector2( 363.137, -9000.77 )
+Dir = Vector2( 1, 1 )
+
+[node name="AnimationPlayer" parent="World/Space/SpaceObj4" index="3"]
+anims/astronaut = SubResource( 79 )
+anims/comet = SubResource( 80 )
+anims/planet = SubResource( 81 )
+anims/satelite = SubResource( 82 )
+
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 23 )
 autoplay = true
@@ -3679,3 +4410,11 @@ out_stream = ExtResource( 27 )
 [editable path="World/Clutter/Clutter2"]
 
 [editable path="World/Clutter/Clutter3"]
+
+[editable path="World/Space/SpaceObj"]
+
+[editable path="World/Space/SpaceObj3"]
+
+[editable path="World/Space/SpaceObj2"]
+
+[editable path="World/Space/SpaceObj4"]
