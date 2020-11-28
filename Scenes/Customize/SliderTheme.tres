@@ -1,6 +1,8 @@
-[gd_resource type="Theme" load_steps=2 format=2]
+[gd_resource type="Theme" load_steps=3 format=2]
 
 [sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
 
 [resource]
 Button/colors/font_color = Color( 0, 0, 0, 1 )
@@ -137,7 +139,7 @@ HSlider/icons/grabber_disabled = null
 HSlider/icons/grabber_highlight = null
 HSlider/icons/tick = null
 HSlider/styles/grabber_area = SubResource( 1 )
-HSlider/styles/grabber_area_highlight = null
+HSlider/styles/grabber_area_highlight = SubResource( 2 )
 HSlider/styles/slider = null
 HSplitContainer/constants/autohide = 1
 HSplitContainer/constants/separation = 12
