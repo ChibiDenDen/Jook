@@ -2496,13 +2496,13 @@ texture = ExtResource( 6 )
 centered = false
 
 [node name="background-05" type="Sprite" parent="BG"]
-position = Vector2( 0, -5760 )
+position = Vector2( 0, -5765 )
 scale = Vector2( 1, 1.00831 )
 texture = ExtResource( 12 )
 centered = false
 
 [node name="background-06" type="Sprite" parent="BG"]
-position = Vector2( 0, -7205 )
+position = Vector2( 0, -7206 )
 texture = ExtResource( 8 )
 centered = false
 
@@ -2534,7 +2534,7 @@ position = Vector2( 1315.51, -544 )
 position = Vector2( 2065.98, -552 )
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2159.85, 1139.32 )
+position = Vector2( 1286.12, -5950.12 )
 __meta__ = {
 "_edit_group_": true
 }
