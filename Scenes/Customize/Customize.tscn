@@ -129,14 +129,14 @@ position = Vector2( -221.247, 0 )
 texture = ExtResource( 11 )
 vframes = 4
 hframes = 7
-frame = 10
+frame = 7
 
 [node name="Body" type="Sprite" parent="box/Jook"]
 position = Vector2( -221.247, 0 )
 texture = ExtResource( 10 )
 vframes = 4
 hframes = 7
-frame = 10
+frame = 7
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="box/Jook"]
 anims/moving = SubResource( 2 )
