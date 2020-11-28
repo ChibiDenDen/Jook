@@ -1,4 +1,4 @@
-[gd_scene load_steps=124 format=2]
+[gd_scene load_steps=125 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -53,6 +53,7 @@
 [ext_resource path="res://Resources/World/tool 2.png" type="Texture" id=51]
 [ext_resource path="res://Resources/World/sneil.png" type="Texture" id=52]
 [ext_resource path="res://Resources/World/moon.png" type="Texture" id=53]
+[ext_resource path="res://Objects/Particles/WaterDrops.tscn" type="PackedScene" id=54]
 
 [sub_resource type="Animation" id=1]
 resource_name = "apple"
@@ -3270,7 +3271,7 @@ rotation = -0.698132
 position = Vector2( 820.729, 1318.8 )
 
 [node name="Wall8" parent="World/Sewer" instance=ExtResource( 22 )]
-position = Vector2( 680.872, 424.225 )
+position = Vector2( 616.138, 424.225 )
 
 [node name="Wall16" parent="World/Sewer" instance=ExtResource( 22 )]
 position = Vector2( 53.6695, 110.521 )
@@ -3344,7 +3345,12 @@ position = Vector2( 1453.95, 425.037 )
 rotation = -1.5708
 
 [node name="PipeH4" parent="World/Sewer" instance=ExtResource( 35 )]
-position = Vector2( 333.431, 422.118 )
+position = Vector2( 272.032, 422.118 )
+
+[node name="Node2D2" parent="World/Sewer" instance=ExtResource( 54 )]
+position = Vector2( 120.032, 381.367 )
+amount = 2
+lifetime = 0.44
 
 [node name="Clutter" type="Node2D" parent="World"]
 
@@ -3385,6 +3391,10 @@ anims/wrench = SubResource( 23 )
 position = Vector2( 1100.03, -141.027 )
 rotation = 0.3735
 texture = ExtResource( 52 )
+
+[node name="Node2D" parent="World/Clutter/Clutter6" instance=ExtResource( 54 )]
+position = Vector2( 161.547, 127.65 )
+lifetime = 0.89
 
 [node name="Clutter4" parent="World/Clutter" instance=ExtResource( 34 )]
 position = Vector2( 513.492, -90.402 )
