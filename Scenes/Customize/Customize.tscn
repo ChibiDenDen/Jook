@@ -1,17 +1,54 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://Resources/Jook/Anims/WINGS.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Customize/box.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Menus/CustomWings.png" type="Texture" id=1]
+[ext_resource path="res://Resources/Menus/Customize.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/Customize/update_color.gd" type="Script" id=3]
 [ext_resource path="res://Scenes/Customize/hat.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/Customize/boots.png" type="Texture" id=5]
 [ext_resource path="res://Objects/UI/Button.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Menus/MenuBackground.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Menus/Menu.gd" type="Script" id=8]
+[ext_resource path="res://Resources/Menus/Back.png" type="Texture" id=9]
+[ext_resource path="res://Resources/Jook/Anims/FRONT.png" type="Texture" id=10]
+[ext_resource path="res://Resources/Jook/Anims/FRONT_WINGS.png" type="Texture" id=11]
+[ext_resource path="res://Resources/Menus/Tick.png" type="Texture" id=12]
+[ext_resource path="res://Resources/Menus/Bar.png" type="Texture" id=13]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.163743, 0.339181, 0.532164, 0.783626, 1 )
 colors = PoolColorArray( 0, 0, 0, 1, 1, 0, 0, 1, 0, 0.132813, 1, 1, 0.0546875, 1, 0, 1, 0.976563, 0.892639, 0, 1, 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 176, 35 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "moving"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Wings:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 25 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Body:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 25 ]
+}
 
 [node name="Build" type="Control"]
 script = ExtResource( 8 )
@@ -32,15 +69,15 @@ script = ExtResource( 3 )
 colors_map = SubResource( 1 )
 
 [node name="top" type="Sprite" parent="box"]
-position = Vector2( 2.20694, -106.985 )
+position = Vector2( 428.838, -286.321 )
 scale = Vector2( 0.39733, 0.396152 )
 texture = ExtResource( 4 )
 
 [node name="topHSlider" type="HSlider" parent="box"]
-margin_left = 43.6847
-margin_top = -118.697
-margin_right = 129.685
-margin_bottom = -97.6966
+margin_left = 397.638
+margin_top = -237.625
+margin_right = 483.638
+margin_bottom = -216.625
 max_value = 1.0
 step = 0.01
 value = 1.0
@@ -49,15 +86,15 @@ __meta__ = {
 }
 
 [node name="low" type="Sprite" parent="box"]
-position = Vector2( -14.488, 112.363 )
+position = Vector2( 422.526, 275.653 )
 scale = Vector2( 0.429169, 0.350455 )
 texture = ExtResource( 5 )
 
 [node name="lowHSlider" type="HSlider" parent="box"]
-margin_left = 39.167
-margin_top = 98.7121
-margin_right = 125.167
-margin_bottom = 119.712
+margin_left = 384.625
+margin_top = 313.915
+margin_right = 470.625
+margin_bottom = 334.915
 max_value = 1.0
 step = 0.01
 value = 1.0
@@ -66,24 +103,43 @@ __meta__ = {
 }
 
 [node name="mid" type="Sprite" parent="box"]
-position = Vector2( 37.2419, -1.14378 )
-scale = Vector2( 0.72027, 0.732348 )
+modulate = Color( 1, 1, 1, 0.858824 )
+position = Vector2( 420.814, 74.6439 )
 texture = ExtResource( 1 )
-offset = Vector2( -3.77551, -11.3265 )
-vframes = 2
-hframes = 5
 
 [node name="midHSlider" type="HSlider" parent="box"]
-margin_left = -130.301
-margin_top = -1.19521
-margin_right = -44.3014
-margin_bottom = 19.8048
+margin_left = 339.175
+margin_top = 129.66
+margin_right = 515.175
+margin_bottom = 164.66
+custom_icons/grabber_highlight = ExtResource( 12 )
+custom_icons/grabber = ExtResource( 12 )
+custom_styles/slider = SubResource( 3 )
 max_value = 1.0
 step = 0.01
-value = 1.0
+value = 0.5
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Jook" type="Node2D" parent="box"]
+
+[node name="Wings" type="Sprite" parent="box/Jook"]
+position = Vector2( -221.247, 0 )
+texture = ExtResource( 11 )
+vframes = 4
+hframes = 7
+frame = 10
+
+[node name="Body" type="Sprite" parent="box/Jook"]
+position = Vector2( -221.247, 0 )
+texture = ExtResource( 10 )
+vframes = 4
+hframes = 7
+frame = 10
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="box/Jook"]
+anims/moving = SubResource( 2 )
 
 [node name="Menu" type="Control" parent="."]
 margin_right = 40.0
@@ -93,13 +149,18 @@ __meta__ = {
 }
 
 [node name="Button" parent="Menu" instance=ExtResource( 6 )]
-margin_left = 264.73
-margin_top = 471.663
-margin_right = 330.73
-margin_bottom = 511.663
+margin_left = 936.0
+margin_top = 634.0
+margin_right = 1004.0
+margin_bottom = 674.0
 
 [node name="Label" parent="Menu/Button" index="0"]
+visible = false
 text = "Back"
+
+[node name="Sprite" type="Sprite" parent="Menu"]
+position = Vector2( 986.518, 663.978 )
+texture = ExtResource( 9 )
 [connection signal="value_changed" from="box/topHSlider" to="box" method="_on_topHSlider_value_changed"]
 [connection signal="value_changed" from="box/lowHSlider" to="box" method="_on_lowHSlider_value_changed"]
 [connection signal="value_changed" from="box/midHSlider" to="box" method="_on_midHSlider_value_changed"]

@@ -45,10 +45,10 @@ UiPath = NodePath("../../..")
 
 [node name="CustomizeMenu" parent="hud/menus" instance=ExtResource( 4 )]
 visible = false
-margin_left = 791.961
-margin_top = 257.387
-margin_right = 791.961
-margin_bottom = 257.387
+margin_left = 772.0
+margin_top = 307.0
+margin_right = 772.0
+margin_bottom = 307.0
 SettingsPath = NodePath("../SettingsMenu")
 CustomizePath = NodePath(".")
 UiPath = NodePath("../../..")
