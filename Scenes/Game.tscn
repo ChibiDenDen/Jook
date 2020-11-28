@@ -75,7 +75,7 @@ texture = ExtResource( 6 )
 centered = false
 
 [node name="background-05" type="Sprite" parent="BG"]
-position = Vector2( 0, -5764 )
+position = Vector2( 0, -5760 )
 scale = Vector2( 1, 1.00831 )
 texture = ExtResource( 12 )
 centered = false
@@ -146,14 +146,6 @@ scale = Vector2( 26.5, 5.125 )
 [node name="World" type="Node2D" parent="."]
 
 [node name="Walls" type="Node2D" parent="World"]
-
-[node name="Wall19" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 770.291, 862.988 )
-rotation = 0.785398
-
-[node name="Wall13" parent="World/Walls" instance=ExtResource( 13 )]
-position = Vector2( 776.762, 867.203 )
-rotation = -0.785398
 
 [node name="TreeH" parent="World/Walls" instance=ExtResource( 29 )]
 position = Vector2( 544, -936 )
@@ -835,6 +827,16 @@ scale = Vector2( 19.654, 1 )
 
 [node name="Wall" parent="World/Sewer" instance=ExtResource( 22 )]
 position = Vector2( 1256.03, 789.367 )
+
+[node name="Wall13" parent="World/Sewer" instance=ExtResource( 22 )]
+position = Vector2( 694.165, 892.75 )
+rotation = 0.785398
+scale = Vector2( 0.9, 1.5 )
+
+[node name="Wall14" parent="World/Sewer" instance=ExtResource( 22 )]
+position = Vector2( 694.165, 892.75 )
+rotation = -0.785398
+scale = Vector2( 0.9, 1.5 )
 
 [node name="Wall8" parent="World/Sewer" instance=ExtResource( 22 )]
 position = Vector2( 448.032, 424.225 )
