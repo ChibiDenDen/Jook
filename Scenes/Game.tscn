@@ -3181,6 +3181,8 @@ __meta__ = {
 }
 
 [node name="PlayerFly" parent="Player" instance=ExtResource( 1 )]
+collision_layer = 35
+collision_mask = 2147483681
 
 [node name="Anchor" type="Position2D" parent="Player"]
 script = ExtResource( 11 )
@@ -4267,25 +4269,25 @@ gravity = 20.0
 shape = SubResource( 70 )
 
 [node name="Wall136" parent="World/Space" instance=ExtResource( 13 )]
-position = Vector2( -707.892, -8491.98 )
+position = Vector2( -657.095, -8491.98 )
 scale = Vector2( 0.9, 135 )
-collision_layer = 8
-collision_mask = 8
+collision_layer = 16
+collision_mask = 16
 physics_material_override = SubResource( 6 )
 
 [node name="Wall138" parent="World/Space" instance=ExtResource( 13 )]
 position = Vector2( 3165.27, -8491.98 )
 scale = Vector2( 0.9, 135 )
-collision_layer = 8
-collision_mask = 8
+collision_layer = 16
+collision_mask = 16
 physics_material_override = SubResource( 6 )
 
 [node name="Wall137" parent="World/Space" instance=ExtResource( 13 )]
 position = Vector2( 1507.65, -10691.5 )
 rotation = 1.5708
 scale = Vector2( 0.9, 135 )
-collision_layer = 8
-collision_mask = 8
+collision_layer = 16
+collision_mask = 16
 physics_material_override = SubResource( 6 )
 
 [node name="Wall139" parent="World/Space" instance=ExtResource( 13 )]
@@ -4293,13 +4295,16 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 1507.65, -6614.39 )
 rotation = 1.5708
 scale = Vector2( 0.9, 135 )
-collision_layer = 8
-collision_mask = 8
+collision_layer = 16
+collision_mask = 16
 physics_material_override = SubResource( 6 )
 
 [node name="SpaceObj" parent="World/Space" instance=ExtResource( 55 )]
 position = Vector2( 444.06, -7302.35 )
+collision_layer = 48
+collision_mask = 48
 Dir = Vector2( 1, -1 )
+speed = 150
 
 [node name="Sprite" parent="World/Space/SpaceObj" index="0"]
 texture = ExtResource( 56 )
@@ -4312,7 +4317,10 @@ position = Vector2( 99.6375, -46.4476 )
 
 [node name="SpaceObj3" parent="World/Space" instance=ExtResource( 55 )]
 position = Vector2( 581, -9724.63 )
+collision_layer = 48
+collision_mask = 48
 Dir = Vector2( -1, 1 )
+speed = 150
 
 [node name="Sprite" parent="World/Space/SpaceObj3" index="0"]
 texture = ExtResource( 58 )
@@ -4330,8 +4338,11 @@ anims/planet = SubResource( 77 )
 anims/satelite = SubResource( 78 )
 
 [node name="SpaceObj2" parent="World/Space" instance=ExtResource( 55 )]
-position = Vector2( 1880.69, -7213.36 )
+position = Vector2( 2213.67, -7551.09 )
+collision_layer = 48
+collision_mask = 48
 Dir = Vector2( -1, 1 )
+speed = 150
 
 [node name="Sprite" parent="World/Space/SpaceObj2" index="0"]
 texture = ExtResource( 57 )
@@ -4348,7 +4359,10 @@ anims/comet = SubResource( 74 )
 
 [node name="SpaceObj4" parent="World/Space" instance=ExtResource( 55 )]
 position = Vector2( 363.137, -9000.77 )
-Dir = Vector2( 1, 1 )
+collision_layer = 48
+collision_mask = 48
+Dir = Vector2( -1, 1 )
+speed = 150
 
 [node name="AnimationPlayer" parent="World/Space/SpaceObj4" index="3"]
 anims/astronaut = SubResource( 79 )

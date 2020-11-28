@@ -34,7 +34,7 @@ func _process(delta):
 	move_vec.y *= diry
 	if name == "astronaut":
 		print(move_vec)
-	move_vec = move_and_slide(move_vec)
+	move_vec = move_and_slide(move_vec, Vector2.UP)
 	if flipy_timeout > 0:
 		return
 	if is_on_ceiling() or is_on_floor():
