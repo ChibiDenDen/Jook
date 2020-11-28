@@ -172,3 +172,7 @@ func _on_Player_body_entered(body: Node2D):
 
 	if force > survivable_hit_force:
 		get_hit()
+
+
+func _on_moon_area_entered(area):
+	pass # TODO: play ending scene
