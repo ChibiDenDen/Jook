@@ -28,8 +28,10 @@ func _process(delta):
 		$AnimationPlayer.play("walk")
 		# Make sure we keep sliding down
 		var dir = 1
+		$Sprite.scale.x = abs($Sprite.scale.x)
 		if slide_down:
 			dir = -1
+			$Sprite.scale.x *= -1
 		move_vec += Vector2.RIGHT * acc * delta * dir
 		if move_vec.length() > walking_speed:
 			move_vec = move_vec.normalized() * walking_speed
@@ -47,7 +49,7 @@ func _process(delta):
 	for i in range(get_slide_count()):
 		var collider = get_slide_collision(i).get_collider()
 		if collider.is_in_group("Checkpoint"):
-			player.global_position = global_position - Vector2(0, 5)
+			player.global_position = global_position - Vector2(0, 10)
 			player.set_process(true)
 			player.crashed = false
 			player.visible = true
@@ -56,4 +58,4 @@ func _process(delta):
 			queue_free()
 	if is_on_wall():
 		slide_down = not slide_down
-	player.global_position = global_position - Vector2(0, 5)
+	player.global_position = global_position - Vector2(0, 10)

@@ -147,6 +147,7 @@ func pickup_shield():
 
 func get_hit():
 	var crashed_player = CrashedPlayerScene.instance()
+	crashed_player.modulate = get_parent().modulate
 	crashed_player.player = self
 	get_tree().current_scene.call_deferred("add_child", crashed_player)
 	crashed_player.global_position = global_position

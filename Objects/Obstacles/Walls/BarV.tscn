@@ -8,7 +8,7 @@
 extents = Vector2( 232.364, 26.436 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 18.5002, 36.9999 )
+extents = Vector2( 18.5002, 31.5 )
 
 [node name="BarV" type="StaticBody2D" groups=[
 "Crash",

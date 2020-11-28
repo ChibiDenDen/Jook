@@ -1,10 +1,6 @@
 extends Sprite
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,6 +19,7 @@ func _on_topHSlider_value_changed(value):
 
 func _on_midHSlider_value_changed(value):
 	$mid.self_modulate = colors_map.interpolate(value)
+	get_tree().current_scene.get_node("Player").modulate = $mid.self_modulate
 
 func _on_lowHSlider_value_changed(value):
 	$low.self_modulate = colors_map.interpolate(value)

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Objects/Obstacles/Walls/PipeBend.png" type="Texture" id=1]
+
+[sub_resource type="PhysicsMaterial" id=1]
+
+[node name="PipeH" type="StaticBody2D" groups=[
+"Crash",
+]]
+collision_mask = 3
+physics_material_override = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -137.613, -33.609, -137.967, 12.7065, -93.0653, 17.3027, -77.8625, 20.8382, -52.7602, 121.601, -23.0617, 150.239, 37.0424, 147.057, 69.2157, 90.1347, 74.8726, -86.642, 76.9939, -94.4202, 105.278, -97.9557, 136.744, -100.077, 136.391, -145.332, 78.7617, -145.685, 45.1741, -134.372, 29.6178, -106.087, 25.3751, 69.9822, 12.2937, 103.216, -10.6873, 101.448, -27.3043, 56.9007, -41.4465, -22.6488, -71.8521, -31.4877 )

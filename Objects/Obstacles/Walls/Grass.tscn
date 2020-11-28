@@ -81,7 +81,7 @@ __meta__ = {
 remote_path = NodePath("../../../Col1")
 
 [node name="Polygon2D" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D"]
-color = Color( 0, 0.360784, 0.0705882, 1 )
+color = Color( 0.121569, 0.756863, 0.247059, 1 )
 polygon = PoolVector2Array( -0.393925, -8.15103, 1.41712, 8.42273, 167.392, 7.09601, 169.279, -8.77006 )
 
 [node name="Polygon2D2" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D"]
@@ -102,7 +102,7 @@ remote_path = NodePath("../../../../Col2")
 
 [node name="Polygon2D4" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2"]
 position = Vector2( 0.163528, 0.303064 )
-color = Color( 0, 0.360784, 0.0705882, 1 )
+color = Color( 0.121569, 0.756863, 0.247059, 1 )
 polygon = PoolVector2Array( 1.29099, -8.69527, -1.40872, 7.07907, 114.286, 59.5044, 121.458, 51.7412 )
 
 [node name="Polygon2D3" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2"]
@@ -123,7 +123,7 @@ remote_path = NodePath("../../../../../Col3")
 
 [node name="Polygon2D5" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3"]
 position = Vector2( -0.0229874, 0.571297 )
-color = Color( 0, 0.360784, 0.0705882, 1 )
+color = Color( 0.121569, 0.756863, 0.247059, 1 )
 polygon = PoolVector2Array( 2.996, -4.91907, -4.51663, 3.28991, 29.0314, 74.6833, 38.7868, 72.7811 )
 
 [node name="Polygon2D4" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3"]
@@ -147,7 +147,7 @@ remote_path = NodePath("../../../../../../Col4")
 [node name="Polygon2D6" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3/Bone2D4"]
 position = Vector2( -0.316681, 0.336761 )
 rotation = -1.65632
-color = Color( 0, 0.360784, 0.0705882, 1 )
+color = Color( 0.121569, 0.756863, 0.247059, 1 )
 polygon = PoolVector2Array( 4.21582, -0.277435, -5.78873, 1.25764, -7.05356, 77.296 )
 
 [node name="Polygon2D5" type="Polygon2D" parent="StaticBody/Skeleton2D/Bone2D/Bone2D2/Bone2D3/Bone2D4"]
