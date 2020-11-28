@@ -42,6 +42,9 @@ const BLUE_COLOR := Color(0.14, 0.14, 0.67)
 
 var active_input := true
 
+func change_color(in_color):
+	$Wings.self_modulate = in_color
+
 func stop_fly():
 	sleeping = true
 
@@ -151,6 +154,7 @@ func get_hit():
 	crashed_player.player = self
 	get_tree().current_scene.call_deferred("add_child", crashed_player)
 	crashed_player.global_position = global_position
+	crashed_player.get_node("Sprite/Wings").self_modulate = $Wings.self_modulate
 	crashed = true
 	visible = false
 	reset()
