@@ -14,6 +14,7 @@ onready var camera := get_node("../Anchor/Camera2D")
 export var thrust = Vector2.UP * 300
 export var boost_thrust = 25
 export var torque = 5000
+export(NodePath) var last_checkpoint
 
 var crashed := false
 

@@ -3161,7 +3161,7 @@ position = Vector2( 32.7579, -10.0793 )
 [node name="Checkpoints" type="Node2D" parent="."]
 
 [node name="Checkpoint" parent="Checkpoints" instance=ExtResource( 2 )]
-position = Vector2( 2164.47, 1222.66 )
+position = Vector2( 2177.7, 1216.67 )
 
 [node name="Checkpoint2" parent="Checkpoints" instance=ExtResource( 2 )]
 position = Vector2( 1448, 690.144 )
@@ -3207,6 +3207,7 @@ __meta__ = {
 [node name="PlayerFly" parent="Player" instance=ExtResource( 1 )]
 collision_layer = 35
 collision_mask = 2147483681
+last_checkpoint = NodePath("../../Checkpoints/Checkpoint")
 
 [node name="Anchor" type="Position2D" parent="Player"]
 script = ExtResource( 11 )

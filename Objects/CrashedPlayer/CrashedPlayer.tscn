@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Resources/Jook/Anims/SIDE_WINGS.png" type="Texture" id=1]
 [ext_resource path="res://Objects/CrashedPlayer/CrashedPlayer.gd" type="Script" id=2]
 [ext_resource path="res://Resources/Jook/Anims/SIDE.png" type="Texture" id=3]
+[ext_resource path="res://NerkoOne-Regular.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 35.7718
@@ -109,6 +110,10 @@ tracks/7/keys = {
 "values": [ 0, 13 ]
 }
 
+[sub_resource type="DynamicFont" id=3]
+size = 34
+font_data = ExtResource( 4 )
+
 [node name="CrashedPlayer" type="KinematicBody2D"]
 collision_layer = 2
 collision_mask = 4
@@ -138,3 +143,18 @@ shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/walk = SubResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -120.0
+margin_top = -152.0
+margin_right = 129.0
+margin_bottom = -65.0
+custom_fonts/font = SubResource( 3 )
+text = "Press R to return
+to last checkpoint"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

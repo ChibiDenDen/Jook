@@ -9,6 +9,7 @@ var player : Node2D
 var drop := false
 var move_vec := Vector2()
 var slide_down := false
+var time := 0.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,10 +20,22 @@ func will_drop():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	time += delta
 	if Input.is_action_pressed("action"):
 		Engine.time_scale = 4
 	else:
 		Engine.time_scale = 1
+	if time > 12:
+		$Label.modulate.a = lerp($Label.modulate.a, 1.0, delta)
+		if Input.is_key_pressed(KEY_R):
+			player.global_position = player.get_node(player.last_checkpoint).global_position
+			player.set_process(true)
+			player.crashed = false
+			player.visible = true
+			player.sleeping = false
+			Engine.time_scale = 1
+			queue_free()
+			return
 	move_vec += Vector2.DOWN * falling_acc * delta
 	if is_on_floor():
 		$AnimationPlayer.play("walk")
@@ -54,6 +67,7 @@ func _process(delta):
 			player.crashed = false
 			player.visible = true
 			player.sleeping = false
+			player.last_checkpoint = player.get_path_to(collider)
 			Engine.time_scale = 1
 			queue_free()
 	if is_on_wall():
