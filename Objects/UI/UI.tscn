@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Objects/UI/UI.gd" type="Script" id=1]
 [ext_resource path="res://Menus/MainMenu.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Resources/Cutscenes/part-2_1.webm" type="VideoStream" id=6]
 [ext_resource path="res://Objects/UI/Button.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Resources/Menus/Back.png" type="Texture" id=8]
+[ext_resource path="res://Resources/Cutscenes/part-3_1.webm" type="VideoStream" id=9]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.67451, 0.141176, 0.141176, 1 )
@@ -53,6 +54,19 @@ visible = false
 margin_right = 1927.0
 margin_bottom = 1090.0
 stream = ExtResource( 6 )
+volume_db = -10.0
+expand = false
+buffering_msec = 10
+bus = "Sfx"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FinalPlayer" type="VideoPlayer" parent="hud/Control"]
+visible = false
+margin_right = 1927.0
+margin_bottom = 1090.0
+stream = ExtResource( 9 )
 volume_db = -10.0
 expand = false
 buffering_msec = 10

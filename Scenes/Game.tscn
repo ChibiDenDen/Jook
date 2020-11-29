@@ -1,4 +1,4 @@
-[gd_scene load_steps=143 format=2]
+[gd_scene load_steps=142 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -15,7 +15,6 @@
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Objects/Obstacles/Walls/BreakableWall.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Objects/Obstacles/Water/Water.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Objects/Obstacles/Lurker/Lurker.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Objects/Teleport/Teleporter.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Objects/Obstacles/Walls/Grass.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Objects/Obstacles/Walls/PipeH1Side.tscn" type="PackedScene" id=19]
@@ -256,12 +255,12 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
-[sub_resource type="PhysicsMaterial" id=8]
-
 [sub_resource type="PhysicsMaterial" id=6]
-rough = true
 
 [sub_resource type="PhysicsMaterial" id=7]
+rough = true
+
+[sub_resource type="PhysicsMaterial" id=8]
 
 [sub_resource type="Animation" id=9]
 resource_name = "apple"
@@ -3200,7 +3199,7 @@ position = Vector2( 2175.53, -630.16 )
 connection_path = NodePath("../Teleporter2")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 450.898, 1196.94 )
+position = Vector2( 2168.16, 1133.9 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -3277,20 +3276,6 @@ rotation = -0.523599
 
 [node name="CollisionShape2D" parent="World/BreakableWalls/BreakableWall" index="1"]
 position = Vector2( 0.876953, 6.33875 )
-
-[node name="Lurkers" type="Node2D" parent="World"]
-
-[node name="Lurker" parent="World/Lurkers" instance=ExtResource( 16 )]
-position = Vector2( 279.998, 634.333 )
-
-[node name="Lurker2" parent="World/Lurkers" instance=ExtResource( 16 )]
-position = Vector2( 1233.07, 300.623 )
-
-[node name="Lurker3" parent="World/Lurkers" instance=ExtResource( 16 )]
-position = Vector2( 2367.69, 354.017 )
-
-[node name="Lurker4" parent="World/Lurkers" instance=ExtResource( 16 )]
-position = Vector2( 1414.61, -195.937 )
 
 [node name="Grass" type="Node2D" parent="World"]
 
@@ -3428,8 +3413,7 @@ position = Vector2( 1483.01, 1226.27 )
 [node name="BreakableWall3" parent="World/Tree" instance=ExtResource( 14 )]
 position = Vector2( -246, -3358.15 )
 rotation = -0.785398
-scale = Vector2( 1, 1 )
-physics_material_override = SubResource( 8 )
+physics_material_override = SubResource( 6 )
 break_force = 300.0
 
 [node name="Sprite" parent="World/Tree/BreakableWall3" index="0"]
@@ -3441,8 +3425,7 @@ position = Vector2( -0.623291, 12.5204 )
 [node name="BreakableWall5" parent="World/Tree" instance=ExtResource( 14 )]
 position = Vector2( -112.7, -3103.97 )
 rotation = -0.785398
-scale = Vector2( 1, 1 )
-physics_material_override = SubResource( 8 )
+physics_material_override = SubResource( 6 )
 break_force = 300.0
 
 [node name="Sprite" parent="World/Tree/BreakableWall5" index="0"]
@@ -3453,35 +3436,35 @@ position = Vector2( 4.59619, 9.5459 )
 
 [node name="Checkpoint13" parent="World/Tree" instance=ExtResource( 2 )]
 position = Vector2( -839.2, -5621.39 )
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 7 )
 
 [node name="Checkpoint14" parent="World/Tree" instance=ExtResource( 2 )]
 position = Vector2( 614.97, -5549.48 )
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 7 )
 
 [node name="Checkpoint15" parent="World/Tree" instance=ExtResource( 2 )]
 position = Vector2( 1041.86, -4036.63 )
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 7 )
 
 [node name="Checkpoint11" parent="World/Tree" instance=ExtResource( 2 )]
 position = Vector2( -903.286, -4166.53 )
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 7 )
 
 [node name="Checkpoint12" parent="World/Tree" instance=ExtResource( 2 )]
 position = Vector2( -167.501, -3532.06 )
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 7 )
 
 [node name="Checkpoint10" parent="World/Tree" instance=ExtResource( 2 )]
 position = Vector2( 240.039, -2691.5 )
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 7 )
 
 [node name="Checkpoint16" parent="World/Tree" instance=ExtResource( 2 )]
 position = Vector2( -1174.96, -3051.21 )
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 7 )
 
 [node name="Checkpoint9" parent="World/Tree" instance=ExtResource( 2 )]
 position = Vector2( -684.869, -2744.41 )
-physics_material_override = SubResource( 6 )
+physics_material_override = SubResource( 7 )
 
 [node name="BarH1Side4" parent="World/Tree" instance=ExtResource( 33 )]
 position = Vector2( 827.692, -5994.46 )
@@ -3581,7 +3564,7 @@ texture = ExtResource( 52 )
 [node name="Wall134" parent="World/Tree" instance=ExtResource( 13 )]
 position = Vector2( 1102.1, -5589.9 )
 scale = Vector2( 0.9, 175 )
-physics_material_override = SubResource( 7 )
+physics_material_override = SubResource( 8 )
 
 [node name="BarH3" parent="World/Tree" instance=ExtResource( 32 )]
 position = Vector2( -118.256, -4514.27 )
@@ -3589,7 +3572,7 @@ position = Vector2( -118.256, -4514.27 )
 [node name="Wall135" parent="World/Tree" instance=ExtResource( 13 )]
 position = Vector2( -1461.35, -6844.57 )
 scale = Vector2( 0.9, 135 )
-physics_material_override = SubResource( 7 )
+physics_material_override = SubResource( 8 )
 
 [node name="BarV2" parent="World/Tree" instance=ExtResource( 31 )]
 position = Vector2( 124.99, -4962.4 )
@@ -4294,14 +4277,14 @@ position = Vector2( -657.095, -8491.98 )
 scale = Vector2( 0.9, 135 )
 collision_layer = 16
 collision_mask = 16
-physics_material_override = SubResource( 7 )
+physics_material_override = SubResource( 8 )
 
 [node name="Wall138" parent="World/Space" instance=ExtResource( 13 )]
 position = Vector2( 3165.27, -8491.98 )
 scale = Vector2( 0.9, 135 )
 collision_layer = 16
 collision_mask = 16
-physics_material_override = SubResource( 7 )
+physics_material_override = SubResource( 8 )
 
 [node name="Wall137" parent="World/Space" instance=ExtResource( 13 )]
 position = Vector2( 1507.65, -10691.5 )
@@ -4309,7 +4292,7 @@ rotation = 1.5708
 scale = Vector2( 0.9, 135 )
 collision_layer = 16
 collision_mask = 16
-physics_material_override = SubResource( 7 )
+physics_material_override = SubResource( 8 )
 
 [node name="Wall139" parent="World/Space" instance=ExtResource( 13 )]
 modulate = Color( 1, 1, 1, 0 )
@@ -4318,7 +4301,7 @@ rotation = 1.5708
 scale = Vector2( 0.9, 135 )
 collision_layer = 16
 collision_mask = 16
-physics_material_override = SubResource( 7 )
+physics_material_override = SubResource( 8 )
 
 [node name="SpaceObj" parent="World/Space" instance=ExtResource( 55 )]
 position = Vector2( 444.06, -7302.35 )
@@ -4420,7 +4403,7 @@ in_stream = ExtResource( 28 )
 out_stream = ExtResource( 27 )
 
 [node name="Tween" type="Tween" parent="."]
-[connection signal="area_entered" from="World/Space/Moon/Area2D4" to="Player/PlayerFly" method="_on_moon_area_entered"]
+[connection signal="body_entered" from="World/Space/Moon/Area2D4" to="Player/PlayerFly" method="_on_moon_body_entered"]
 
 [editable path="World/BreakableWalls/BreakableWall"]
 

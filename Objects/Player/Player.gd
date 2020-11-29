@@ -41,11 +41,13 @@ const RED_COLOR := Color(0.67, 0.14, 0.14)
 const BLUE_COLOR := Color(0.14, 0.14, 0.67)
 
 var active_input := true
+var teleporting := false
 
 func teleport(target_pos : Vector2):
 	gravity_scale = 0
 	sleeping = true
 	reset(false)
+	teleporting = true
 	$AnimationPlayer.play("teleport")
 	$Tween.interpolate_callback(self, 1, "move_to", target_pos)
 	$Tween.start()
@@ -78,6 +80,7 @@ func reset(rotate_p := true):
 func move_to(pos : Vector2):
 	global_position = pos
 	sleeping = false
+	teleporting = false
 
 func set_camera_zoom(zoom : Vector2):
 	camera.zoom = zoom
@@ -132,7 +135,8 @@ func _integrate_forces(state):
 		applied_force = cur_thrust.rotated(rotation)
 		$Particles2D.emitting = true
 	else:
-		$AnimationPlayer.stop()
+		if !teleporting:
+			$AnimationPlayer.stop()
 		if use_fuel:
 			cur_fuel = min(max_fuel, cur_fuel + (max_fuel * state.get_step()) / fuel_fill_time)
 			filling_fuel = cur_fuel != max_fuel
@@ -184,5 +188,7 @@ func _on_Player_body_entered(body: Node2D):
 		get_hit()
 
 
-func _on_moon_area_entered(area):
-	pass # TODO: play ending scene
+func _on_moon_body_entered(body):
+	if !body.is_in_group("Player"):
+		return
+	get_tree().current_scene.get_node("UI").play_final()

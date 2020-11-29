@@ -31,6 +31,16 @@ func finish_cutscenes():
 	$hud/menus/MainMenu.visible = true
 	$hud/Control/Button.visible = false
 
+func play_final():
+	tween.stop_all()
+	$hud/Control/FinalPlayer.visible = true
+	$hud/Control/FinalPlayer.play()
+	tween.interpolate_callback(self, 15, "quit")
+	tween.start()
+
+func quit():
+	get_tree().quit()
+
 func _process(_delta):
 	pass
 
