@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Menus/MenuSlider.gd" type="Script" id=1]
-[ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://NerkoOne-Regular.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=1]
-size = 42
+size = 60
 font_data = ExtResource( 2 )
 
 [node name="HSlider" type="HSlider"]
