@@ -42,6 +42,14 @@ const BLUE_COLOR := Color(0.14, 0.14, 0.67)
 
 var active_input := true
 
+func teleport(target_pos : Vector2):
+	gravity_scale = 0
+	sleeping = true
+	reset(false)
+	$AnimationPlayer.play("teleport")
+	$Tween.interpolate_callback(self, 1, "move_to", target_pos)
+	$Tween.start()
+
 func change_color(in_color):
 	$Wings.self_modulate = in_color
 
@@ -58,19 +66,17 @@ func _ready():
 		fuel_progress.visible = false
 	stop_fly()
 
-func reset():
+func reset(rotate_p := true):
 	cur_fuel = max_fuel
 	fuel_progress.value = max_fuel
 	gravity_scale = 0
 	applied_force = Vector2(0, 0)
 	applied_torque = 0
-	rotation = 0
+	if rotate_p:
+		rotation = 0
 
 func move_to(pos : Vector2):
 	global_position = pos
-	gravity_scale = 0
-	sleeping = true
-	reset()
 	sleeping = false
 
 func set_camera_zoom(zoom : Vector2):
