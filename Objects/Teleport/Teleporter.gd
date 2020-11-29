@@ -14,9 +14,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	$Label.modulate.a = lerp($Label.modulate.a, 1.0 if (player_in and connection.unlocked) else 0.0, 0.2)
+	$Label2.modulate.a = lerp($Label2.modulate.a, 1.0 if (player_in and not connection.unlocked) else 0.0, 0.2)
 	if !connection.unlocked:
 		return
-	$Label.modulate.a = lerp($Label.modulate.a, 1.0 if player_in else 0.0, 0.2)
 	if player_in and Input.is_action_just_pressed("action") and !player.crashed:
 		$AnimationPlayer.play("enter")
 		player.teleport(connection.global_position)
