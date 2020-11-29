@@ -30,5 +30,5 @@ func _on_Area2D_body_entered(body):
 	player_in = true
 
 
-func _on_Area2D_body_exited():
+func _on_Area2D_body_exited(_body):
 	player_in = false

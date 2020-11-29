@@ -6,7 +6,7 @@
 [sub_resource type="PhysicsMaterial" id=1]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 121.066, 35.8477 )
+extents = Vector2( 121.066, 31.5441 )
 
 [node name="BreakableWall" type="StaticBody2D" groups=[
 "Breakable",
