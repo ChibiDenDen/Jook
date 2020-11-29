@@ -15,6 +15,7 @@ func _ready():
 func _process(delta):
 	if !connection.unlocked:
 		return
+	$Label.modulate.a = lerp($Label.modulate.a, 1.0 if player_in else 0.0, 0.2)
 	if player_in and Input.is_action_just_pressed("action"):
 		player.move_to(connection.global_position)
 
