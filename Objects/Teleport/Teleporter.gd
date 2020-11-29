@@ -4,7 +4,7 @@ var player_in := false
 var player : Node2D
 export var connection_path : NodePath
 var connection : Node2D
-var unlocked := true
+var unlocked := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

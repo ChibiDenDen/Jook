@@ -4,6 +4,9 @@ var target_position = Vector2.ZERO
 var noise := OpenSimplexNoise.new()
 var time := 0.0
 
+func _ready():
+	$CenterContainer/AnimationPlayer.play("fly")
+
 func _process(delta):
 	var speed = 400
 	time += delta

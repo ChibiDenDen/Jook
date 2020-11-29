@@ -1,7 +1,38 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Menus/Cursor.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Jook/Anims/BACK.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Jook/Anims/WINGS.png" type="Texture" id=3]
+
+[sub_resource type="Animation" id=1]
+resource_name = "fly"
+length = 0.5
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("Body:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 7 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Wings:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0, 7 ]
+}
 
 [node name="Cursor" type="Control"]
 anchor_left = 0.5
@@ -12,7 +43,7 @@ margin_left = -20.0
 margin_top = -20.0
 margin_right = -20.0
 margin_bottom = -20.0
-rect_scale = Vector2( 0.5, 0.5 )
+rect_scale = Vector2( 0.25, 0.25 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -31,7 +62,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="CenterContainer"]
-margin_right = 64.0
-margin_bottom = 64.0
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer"]
+anims/fly = SubResource( 1 )
+
+[node name="Body" type="Sprite" parent="CenterContainer"]
 texture = ExtResource( 2 )
+vframes = 2
+hframes = 5
+
+[node name="Wings" type="Sprite" parent="CenterContainer"]
+texture = ExtResource( 3 )
+vframes = 2
+hframes = 5

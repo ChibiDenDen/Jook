@@ -3195,11 +3195,11 @@ position = Vector2( 416.151, 1189.63 )
 connection_path = NodePath("../Teleporter7")
 
 [node name="Teleporter7" parent="Teleporters" instance=ExtResource( 17 )]
-position = Vector2( 2175.53, -630.16 )
+position = Vector2( 2344.53, -743.16 )
 connection_path = NodePath("../Teleporter2")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2168.16, 1133.9 )
+position = Vector2( 2153.06, 1118.8 )
 __meta__ = {
 "_edit_group_": true
 }
