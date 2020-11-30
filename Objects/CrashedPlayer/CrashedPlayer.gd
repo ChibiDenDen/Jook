@@ -11,8 +11,15 @@ var move_vec := Vector2()
 var slide_down := false
 var time := 0.0
 
+var brows_index := 0
+var lens_index := 0
+var misc_index := 0
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$Sprite/Eyebrows.texture = load("res://Resources/Jook/Customize/eyebrows/SIDE " + str(brows_index) + ".png")
+	$Sprite/Lens.texture = load("res://Resources/Jook/Customize/lens/SIDE " + str(lens_index) + ".png")
+	# $AnimationPlayer.play("misc" + str(misc_index))
 	$AnimationPlayer.play("walk")
 
 func will_drop():

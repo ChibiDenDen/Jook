@@ -1,15 +1,18 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Resources/Jook/Anims/SIDE_WINGS.png" type="Texture" id=1]
 [ext_resource path="res://Objects/CrashedPlayer/CrashedPlayer.gd" type="Script" id=2]
 [ext_resource path="res://Resources/Jook/Anims/SIDE.png" type="Texture" id=3]
 [ext_resource path="res://NerkoOne-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Resources/Jook/Customize/eyebrows/side 5.png" type="Texture" id=9]
 
-[sub_resource type="CircleShape2D" id=1]
+[sub_resource type="ImageTexture" id=1]
+size = Vector2( 2, 2 )
+
+[sub_resource type="CircleShape2D" id=2]
 radius = 35.7718
 
-[sub_resource type="Animation" id=2]
-resource_name = "walk"
+[sub_resource type="Animation" id=3]
 length = 0.5
 loop = true
 step = 0.05
@@ -109,8 +112,32 @@ tracks/7/keys = {
 "update": 0,
 "values": [ 0, 13 ]
 }
+tracks/8/type = "value"
+tracks/8/path = NodePath("Sprite/Eyebrows:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 8.0553, -45.0487 ), Vector2( 7.08907, -44.6771 ), Vector2( 6.30453, -44.3468 ), Vector2( 5.55714, -44.0629 ), Vector2( 3.90724, -43.1632 ), Vector2( 3.11207, -43.4031 ), Vector2( 4.10072, -43.7322 ), Vector2( 5.98127, -44.433 ), Vector2( 6.37532, -44.7126 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Sprite/Lens:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.05, 0.15, 0.2, 0.25, 0.35 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 7.84219, -41.38 ), Vector2( 7.17326, -41.3057 ), Vector2( 5.61243, -40.6533 ), Vector2( 4.22148, -39.6422 ), Vector2( 3.41274, -40.0062 ), Vector2( 5.85345, -40.9274 ) ]
+}
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 34
 font_data = ExtResource( 4 )
 
@@ -137,12 +164,22 @@ texture = ExtResource( 1 )
 vframes = 2
 hframes = 7
 
+[node name="Lens" type="Sprite" parent="Sprite"]
+position = Vector2( 7.84219, -41.38 )
+scale = Vector2( 0.1, 0.1 )
+texture = SubResource( 1 )
+
+[node name="Eyebrows" type="Sprite" parent="Sprite"]
+position = Vector2( 8.0553, -45.0487 )
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 9 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1.75, -10.75 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/walk = SubResource( 2 )
+anims/walk = SubResource( 3 )
 
 [node name="Label" type="Label" parent="."]
 modulate = Color( 1, 1, 1, 0 )
@@ -150,7 +187,7 @@ margin_left = -120.0
 margin_top = -152.0
 margin_right = 129.0
 margin_bottom = -65.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Press R to return
 to last checkpoint"
 align = 1
@@ -165,7 +202,7 @@ margin_left = -120.0
 margin_top = -152.0
 margin_right = 129.0
 margin_bottom = -65.0
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Press space to
 speed up time"
 align = 1

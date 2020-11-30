@@ -44,6 +44,10 @@ const BLUE_COLOR := Color(0.14, 0.14, 0.67)
 var active_input := true
 var teleporting := false
 
+var brows_index := 0
+var lens_index := 0
+var misc_index := 0
+
 func teleport(target_pos : Vector2):
 	gravity_scale = 0
 	sleeping = true
@@ -114,8 +118,12 @@ func _process(delta):
 		fuel_progress.get_stylebox("fg").set_bg_color(BLUE_COLOR)
 
 func _integrate_forces(state):
+	# $AnimationPlayer.play("misc" + str(misc_index))
 	if crashed:
 		return
+	
+	if Input.is_key_pressed(KEY_K):
+		get_hit()
 
 	if active_input and Input.is_action_pressed("ui_up") and cur_fuel > 0 and !filling_fuel:
 		$AnimationPlayer.play("fly")
@@ -161,6 +169,9 @@ func pickup_shield():
 
 func get_hit():
 	var crashed_player = CrashedPlayerScene.instance()
+	crashed_player.brows_index = brows_index
+	crashed_player.lens_index = lens_index
+	crashed_player.misc_index = misc_index
 	crashed_player.modulate = get_parent().modulate
 	crashed_player.player = self
 	get_tree().current_scene.call_deferred("add_child", crashed_player)

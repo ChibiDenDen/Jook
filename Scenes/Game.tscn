@@ -257,9 +257,9 @@ tracks/2/keys = {
 
 [sub_resource type="PhysicsMaterial" id=6]
 
-[sub_resource type="PhysicsMaterial" id=8]
+[sub_resource type="PhysicsMaterial" id=7]
 
-[sub_resource type="Animation" id=9]
+[sub_resource type="Animation" id=8]
 resource_name = "apple"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -298,7 +298,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
 }
 
-[sub_resource type="Animation" id=10]
+[sub_resource type="Animation" id=9]
 resource_name = "coffeecup"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -337,7 +337,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=11]
+[sub_resource type="Animation" id=10]
 resource_name = "faucet"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -376,7 +376,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=12]
+[sub_resource type="Animation" id=11]
 resource_name = "hammer"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -415,7 +415,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=13]
+[sub_resource type="Animation" id=12]
 resource_name = "mouse"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -454,7 +454,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=14]
+[sub_resource type="Animation" id=13]
 resource_name = "redcan"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -493,7 +493,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=15]
+[sub_resource type="Animation" id=14]
 resource_name = "tunacan"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -532,7 +532,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=16]
+[sub_resource type="Animation" id=15]
 resource_name = "wrench"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -571,7 +571,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
-[sub_resource type="Animation" id=17]
+[sub_resource type="Animation" id=16]
 resource_name = "apple"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -610,7 +610,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
 }
 
-[sub_resource type="Animation" id=18]
+[sub_resource type="Animation" id=17]
 resource_name = "coffeecup"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -649,7 +649,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=19]
+[sub_resource type="Animation" id=18]
 resource_name = "faucet"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -688,7 +688,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=20]
+[sub_resource type="Animation" id=19]
 resource_name = "hammer"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -727,7 +727,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=21]
+[sub_resource type="Animation" id=20]
 resource_name = "mouse"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -766,7 +766,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=21]
 resource_name = "tunacan"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -805,7 +805,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=23]
+[sub_resource type="Animation" id=22]
 resource_name = "wrench"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -844,7 +844,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
-[sub_resource type="Animation" id=24]
+[sub_resource type="Animation" id=23]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -882,7 +882,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
 }
 
-[sub_resource type="Animation" id=25]
+[sub_resource type="Animation" id=24]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -906,6 +906,44 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ PoolVector2Array( -158.383, -36.1335, -148.383, -26.6335, -124.383, -20.6335, -99.8825, -22.6335, -75.3825, -26.1335, -72.8825, -11.1335, -80.3825, 2.36652, -84.3825, 11.8665, -102.383, 25.8665, -110.883, 31.8665, -108.383, 33.8665, -142.383, 43.8665, -138.383, 44.8665, -106.883, 41.8665, -100.883, 47.3665, -95.3825, 39.3665, -75.3825, 32.8665, -73.3825, 38.3665, -61.3825, 27.8665, -27.8825, 17.3665, -11.8825, 42.8665, -1.38254, 64.3665, 11.6175, 77.3665, 37.6175, 90.8665, -2.88254, 100.367, 5.61746, 103.367, 28.6175, 99.3665, 47.1175, 98.8665, 54.1175, 99.3665, 88.1175, 102.867, 115.117, 93.3665, 140.617, 76.3665, 138.617, 68.3665, 144.117, 48.8665, 147.117, 19.3665, 129.117, -13.1335, 98.6175, -42.6335, 56.1175, -64.6335, 34.1175, -70.1335, 4.11746, -83.6335, -26.3825, -75.6335, -40.8825, -71.1335, -46.3825, -75.6335, -35.8825, -87.6335, -44.8825, -92.6335, -52.3825, -94.1335, -62.3825, -101.133, -66.8825, -101.633, -71.3825, -91.6335, -84.3825, -91.1335, -105.383, -85.1335, -121.383, -71.6335, -135.383, -55.6335, -143.883, -44.1335 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionPolygon2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.38254, -0.366516 ) ]
+}
+
+[sub_resource type="Animation" id=25]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 39 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -113.587, -18.215, -112.088, 78.4258, 109.661, 78.8004, 110.41, -17.8404, 106.665, -32.4489, 94.3036, -41.0642, 65.8357, -52.6761, 41.1136, -57.9202, 45.6086, -70.6558, 42.6119, -87.1371, 35.1204, -99.4982, 19.3882, -106.241, 9.27463, -103.244, 2.9068, -103.993, -35.6746, -108.488, -45.039, -103.619, -46.1628, -96.127, -44.6645, -81.8931, -43.9153, -75.8998, -32.3034, -71.0303, 0.659332, -77.3982, -0.0898132, -69.532, -0.838959, -60.5422, -28.9322, -59.0439, -58.8984, -56.4218, -88.4899, -44.81, -106.095, -33.9473 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionPolygon2D:position")
@@ -931,44 +969,6 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 39 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("CollisionPolygon2D:polygon")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ PoolVector2Array( -113.587, -18.215, -112.088, 78.4258, 109.661, 78.8004, 110.41, -17.8404, 106.665, -32.4489, 94.3036, -41.0642, 65.8357, -52.6761, 41.1136, -57.9202, 45.6086, -70.6558, 42.6119, -87.1371, 35.1204, -99.4982, 19.3882, -106.241, 9.27463, -103.244, 2.9068, -103.993, -35.6746, -108.488, -45.039, -103.619, -46.1628, -96.127, -44.6645, -81.8931, -43.9153, -75.8998, -32.3034, -71.0303, 0.659332, -77.3982, -0.0898132, -69.532, -0.838959, -60.5422, -28.9322, -59.0439, -58.8984, -56.4218, -88.4899, -44.81, -106.095, -33.9473 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("CollisionPolygon2D:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 2.38254, -0.366516 ) ]
-}
-
-[sub_resource type="Animation" id=27]
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
 "values": [ ExtResource( 37 ) ]
 }
 tracks/1/type = "value"
@@ -996,7 +996,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
-[sub_resource type="Animation" id=28]
+[sub_resource type="Animation" id=27]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -1034,7 +1034,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
 }
 
-[sub_resource type="Animation" id=29]
+[sub_resource type="Animation" id=28]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -1058,6 +1058,44 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ PoolVector2Array( -76.9123, 167.867, -60.4123, 180.867, -25.9123, 188.367, 34.0877, 186.367, 63.5877, 179.367, 84.5877, 167.367, 109.588, -123.633, 120.088, -129.133, 119.088, -156.633, 111.588, -159.633, 111.088, -170.633, 71.5877, -182.633, -0.412262, -185.633, -72.4123, -180.133, -109.912, -169.633, -110.412, -160.133, -120.912, -156.633, -119.912, -127.633, -109.412, -122.133 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionPolygon2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.91226, -0.366516 ) ]
+}
+
+[sub_resource type="Animation" id=29]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 51 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -29.18, 206.699, 14.0767, 207.89, 10.1082, 58.674, 0.583771, 49.1496, -0.20993, -152.847, 5.34598, -159.991, 9.31445, -183.008, 28.7601, -188.961, 45.8247, -181.421, 67.2546, -165.943, 60.905, -188.564, 26.379, -211.581, -7.75009, -217.931, -25.6084, -217.534, -42.2761, -210.391, -69.2619, -217.931, -70.4524, -178.246, -42.2761, -184.199, -27.5926, -183.008, -22.0367, -178.246, -19.6556, -158.006, -14.4966, -154.038, -15.2903, 47.959, -24.4178, 54.7055 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionPolygon2D:position")
@@ -1083,44 +1121,6 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 51 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("CollisionPolygon2D:polygon")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ PoolVector2Array( -29.18, 206.699, 14.0767, 207.89, 10.1082, 58.674, 0.583771, 49.1496, -0.20993, -152.847, 5.34598, -159.991, 9.31445, -183.008, 28.7601, -188.961, 45.8247, -181.421, 67.2546, -165.943, 60.905, -188.564, 26.379, -211.581, -7.75009, -217.931, -25.6084, -217.534, -42.2761, -210.391, -69.2619, -217.931, -70.4524, -178.246, -42.2761, -184.199, -27.5926, -183.008, -22.0367, -178.246, -19.6556, -158.006, -14.4966, -154.038, -15.2903, 47.959, -24.4178, 54.7055 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("CollisionPolygon2D:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 2.91226, -0.366516 ) ]
-}
-
-[sub_resource type="Animation" id=31]
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
 "values": [ ExtResource( 40 ) ]
 }
 tracks/1/type = "value"
@@ -1134,6 +1134,44 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ PoolVector2Array( -158.383, -36.1335, -148.383, -26.6335, -124.383, -20.6335, -99.8825, -22.6335, -75.3825, -26.1335, -72.8825, -11.1335, -80.3825, 2.36652, -84.3825, 11.8665, -102.383, 25.8665, -110.883, 31.8665, -108.383, 33.8665, -142.383, 43.8665, -138.383, 44.8665, -106.883, 41.8665, -100.883, 47.3665, -95.3825, 39.3665, -75.3825, 32.8665, -73.3825, 38.3665, -61.3825, 27.8665, -27.8825, 17.3665, -11.8825, 42.8665, -1.38254, 64.3665, 11.6175, 77.3665, 37.6175, 90.8665, -2.88254, 100.367, 5.61746, 103.367, 28.6175, 99.3665, 47.1175, 98.8665, 54.1175, 99.3665, 88.1175, 102.867, 115.117, 93.3665, 140.617, 76.3665, 138.617, 68.3665, 144.117, 48.8665, 147.117, 19.3665, 129.117, -13.1335, 98.6175, -42.6335, 56.1175, -64.6335, 34.1175, -70.1335, 4.11746, -83.6335, -26.3825, -75.6335, -40.8825, -71.1335, -46.3825, -75.6335, -35.8825, -87.6335, -44.8825, -92.6335, -52.3825, -94.1335, -62.3825, -101.133, -66.8825, -101.633, -71.3825, -91.6335, -84.3825, -91.1335, -105.383, -85.1335, -121.383, -71.6335, -135.383, -55.6335, -143.883, -44.1335 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionPolygon2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.38254, -0.366516 ) ]
+}
+
+[sub_resource type="Animation" id=31]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 39 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -113.587, -18.215, -112.088, 78.4258, 109.661, 78.8004, 110.41, -17.8404, 106.665, -32.4489, 94.3036, -41.0642, 65.8357, -52.6761, 41.1136, -57.9202, 45.6086, -70.6558, 42.6119, -87.1371, 35.1204, -99.4982, 19.3882, -106.241, 9.27463, -103.244, 2.9068, -103.993, -35.6746, -108.488, -45.039, -103.619, -46.1628, -96.127, -44.6645, -81.8931, -43.9153, -75.8998, -32.3034, -71.0303, 0.659332, -77.3982, -0.0898132, -69.532, -0.838959, -60.5422, -28.9322, -59.0439, -58.8984, -56.4218, -88.4899, -44.81, -106.095, -33.9473 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionPolygon2D:position")
@@ -1159,44 +1197,6 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 39 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("CollisionPolygon2D:polygon")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ PoolVector2Array( -113.587, -18.215, -112.088, 78.4258, 109.661, 78.8004, 110.41, -17.8404, 106.665, -32.4489, 94.3036, -41.0642, 65.8357, -52.6761, 41.1136, -57.9202, 45.6086, -70.6558, 42.6119, -87.1371, 35.1204, -99.4982, 19.3882, -106.241, 9.27463, -103.244, 2.9068, -103.993, -35.6746, -108.488, -45.039, -103.619, -46.1628, -96.127, -44.6645, -81.8931, -43.9153, -75.8998, -32.3034, -71.0303, 0.659332, -77.3982, -0.0898132, -69.532, -0.838959, -60.5422, -28.9322, -59.0439, -58.8984, -56.4218, -88.4899, -44.81, -106.095, -33.9473 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("CollisionPolygon2D:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 2.38254, -0.366516 ) ]
-}
-
-[sub_resource type="Animation" id=33]
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
 "values": [ ExtResource( 37 ) ]
 }
 tracks/1/type = "value"
@@ -1224,7 +1224,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
-[sub_resource type="Animation" id=34]
+[sub_resource type="Animation" id=33]
 resource_name = "apple"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1263,7 +1263,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
 }
 
-[sub_resource type="Animation" id=35]
+[sub_resource type="Animation" id=34]
 resource_name = "coffeecup"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1288,6 +1288,45 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ PoolVector2Array( -76.9123, 167.867, -60.4123, 180.867, -25.9123, 188.367, 34.0877, 186.367, 63.5877, 179.367, 84.5877, 167.367, 109.588, -123.633, 120.088, -129.133, 119.088, -156.633, 111.588, -159.633, 111.088, -170.633, 71.5877, -182.633, -0.412262, -185.633, -72.4123, -180.133, -109.912, -169.633, -110.412, -160.133, -120.912, -156.633, -119.912, -127.633, -109.412, -122.133 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionPolygon2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.91226, -0.366516 ) ]
+}
+
+[sub_resource type="Animation" id=35]
+resource_name = "coffeecup (copy)"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 51 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -29.18, 206.699, 14.0767, 207.89, 10.1082, 58.674, 0.583771, 49.1496, -0.20993, -152.847, 5.34598, -159.991, 9.31445, -183.008, 28.7601, -188.961, 45.8247, -181.421, 67.2546, -165.943, 60.905, -188.564, 26.379, -211.581, -7.75009, -217.931, -25.6084, -217.534, -42.2761, -210.391, -69.2619, -217.931, -70.4524, -178.246, -42.2761, -184.199, -27.5926, -183.008, -22.0367, -178.246, -19.6556, -158.006, -14.4966, -154.038, -15.2903, 47.959, -24.4178, 54.7055 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionPolygon2D:position")
@@ -1303,45 +1342,6 @@ tracks/2/keys = {
 }
 
 [sub_resource type="Animation" id=36]
-resource_name = "coffeecup (copy)"
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ ExtResource( 51 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("CollisionPolygon2D:polygon")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ PoolVector2Array( -29.18, 206.699, 14.0767, 207.89, 10.1082, 58.674, 0.583771, 49.1496, -0.20993, -152.847, 5.34598, -159.991, 9.31445, -183.008, 28.7601, -188.961, 45.8247, -181.421, 67.2546, -165.943, 60.905, -188.564, 26.379, -211.581, -7.75009, -217.931, -25.6084, -217.534, -42.2761, -210.391, -69.2619, -217.931, -70.4524, -178.246, -42.2761, -184.199, -27.5926, -183.008, -22.0367, -178.246, -19.6556, -158.006, -14.4966, -154.038, -15.2903, 47.959, -24.4178, 54.7055 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("CollisionPolygon2D:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 2.91226, -0.366516 ) ]
-}
-
-[sub_resource type="Animation" id=37]
 resource_name = "faucet"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1380,7 +1380,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=38]
+[sub_resource type="Animation" id=37]
 resource_name = "hammer"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1419,7 +1419,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=39]
+[sub_resource type="Animation" id=38]
 resource_name = "mouse"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1458,7 +1458,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=40]
+[sub_resource type="Animation" id=39]
 resource_name = "redcan"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1497,7 +1497,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=41]
+[sub_resource type="Animation" id=40]
 resource_name = "tunacan"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1536,7 +1536,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=42]
+[sub_resource type="Animation" id=41]
 resource_name = "wrench"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1575,7 +1575,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
-[sub_resource type="Animation" id=43]
+[sub_resource type="Animation" id=42]
 resource_name = "apple"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1614,7 +1614,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
 }
 
-[sub_resource type="Animation" id=44]
+[sub_resource type="Animation" id=43]
 resource_name = "coffeecup"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1653,7 +1653,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=45]
+[sub_resource type="Animation" id=44]
 resource_name = "coffeecup (copy)"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1692,7 +1692,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=46]
+[sub_resource type="Animation" id=45]
 resource_name = "faucet"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1731,7 +1731,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=47]
+[sub_resource type="Animation" id=46]
 resource_name = "hammer"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1770,7 +1770,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=48]
+[sub_resource type="Animation" id=47]
 resource_name = "mouse"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1809,7 +1809,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=49]
+[sub_resource type="Animation" id=48]
 resource_name = "redcan"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1848,7 +1848,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=50]
+[sub_resource type="Animation" id=49]
 resource_name = "tunacan"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1887,7 +1887,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=51]
+[sub_resource type="Animation" id=50]
 resource_name = "wrench"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -1926,7 +1926,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
-[sub_resource type="Animation" id=52]
+[sub_resource type="Animation" id=51]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -1964,7 +1964,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
 }
 
-[sub_resource type="Animation" id=53]
+[sub_resource type="Animation" id=52]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -1988,6 +1988,44 @@ tracks/1/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 1,
 "values": [ PoolVector2Array( -76.9123, 167.867, -60.4123, 180.867, -25.9123, 188.367, 34.0877, 186.367, 63.5877, 179.367, 84.5877, 167.367, 109.588, -123.633, 120.088, -129.133, 119.088, -156.633, 111.588, -159.633, 111.088, -170.633, 71.5877, -182.633, -0.412262, -185.633, -72.4123, -180.133, -109.912, -169.633, -110.412, -160.133, -120.912, -156.633, -119.912, -127.633, -109.412, -122.133 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionPolygon2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.91226, -0.366516 ) ]
+}
+
+[sub_resource type="Animation" id=53]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 51 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ PoolVector2Array( -29.18, 206.699, 14.0767, 207.89, 10.1082, 58.674, 0.583771, 49.1496, -0.20993, -152.847, 5.34598, -159.991, 9.31445, -183.008, 28.7601, -188.961, 45.8247, -181.421, 67.2546, -165.943, 60.905, -188.564, 26.379, -211.581, -7.75009, -217.931, -25.6084, -217.534, -42.2761, -210.391, -69.2619, -217.931, -70.4524, -178.246, -42.2761, -184.199, -27.5926, -183.008, -22.0367, -178.246, -19.6556, -158.006, -14.4966, -154.038, -15.2903, 47.959, -24.4178, 54.7055 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionPolygon2D:position")
@@ -2013,44 +2051,6 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 51 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("CollisionPolygon2D:polygon")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ PoolVector2Array( -29.18, 206.699, 14.0767, 207.89, 10.1082, 58.674, 0.583771, 49.1496, -0.20993, -152.847, 5.34598, -159.991, 9.31445, -183.008, 28.7601, -188.961, 45.8247, -181.421, 67.2546, -165.943, 60.905, -188.564, 26.379, -211.581, -7.75009, -217.931, -25.6084, -217.534, -42.2761, -210.391, -69.2619, -217.931, -70.4524, -178.246, -42.2761, -184.199, -27.5926, -183.008, -22.0367, -178.246, -19.6556, -158.006, -14.4966, -154.038, -15.2903, 47.959, -24.4178, 54.7055 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("CollisionPolygon2D:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 2.91226, -0.366516 ) ]
-}
-
-[sub_resource type="Animation" id=55]
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
 "values": [ ExtResource( 44 ) ]
 }
 tracks/1/type = "value"
@@ -2078,7 +2078,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=56]
+[sub_resource type="Animation" id=55]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -2116,7 +2116,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=57]
+[sub_resource type="Animation" id=56]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -2154,7 +2154,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=58]
+[sub_resource type="Animation" id=57]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -2192,7 +2192,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=59]
+[sub_resource type="Animation" id=58]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -2228,6 +2228,44 @@ tracks/2/keys = {
 "transitions": PoolRealArray( 1 ),
 "update": 0,
 "values": [ Vector2( 2.38254, -0.366516 ) ]
+}
+
+[sub_resource type="Animation" id=59]
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 37 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -24.6302, 37.7742 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CollisionPolygon2D:polygon")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
 [sub_resource type="Animation" id=60]
@@ -2241,7 +2279,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 37 ) ]
+"values": [ ExtResource( 38 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("CollisionPolygon2D:position")
@@ -2253,7 +2291,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( -24.6302, 37.7742 ) ]
+"values": [ Vector2( 2.91226, -0.366516 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionPolygon2D:polygon")
@@ -2265,7 +2303,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
+"values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
 }
 
 [sub_resource type="Animation" id=61]
@@ -2279,44 +2317,6 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ ExtResource( 38 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("CollisionPolygon2D:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 2.91226, -0.366516 ) ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("CollisionPolygon2D:polygon")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
-}
-
-[sub_resource type="Animation" id=62]
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
 "values": [ ExtResource( 37 ) ]
 }
 tracks/1/type = "value"
@@ -2344,7 +2344,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
-[sub_resource type="Animation" id=63]
+[sub_resource type="Animation" id=62]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -2382,7 +2382,7 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -113.254, -54.5571, -83.331, -80.3855, -49.6281, -89.5199, -19.39, -90.1499, 2.34361, -88.575, 11.1631, -107.159, 20.6125, -130.152, 32.8967, -151.886, 47.3858, -146.846, 36.0465, -125.743, 25.3372, -109.679, 17.4627, -98.0244, 13.9979, -88.575, 39.1963, -91.4098, 68.8045, -85.4252, 92.428, -73.4559, 115.107, -48.2575, 86.4433, -36.9182, 59.985, -13.2947, 47.7008, 12.5337, 38.2514, 31.7475, 39.5113, 60.7257, 49.5907, 82.4593, 56.6392, 99.8747, 66.0036, 113.359, 84.3578, 128.717, 73.8697, 138.081, 52.8934, 148.195, 30.7934, 155.312, 10.1917, 154.188, -2.91852, 148.57, -19.7745, 152.69, -39.2525, 153.065, -61.7271, 147.446, -87.1983, 134.336, -66.9712, 123.848, -56.1084, 103.995, -43.3728, 78.8984, -34.383, 61.6678, -31.0118, 27.5813, -31.0118, 4.73215, -44.4966, -15.8696, -65.8474, -37.2205, -90.5695, -49.2069 ) ]
 }
 
-[sub_resource type="Animation" id=64]
+[sub_resource type="Animation" id=63]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -2420,7 +2420,7 @@ tracks/2/keys = {
 "values": [ Vector2( 2.38254, -0.366516 ) ]
 }
 
-[sub_resource type="Animation" id=65]
+[sub_resource type="Animation" id=64]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -2458,28 +2458,28 @@ tracks/2/keys = {
 "values": [ PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 ) ]
 }
 
-[sub_resource type="RectangleShape2D" id=66]
+[sub_resource type="RectangleShape2D" id=65]
 extents = Vector2( 1400, 600 )
 
-[sub_resource type="CircleShape2D" id=67]
+[sub_resource type="CircleShape2D" id=66]
 radius = 1180.5
 
-[sub_resource type="CircleShape2D" id=68]
+[sub_resource type="CircleShape2D" id=67]
 radius = 974.0
 
-[sub_resource type="CircleShape2D" id=69]
+[sub_resource type="CircleShape2D" id=68]
 radius = 698.5
 
-[sub_resource type="CircleShape2D" id=70]
+[sub_resource type="CircleShape2D" id=69]
 radius = 423.0
 
-[sub_resource type="CircleShape2D" id=71]
+[sub_resource type="CircleShape2D" id=70]
 radius = 77.4912
 
-[sub_resource type="CircleShape2D" id=72]
+[sub_resource type="CircleShape2D" id=71]
 radius = 98.0387
 
-[sub_resource type="Animation" id=73]
+[sub_resource type="Animation" id=72]
 resource_name = "astronaut"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -2503,7 +2503,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D2:shape")
@@ -2515,7 +2515,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("CollisionShape2D:position")
@@ -2542,7 +2542,7 @@ tracks/4/keys = {
 "values": [ Vector2( 1.49835, 44.9492 ) ]
 }
 
-[sub_resource type="Animation" id=74]
+[sub_resource type="Animation" id=73]
 resource_name = "comet"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -2566,7 +2566,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D:position")
@@ -2590,7 +2590,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("CollisionShape2D2:position")
@@ -2605,7 +2605,7 @@ tracks/4/keys = {
 "values": [ Vector2( 99.6375, -46.4476 ) ]
 }
 
-[sub_resource type="Animation" id=75]
+[sub_resource type="Animation" id=74]
 resource_name = "planet"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -2629,7 +2629,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D:position")
@@ -2653,7 +2653,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("CollisionShape2D2:position")
@@ -2668,7 +2668,7 @@ tracks/4/keys = {
 "values": [ Vector2( -5.01428, -3.31406 ) ]
 }
 
-[sub_resource type="Animation" id=76]
+[sub_resource type="Animation" id=75]
 resource_name = "satelite"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -2692,7 +2692,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D:position")
@@ -2716,7 +2716,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("CollisionShape2D2:position")
@@ -2731,7 +2731,7 @@ tracks/4/keys = {
 "values": [ Vector2( -39.5013, -15.2061 ) ]
 }
 
-[sub_resource type="Animation" id=77]
+[sub_resource type="Animation" id=76]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -2754,7 +2754,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D2:shape")
@@ -2766,7 +2766,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("CollisionShape2D:position")
@@ -2793,7 +2793,7 @@ tracks/4/keys = {
 "values": [ Vector2( 1.49835, 44.9492 ) ]
 }
 
-[sub_resource type="Animation" id=78]
+[sub_resource type="Animation" id=77]
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
 tracks/0/interp = 1
@@ -2816,7 +2816,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D:position")
@@ -2840,7 +2840,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("CollisionShape2D2:position")
@@ -2855,7 +2855,7 @@ tracks/4/keys = {
 "values": [ Vector2( 99.6375, -46.4476 ) ]
 }
 
-[sub_resource type="Animation" id=79]
+[sub_resource type="Animation" id=78]
 resource_name = "astronaut"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -2879,7 +2879,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D2:shape")
@@ -2891,7 +2891,7 @@ tracks/2/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("CollisionShape2D:position")
@@ -2918,7 +2918,7 @@ tracks/4/keys = {
 "values": [ Vector2( 1.49835, 44.9492 ) ]
 }
 
-[sub_resource type="Animation" id=80]
+[sub_resource type="Animation" id=79]
 resource_name = "comet"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -2942,7 +2942,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D:position")
@@ -2966,7 +2966,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("CollisionShape2D2:position")
@@ -2981,7 +2981,7 @@ tracks/4/keys = {
 "values": [ Vector2( 99.6375, -46.4476 ) ]
 }
 
-[sub_resource type="Animation" id=81]
+[sub_resource type="Animation" id=80]
 resource_name = "planet"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -3005,7 +3005,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D:position")
@@ -3029,7 +3029,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("CollisionShape2D2:position")
@@ -3044,7 +3044,7 @@ tracks/4/keys = {
 "values": [ Vector2( -5.01428, -3.31406 ) ]
 }
 
-[sub_resource type="Animation" id=82]
+[sub_resource type="Animation" id=81]
 resource_name = "satelite"
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:texture")
@@ -3068,7 +3068,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 71 ) ]
+"values": [ SubResource( 70 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("CollisionShape2D:position")
@@ -3092,7 +3092,7 @@ tracks/3/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ SubResource( 72 ) ]
+"values": [ SubResource( 71 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath("CollisionShape2D2:position")
@@ -3196,7 +3196,7 @@ position = Vector2( 2344.53, -743.16 )
 connection_path = NodePath("../Teleporter2")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2153.06, 1118.8 )
+position = Vector2( 2133.26, 1217.79 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -3554,7 +3554,7 @@ texture = ExtResource( 52 )
 [node name="Wall134" parent="World/Tree" instance=ExtResource( 13 )]
 position = Vector2( 1102.1, -5589.9 )
 scale = Vector2( 0.9, 175 )
-physics_material_override = SubResource( 8 )
+physics_material_override = SubResource( 7 )
 
 [node name="BarH3" parent="World/Tree" instance=ExtResource( 32 )]
 position = Vector2( -118.256, -4514.27 )
@@ -3562,7 +3562,7 @@ position = Vector2( -118.256, -4514.27 )
 [node name="Wall135" parent="World/Tree" instance=ExtResource( 13 )]
 position = Vector2( -1461.35, -6844.57 )
 scale = Vector2( 0.9, 135 )
-physics_material_override = SubResource( 8 )
+physics_material_override = SubResource( 7 )
 
 [node name="BarV2" parent="World/Tree" instance=ExtResource( 31 )]
 position = Vector2( 124.99, -4962.4 )
@@ -3779,14 +3779,14 @@ position = Vector2( -33.437, -5442.25 )
 rotation = -0.523599
 
 [node name="AnimationPlayer" parent="World/Tree/Clutter7" index="2"]
-anims/apple = SubResource( 9 )
-anims/coffeecup = SubResource( 10 )
-anims/faucet = SubResource( 11 )
-anims/hammer = SubResource( 12 )
-anims/mouse = SubResource( 13 )
-anims/redcan = SubResource( 14 )
-anims/tunacan = SubResource( 15 )
-anims/wrench = SubResource( 16 )
+anims/apple = SubResource( 8 )
+anims/coffeecup = SubResource( 9 )
+anims/faucet = SubResource( 10 )
+anims/hammer = SubResource( 11 )
+anims/mouse = SubResource( 12 )
+anims/redcan = SubResource( 13 )
+anims/tunacan = SubResource( 14 )
+anims/wrench = SubResource( 15 )
 
 [node name="Sewer" type="Node2D" parent="World"]
 position = Vector2( 79.968, -29.3666 )
@@ -4015,13 +4015,13 @@ texture = ExtResource( 44 )
 polygon = PoolVector2Array( -183.949, 64.2366, -184.616, -15.1864, -171.601, -1.83795, -70.1537, -2.50537, -52.1333, -12.5167, -34.7804, -71.917, -28.1062, -73.5856, -27.7725, -122.975, -75.1593, -117.969, -75.493, -134.988, -75.493, -134.988, -31.777, -128.314, -18.7623, -138.659, -2.07681, -128.314, 41.9729, -132.986, 43.9752, -118.97, -3.07794, -121.64, -7.08249, -113.965, -4.74649, -72.9182, 3.26254, -70.5822, 11.939, -13.5178, 30.6267, -1.83795, 81.017, 0.831726, 123.732, 21.5217, 157.437, 57.8961, 179.128, 104.282, 134.411, 128.643, 81.3507, 63.9029, 41.3055, 57.8961, -15.0915, 75.5827, -78.4964, 59.8984, -172.936, 58.5636 )
 
 [node name="AnimationPlayer" parent="World/Clutter/Clutter6" index="2"]
-anims/apple = SubResource( 17 )
-anims/coffeecup = SubResource( 18 )
-anims/faucet = SubResource( 19 )
-anims/hammer = SubResource( 20 )
-anims/mouse = SubResource( 21 )
-anims/tunacan = SubResource( 22 )
-anims/wrench = SubResource( 23 )
+anims/apple = SubResource( 16 )
+anims/coffeecup = SubResource( 17 )
+anims/faucet = SubResource( 18 )
+anims/hammer = SubResource( 19 )
+anims/mouse = SubResource( 20 )
+anims/tunacan = SubResource( 21 )
+anims/wrench = SubResource( 22 )
 
 [node name="sneil" type="Sprite" parent="World/Clutter/Clutter6"]
 position = Vector2( 1100.03, -141.027 )
@@ -4044,10 +4044,10 @@ position = Vector2( 1.09122, -3.91431 )
 polygon = PoolVector2Array( -158.383, -36.1335, -148.383, -26.6335, -124.383, -20.6335, -99.8825, -22.6335, -75.3825, -26.1335, -72.8825, -11.1335, -80.3825, 2.36652, -84.3825, 11.8665, -102.383, 25.8665, -110.883, 31.8665, -108.383, 33.8665, -142.383, 43.8665, -138.383, 44.8665, -106.883, 41.8665, -100.883, 47.3665, -95.3825, 39.3665, -75.3825, 32.8665, -73.3825, 38.3665, -61.3825, 27.8665, -27.8825, 17.3665, -11.8825, 42.8665, -1.38254, 64.3665, 11.6175, 77.3665, 37.6175, 90.8665, -2.88254, 100.367, 5.61746, 103.367, 28.6175, 99.3665, 47.1175, 98.8665, 54.1175, 99.3665, 88.1175, 102.867, 115.117, 93.3665, 140.617, 76.3665, 138.617, 68.3665, 144.117, 48.8665, 147.117, 19.3665, 129.117, -13.1335, 98.6175, -42.6335, 56.1175, -64.6335, 34.1175, -70.1335, 4.11746, -83.6335, -26.3825, -75.6335, -40.8825, -71.1335, -46.3825, -75.6335, -35.8825, -87.6335, -44.8825, -92.6335, -52.3825, -94.1335, -62.3825, -101.133, -66.8825, -101.633, -71.3825, -91.6335, -84.3825, -91.1335, -105.383, -85.1335, -121.383, -71.6335, -135.383, -55.6335, -143.883, -44.1335 )
 
 [node name="AnimationPlayer" parent="World/Clutter/Clutter4" index="2"]
-anims/apple = SubResource( 24 )
-anims/mouse = SubResource( 25 )
-anims/tunacan = SubResource( 26 )
-anims/wrench = SubResource( 27 )
+anims/apple = SubResource( 23 )
+anims/mouse = SubResource( 24 )
+anims/tunacan = SubResource( 25 )
+anims/wrench = SubResource( 26 )
 
 [node name="Clutter5" parent="World/Clutter" instance=ExtResource( 34 )]
 position = Vector2( 333.496, -1917.63 )
@@ -4060,12 +4060,12 @@ texture = ExtResource( 51 )
 polygon = PoolVector2Array( -29.18, 206.699, 14.0767, 207.89, 10.1082, 58.674, 0.583771, 49.1496, -0.20993, -152.847, 5.34598, -159.991, 9.31445, -183.008, 28.7601, -188.961, 45.8247, -181.421, 67.2546, -165.943, 60.905, -188.564, 26.379, -211.581, -7.75009, -217.931, -25.6084, -217.534, -42.2761, -210.391, -69.2619, -217.931, -70.4524, -178.246, -42.2761, -184.199, -27.5926, -183.008, -22.0367, -178.246, -19.6556, -158.006, -14.4966, -154.038, -15.2903, 47.959, -24.4178, 54.7055 )
 
 [node name="AnimationPlayer" parent="World/Clutter/Clutter5" index="2"]
-anims/apple = SubResource( 28 )
-anims/coffeecup = SubResource( 29 )
-"anims/coffeecup (copy)" = SubResource( 30 )
-anims/mouse = SubResource( 31 )
-anims/tunacan = SubResource( 32 )
-anims/wrench = SubResource( 33 )
+anims/apple = SubResource( 27 )
+anims/coffeecup = SubResource( 28 )
+"anims/coffeecup (copy)" = SubResource( 29 )
+anims/mouse = SubResource( 30 )
+anims/tunacan = SubResource( 31 )
+anims/wrench = SubResource( 32 )
 
 [node name="Clutter7" parent="World/Clutter" instance=ExtResource( 34 )]
 position = Vector2( 521.723, -3611.36 )
@@ -4078,15 +4078,15 @@ texture = ExtResource( 51 )
 polygon = PoolVector2Array( -29.18, 206.699, 14.0767, 207.89, 10.1082, 58.674, 0.583771, 49.1496, -0.20993, -152.847, 5.34598, -159.991, 9.31445, -183.008, 28.7601, -188.961, 45.8247, -181.421, 67.2546, -165.943, 60.905, -188.564, 26.379, -211.581, -7.75009, -217.931, -25.6084, -217.534, -42.2761, -210.391, -69.2619, -217.931, -70.4524, -178.246, -42.2761, -184.199, -27.5926, -183.008, -22.0367, -178.246, -19.6556, -158.006, -14.4966, -154.038, -15.2903, 47.959, -24.4178, 54.7055 )
 
 [node name="AnimationPlayer" parent="World/Clutter/Clutter7" index="2"]
-anims/apple = SubResource( 34 )
-anims/coffeecup = SubResource( 35 )
-"anims/coffeecup (copy)" = SubResource( 36 )
-anims/faucet = SubResource( 37 )
-anims/hammer = SubResource( 38 )
-anims/mouse = SubResource( 39 )
-anims/redcan = SubResource( 40 )
-anims/tunacan = SubResource( 41 )
-anims/wrench = SubResource( 42 )
+anims/apple = SubResource( 33 )
+anims/coffeecup = SubResource( 34 )
+"anims/coffeecup (copy)" = SubResource( 35 )
+anims/faucet = SubResource( 36 )
+anims/hammer = SubResource( 37 )
+anims/mouse = SubResource( 38 )
+anims/redcan = SubResource( 39 )
+anims/tunacan = SubResource( 40 )
+anims/wrench = SubResource( 41 )
 
 [node name="Clutter9" parent="World/Clutter" instance=ExtResource( 34 )]
 position = Vector2( 496.778, -5441.26 )
@@ -4099,15 +4099,15 @@ texture = ExtResource( 51 )
 polygon = PoolVector2Array( -29.18, 206.699, 14.0767, 207.89, 10.1082, 58.674, 0.583771, 49.1496, -0.20993, -152.847, 5.34598, -159.991, 9.31445, -183.008, 28.7601, -188.961, 45.8247, -181.421, 67.2546, -165.943, 60.905, -188.564, 26.379, -211.581, -7.75009, -217.931, -25.6084, -217.534, -42.2761, -210.391, -69.2619, -217.931, -70.4524, -178.246, -42.2761, -184.199, -27.5926, -183.008, -22.0367, -178.246, -19.6556, -158.006, -14.4966, -154.038, -15.2903, 47.959, -24.4178, 54.7055 )
 
 [node name="AnimationPlayer" parent="World/Clutter/Clutter9" index="2"]
-anims/apple = SubResource( 43 )
-anims/coffeecup = SubResource( 44 )
-"anims/coffeecup (copy)" = SubResource( 45 )
-anims/faucet = SubResource( 46 )
-anims/hammer = SubResource( 47 )
-anims/mouse = SubResource( 48 )
-anims/redcan = SubResource( 49 )
-anims/tunacan = SubResource( 50 )
-anims/wrench = SubResource( 51 )
+anims/apple = SubResource( 42 )
+anims/coffeecup = SubResource( 43 )
+"anims/coffeecup (copy)" = SubResource( 44 )
+anims/faucet = SubResource( 45 )
+anims/hammer = SubResource( 46 )
+anims/mouse = SubResource( 47 )
+anims/redcan = SubResource( 48 )
+anims/tunacan = SubResource( 49 )
+anims/wrench = SubResource( 50 )
 
 [node name="Clutter8" parent="World/Clutter" instance=ExtResource( 34 )]
 position = Vector2( 1296.49, -4719.7 )
@@ -4121,15 +4121,15 @@ position = Vector2( -24.6302, 37.7742 )
 polygon = PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 )
 
 [node name="AnimationPlayer" parent="World/Clutter/Clutter8" index="2"]
-anims/apple = SubResource( 52 )
-anims/coffeecup = SubResource( 53 )
-"anims/coffeecup (copy)" = SubResource( 54 )
-anims/faucet = SubResource( 55 )
-anims/hammer = SubResource( 56 )
-anims/mouse = SubResource( 57 )
-anims/redcan = SubResource( 58 )
-anims/tunacan = SubResource( 59 )
-anims/wrench = SubResource( 60 )
+anims/apple = SubResource( 51 )
+anims/coffeecup = SubResource( 52 )
+"anims/coffeecup (copy)" = SubResource( 53 )
+anims/faucet = SubResource( 54 )
+anims/hammer = SubResource( 55 )
+anims/mouse = SubResource( 56 )
+anims/redcan = SubResource( 57 )
+anims/tunacan = SubResource( 58 )
+anims/wrench = SubResource( 59 )
 
 [node name="Clutter2" parent="World/Clutter" instance=ExtResource( 34 )]
 position = Vector2( 1003.98, 312.519 )
@@ -4143,8 +4143,8 @@ position = Vector2( -24.6302, 37.7742 )
 polygon = PoolVector2Array( -232.767, -70.6616, -197.449, -101.354, -133.12, -72.3434, -134.802, -62.6731, 193.988, -61.8322, 220.477, -81.5933, 245.283, -82.0137, 267.987, -71.923, 275.555, -58.4686, 279.76, -42.4916, 278.498, -19.7874, 269.669, -7.17395, 259.578, 1.23502, 245.703, 7.54173, 232.67, 6.2804, 215.852, 1.23502, 209.965, -3.38992, 205.761, -8.01485, 199.034, -12.2193, 195.67, -14.3216, 191.886, -15.5829, -134.382, -16.4238, -136.484, -7.59441, -183.574, 23.0983, -200.392, 22.6779, -221.835, 3.33725, -226.039, -8.85574, -186.517, -5.91261, -165.495, -17.6852, -165.074, -55.105, -179.37, -66.0367 )
 
 [node name="AnimationPlayer" parent="World/Clutter/Clutter2" index="2"]
-anims/apple = SubResource( 61 )
-anims/wrench = SubResource( 62 )
+anims/apple = SubResource( 60 )
+anims/wrench = SubResource( 61 )
 
 [node name="Clutter3" parent="World/Clutter" instance=ExtResource( 34 )]
 position = Vector2( 2370.26, -478.785 )
@@ -4158,9 +4158,9 @@ position = Vector2( 2.38254, -0.366516 )
 polygon = PoolVector2Array( -113.587, -18.215, -112.088, 78.4258, 109.661, 78.8004, 110.41, -17.8404, 106.665, -32.4489, 94.3036, -41.0642, 65.8357, -52.6761, 41.1136, -57.9202, 45.6086, -70.6558, 42.6119, -87.1371, 35.1204, -99.4982, 19.3882, -106.241, 9.27463, -103.244, 2.9068, -103.993, -35.6746, -108.488, -45.039, -103.619, -46.1628, -96.127, -44.6645, -81.8931, -43.9153, -75.8998, -32.3034, -71.0303, 0.659332, -77.3982, -0.0898132, -69.532, -0.838959, -60.5422, -28.9322, -59.0439, -58.8984, -56.4218, -88.4899, -44.81, -106.095, -33.9473 )
 
 [node name="AnimationPlayer" parent="World/Clutter/Clutter3" index="2"]
-anims/apple = SubResource( 63 )
-anims/tunacan = SubResource( 64 )
-anims/wrench = SubResource( 65 )
+anims/apple = SubResource( 62 )
+anims/tunacan = SubResource( 63 )
+anims/wrench = SubResource( 64 )
 
 [node name="red can" type="Sprite" parent="World/Clutter/Clutter3"]
 position = Vector2( 159.613, -420.395 )
@@ -4207,7 +4207,7 @@ space_override = 1
 gravity = -80.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/Area2D"]
-shape = SubResource( 66 )
+shape = SubResource( 65 )
 
 [node name="Area2D2" type="Area2D" parent="World/Space"]
 position = Vector2( 1272, -8376 )
@@ -4215,7 +4215,7 @@ space_override = 1
 gravity = -50.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/Area2D2"]
-shape = SubResource( 66 )
+shape = SubResource( 65 )
 
 [node name="Area2D3" type="Area2D" parent="World/Space"]
 position = Vector2( 1272, -9576 )
@@ -4223,7 +4223,7 @@ space_override = 1
 gravity = -20.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/Area2D3"]
-shape = SubResource( 66 )
+shape = SubResource( 65 )
 
 [node name="Moon" type="Node2D" parent="World/Space"]
 position = Vector2( 1848, -9232 )
@@ -4237,7 +4237,7 @@ gravity_point = true
 gravity = 20.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/Moon/Area2D"]
-shape = SubResource( 67 )
+shape = SubResource( 66 )
 
 [node name="Area2D2" type="Area2D" parent="World/Space/Moon"]
 space_override = 1
@@ -4245,7 +4245,7 @@ gravity_point = true
 gravity = 20.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/Moon/Area2D2"]
-shape = SubResource( 68 )
+shape = SubResource( 67 )
 
 [node name="Area2D3" type="Area2D" parent="World/Space/Moon"]
 space_override = 1
@@ -4253,28 +4253,28 @@ gravity_point = true
 gravity = 20.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/Moon/Area2D3"]
-shape = SubResource( 69 )
+shape = SubResource( 68 )
 
 [node name="Area2D4" type="Area2D" parent="World/Space/Moon"]
 gravity_point = true
 gravity = 20.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="World/Space/Moon/Area2D4"]
-shape = SubResource( 70 )
+shape = SubResource( 69 )
 
 [node name="Wall136" parent="World/Space" instance=ExtResource( 13 )]
 position = Vector2( -657.095, -8491.98 )
 scale = Vector2( 0.9, 135 )
 collision_layer = 16
 collision_mask = 16
-physics_material_override = SubResource( 8 )
+physics_material_override = SubResource( 7 )
 
 [node name="Wall138" parent="World/Space" instance=ExtResource( 13 )]
 position = Vector2( 3165.27, -8491.98 )
 scale = Vector2( 0.9, 135 )
 collision_layer = 16
 collision_mask = 16
-physics_material_override = SubResource( 8 )
+physics_material_override = SubResource( 7 )
 
 [node name="Wall137" parent="World/Space" instance=ExtResource( 13 )]
 position = Vector2( 1507.65, -10691.5 )
@@ -4282,7 +4282,7 @@ rotation = 1.5708
 scale = Vector2( 0.9, 135 )
 collision_layer = 16
 collision_mask = 16
-physics_material_override = SubResource( 8 )
+physics_material_override = SubResource( 7 )
 
 [node name="Wall139" parent="World/Space" instance=ExtResource( 13 )]
 modulate = Color( 1, 1, 1, 0 )
@@ -4291,7 +4291,7 @@ rotation = 1.5708
 scale = Vector2( 0.9, 135 )
 collision_layer = 16
 collision_mask = 16
-physics_material_override = SubResource( 8 )
+physics_material_override = SubResource( 7 )
 
 [node name="SpaceObj" parent="World/Space" instance=ExtResource( 55 )]
 position = Vector2( 444.06, -7302.35 )
@@ -4326,10 +4326,10 @@ position = Vector2( -3.27954, 2.16743 )
 position = Vector2( -5.01428, -3.31406 )
 
 [node name="AnimationPlayer" parent="World/Space/SpaceObj3" index="3"]
-anims/astronaut = SubResource( 73 )
-anims/comet = SubResource( 74 )
-anims/planet = SubResource( 75 )
-anims/satelite = SubResource( 76 )
+anims/astronaut = SubResource( 72 )
+anims/comet = SubResource( 73 )
+anims/planet = SubResource( 74 )
+anims/satelite = SubResource( 75 )
 
 [node name="SpaceObj2" parent="World/Space" instance=ExtResource( 55 )]
 position = Vector2( 2213.67, -7551.09 )
@@ -4348,8 +4348,8 @@ position = Vector2( 2.9967, -125.858 )
 position = Vector2( 1.49835, 44.9492 )
 
 [node name="AnimationPlayer" parent="World/Space/SpaceObj2" index="3"]
-anims/astronaut = SubResource( 77 )
-anims/comet = SubResource( 78 )
+anims/astronaut = SubResource( 76 )
+anims/comet = SubResource( 77 )
 
 [node name="SpaceObj4" parent="World/Space" instance=ExtResource( 55 )]
 position = Vector2( 363.137, -9000.77 )
@@ -4359,10 +4359,10 @@ Dir = Vector2( -1, 1 )
 speed = 150
 
 [node name="AnimationPlayer" parent="World/Space/SpaceObj4" index="3"]
-anims/astronaut = SubResource( 79 )
-anims/comet = SubResource( 80 )
-anims/planet = SubResource( 81 )
-anims/satelite = SubResource( 82 )
+anims/astronaut = SubResource( 78 )
+anims/comet = SubResource( 79 )
+anims/planet = SubResource( 80 )
+anims/satelite = SubResource( 81 )
 
 [node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 23 )

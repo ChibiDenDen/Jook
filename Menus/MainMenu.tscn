@@ -77,7 +77,6 @@ size_flags_vertical = 1
 text = "Quit"
 
 [node name="Cursor" parent="." instance=ExtResource( 1 )]
-[connection signal="mouse_exited" from="Menu/StartButton" to="." method="_on_StartButton_mouse_exited"]
 
 [editable path="Menu/StartButton"]
 
