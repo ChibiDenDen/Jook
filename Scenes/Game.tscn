@@ -3314,19 +3314,19 @@ position = Vector2( 377.45, -2255.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass30" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 341.45, -2269.53 )
+position = Vector2( 328.45, -2269.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass31" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 325.45, -2255.53 )
+position = Vector2( 303.45, -2255.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass32" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 305.45, -2263.53 )
+position = Vector2( 277.45, -2263.53 )
 scale = Vector2( -0.7, 0.7 )
 
 [node name="Grass33" parent="World/Grass" instance=ExtResource( 18 )]
-position = Vector2( 281.45, -2245.53 )
+position = Vector2( 255.45, -2245.53 )
 scale = Vector2( -1, 1 )
 
 [node name="Grass34" parent="World/Grass" instance=ExtResource( 18 )]
@@ -3482,7 +3482,7 @@ position = Vector2( -1226.23, -3009.96 )
 rotation = 0.523599
 
 [node name="TreeV11" parent="World/Tree" instance=ExtResource( 30 )]
-position = Vector2( -1001.26, -3485.4 )
+position = Vector2( -1036.26, -3487.4 )
 rotation = 1.5708
 
 [node name="TreeV9" parent="World/Tree" instance=ExtResource( 30 )]
@@ -3560,7 +3560,7 @@ physics_material_override = SubResource( 7 )
 position = Vector2( -118.256, -4514.27 )
 
 [node name="Wall135" parent="World/Tree" instance=ExtResource( 13 )]
-position = Vector2( -1461.35, -6844.57 )
+position = Vector2( -1514.35, -6844.57 )
 scale = Vector2( 0.9, 135 )
 physics_material_override = SubResource( 7 )
 
@@ -4277,7 +4277,23 @@ collision_mask = 16
 physics_material_override = SubResource( 7 )
 
 [node name="Wall137" parent="World/Space" instance=ExtResource( 13 )]
-position = Vector2( 1507.65, -10691.5 )
+position = Vector2( 1507.65, -10697.4 )
+rotation = 1.5708
+scale = Vector2( 0.9, 135 )
+collision_layer = 16
+collision_mask = 16
+physics_material_override = SubResource( 7 )
+
+[node name="Wall140" parent="World/Space" instance=ExtResource( 13 )]
+position = Vector2( -4348.08, -6518.11 )
+rotation = 1.5708
+scale = Vector2( 0.9, 135 )
+collision_layer = 16
+collision_mask = 16
+physics_material_override = SubResource( 7 )
+
+[node name="Wall141" parent="World/Space" instance=ExtResource( 13 )]
+position = Vector2( 6879.34, -6547.62 )
 rotation = 1.5708
 scale = Vector2( 0.9, 135 )
 collision_layer = 16
