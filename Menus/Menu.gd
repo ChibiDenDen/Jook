@@ -8,12 +8,15 @@ var Settings : Control
 var Customize: Control
 export var UiPath : NodePath
 var Ui : UI
+export var AboutPath : NodePath
+var About : Control
 var player
 
 func _ready():
 	Settings = get_node_or_null(SettingsPath)
 	Customize = get_node_or_null(CustomizePath)
 	Ui = get_node_or_null(UiPath)
+	About = get_node_or_null(AboutPath)
 	player = Ui.get_parent().get_node("Player/PlayerFly")
 	for item in $Menu.get_children():
 		if item is Button:
@@ -26,7 +29,7 @@ func change_menu(menu : Control):
 
 func _on_pressed(text):
 	match text:
-		"Start Game":
+		"Play":
 			player.sleeping = false
 			visible = false
 		"Settings":
@@ -35,5 +38,7 @@ func _on_pressed(text):
 			change_menu(Ui.BackMenu)
 		"Customize":
 			change_menu(Customize)
+		"About":
+			change_menu(About)
 		"Quit":
 			get_tree().quit()

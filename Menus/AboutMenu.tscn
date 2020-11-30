@@ -1,0 +1,183 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Menus/MenuBackground.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objects/UI/Button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Menus/Menu.gd" type="Script" id=3]
+[ext_resource path="res://NerkoOne-Regular.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=6]
+size = 64
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 32
+font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=2]
+length = 0.5
+step = 0.01
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.08, 0.16, 0.24, 0.32, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ null, null, null, null, null, null ]
+}
+
+[sub_resource type="Animation" id=3]
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 4.43828 ),
+"update": 1,
+"values": [ null ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 0.5
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ null, null, null, null ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 0.5
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 20.393 ),
+"update": 1,
+"values": [ null, null ]
+}
+
+[node name="AboutMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 0.00012207
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1880.0
+margin_bottom = -1040.0
+
+[node name="ColorRect2" parent="." instance=ExtResource( 1 )]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+color = Color( 0, 0, 0, 0.521569 )
+
+[node name="ColorRect" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -306.5
+margin_top = -352.5
+margin_right = 306.5
+margin_bottom = 352.5
+color = Color( 1, 1, 1, 0.294118 )
+
+[node name="Menu" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -233.5
+margin_top = -328.5
+margin_right = 233.5
+margin_bottom = 328.5
+custom_constants/separation = 100
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="Menu"]
+margin_right = 466.0
+margin_bottom = 79.0
+custom_fonts/font = SubResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "About"
+align = 1
+valign = 1
+
+[node name="Label" type="Label" parent="Menu"]
+margin_top = 179.0
+margin_right = 466.0
+margin_bottom = 477.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "~Programming~
+Daivid Savernin Frank
+Roy Moore
+Dani Savernin Frank
+~Art~
+Yulia Zazovsky
+Oded Ohayon"
+align = 1
+valign = 1
+
+[node name="BackButton" parent="Menu" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 577.0
+margin_right = 466.0
+margin_bottom = 657.0
+
+[node name="Label" parent="Menu/BackButton" index="0"]
+margin_left = 1.5874
+margin_right = 1.5874
+size_flags_vertical = 1
+text = "Back"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 568, 208 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/cry = SubResource( 2 )
+anims/idle = SubResource( 3 )
+anims/nod = SubResource( 4 )
+anims/stressed = SubResource( 5 )
+
+[node name="dbg" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[editable path="Menu/BackButton"]
