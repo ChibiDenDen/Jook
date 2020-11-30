@@ -114,7 +114,9 @@ tracks/7/keys = {
 size = 34
 font_data = ExtResource( 4 )
 
-[node name="CrashedPlayer" type="KinematicBody2D"]
+[node name="CrashedPlayer" type="KinematicBody2D" groups=[
+"CrashedPlayer",
+]]
 collision_layer = 2
 collision_mask = 4
 script = ExtResource( 2 )
@@ -127,7 +129,6 @@ scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 3 )
 vframes = 2
 hframes = 7
-frame = 3
 
 [node name="Wings" type="Sprite" parent="Sprite"]
 position = Vector2( -1.5, -6.5 )
@@ -135,7 +136,6 @@ scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 1 )
 vframes = 2
 hframes = 7
-frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1.75, -10.75 )
@@ -153,6 +153,21 @@ margin_bottom = -65.0
 custom_fonts/font = SubResource( 3 )
 text = "Press R to return
 to last checkpoint"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpaceLabel" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -120.0
+margin_top = -152.0
+margin_right = 129.0
+margin_bottom = -65.0
+custom_fonts/font = SubResource( 3 )
+text = "Press space to
+speed up time"
 align = 1
 valign = 1
 __meta__ = {

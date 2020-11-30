@@ -20,12 +20,17 @@ func will_drop():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	time += delta
+	time += (delta / Engine.time_scale)
+	if time > 2:
+		if time > 4:
+			$SpaceLabel.modulate.a = lerp($SpaceLabel.modulate.a, 0.0, delta)
+		else:
+			$SpaceLabel.modulate.a = lerp($SpaceLabel.modulate.a, 1.0, delta)
 	if Input.is_action_pressed("action"):
 		Engine.time_scale = 4
 	else:
 		Engine.time_scale = 1
-	if time > 12:
+	if time > 20:
 		$Label.modulate.a = lerp($Label.modulate.a, 1.0, delta)
 		if Input.is_key_pressed(KEY_R):
 			player.global_position = player.get_node(player.last_checkpoint).global_position
@@ -59,17 +64,16 @@ func _process(delta):
 		slide_down = true
 	if get_slide_count() == 0 or will_drop():
 		drop = true
-	for i in range(get_slide_count()):
-		var collider = get_slide_collision(i).get_collider()
-		if collider.is_in_group("Checkpoint"):
-			player.global_position = global_position - Vector2(0, 10)
-			player.set_process(true)
-			player.crashed = false
-			player.visible = true
-			player.sleeping = false
-			player.last_checkpoint = player.get_path_to(collider)
-			Engine.time_scale = 1
-			queue_free()
 	if is_on_wall():
 		slide_down = not slide_down
 	player.global_position = global_position - Vector2(0, 10)
+
+func respawn_player(checkpoint : Node2D):
+	player.global_position = global_position - Vector2(0, 10)
+	player.set_process(true)
+	player.crashed = false
+	player.visible = true
+	player.sleeping = false
+	player.last_checkpoint = player.get_path_to(checkpoint)
+	Engine.time_scale = 1
+	queue_free()
