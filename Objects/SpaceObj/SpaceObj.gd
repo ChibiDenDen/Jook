@@ -18,7 +18,7 @@ func _ready():
 func _process(delta):
 	move_vec = Dir
 	flipx_timeout = max(flipx_timeout -delta, 0.0)
-	flipx_timeout = max(flipy_timeout -delta, 0.0)
+	flipy_timeout = max(flipy_timeout -delta, 0.0)
 	var dirx = 1
 	$Sprite.scale.x = abs($Sprite.scale.x)
 	if move_revx:

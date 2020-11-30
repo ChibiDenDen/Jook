@@ -122,9 +122,6 @@ func _integrate_forces(state):
 	if crashed:
 		return
 
-	if Input.is_key_pressed(KEY_K):
-		get_hit()
-
 	if active_input and Input.is_action_pressed("ui_up") and cur_fuel > 0 and !filling_fuel:
 		$AnimationPlayer.play("fly")
 		gravity_scale = 1
