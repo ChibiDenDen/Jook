@@ -1,7 +1,9 @@
 # Jook
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
 (This is the repo for our game 'Jook' for the [Game Off 2020](https://itch.io/jam/game-off-2020) jam)
-![Jook Logo](jook1.jpg?raw=true "Jook")
+
+![Jook Logo](logo.png?raw=true "Jook")
+
 # Theme
 
 > Game Off is an annual game jam, where participants spend the month of November creating games based on a secret theme. Participate individually, or as a team. Use whatever game engines, libraries, and languages you like.
