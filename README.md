@@ -34,7 +34,7 @@ Copyright held by Yulia Zazovsky and Oded Ohayon
 Humble Sound Effects and Music for Games, Films, and Content Creators Bundle - GameDev Market EULA
 
 ## Fonts
-[Roboto](https://fonts.google.com/specimen/Roboto)
+[Nerko One](https://fonts.google.com/specimen/Nerko+One)
 
 ## Special Thanks
 ...
