@@ -46,7 +46,7 @@ var teleporting := false
 
 var brows_index := 0
 var lens_index := 0
-var misc_index := 0
+var misc_index := 3
 
 func teleport(target_pos : Vector2):
 	gravity_scale = 0
@@ -91,6 +91,7 @@ func set_camera_zoom(zoom : Vector2):
 	camera.zoom = zoom
 
 func _process(delta):
+	$Misc.texture = load("res://Resources/Jook/Customize/misc/back" + str(misc_index) + ".png")
 	active_input = !get_tree().current_scene.get_node("UI").is_shown()
 	if Input.is_key_pressed(KEY_ESCAPE):
 		get_tree().current_scene.get_node("UI").show()
@@ -118,10 +119,9 @@ func _process(delta):
 		fuel_progress.get_stylebox("fg").set_bg_color(BLUE_COLOR)
 
 func _integrate_forces(state):
-	# $AnimationPlayer.play("misc" + str(misc_index))
 	if crashed:
 		return
-	
+
 	if Input.is_key_pressed(KEY_K):
 		get_hit()
 

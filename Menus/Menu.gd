@@ -28,7 +28,6 @@ func _on_pressed(text):
 	match text:
 		"Start Game":
 			player.sleeping = false
-			player.visible = true
 			visible = false
 		"Settings":
 			change_menu(Settings)

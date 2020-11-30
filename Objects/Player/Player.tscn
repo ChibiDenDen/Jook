@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Objects/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Resources/Jook/Anims/WINGS.png" type="Texture" id=2]
 [ext_resource path="res://Resources/Jook/Anims/BACK.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Jook/Customize/misc/back2.png" type="Texture" id=4]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 30.0666
@@ -190,4 +191,9 @@ process_material = SubResource( 2 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/fly = SubResource( 3 )
 anims/teleport = SubResource( 4 )
+
+[node name="Misc" type="Sprite" parent="."]
+position = Vector2( 0, -31.6269 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
 [connection signal="body_entered" from="." to="." method="_on_Player_body_entered"]

@@ -136,6 +136,18 @@ tracks/9/keys = {
 "update": 0,
 "values": [ Vector2( 7.84219, -41.38 ), Vector2( 7.17326, -41.3057 ), Vector2( 5.61243, -40.6533 ), Vector2( 4.22148, -39.6422 ), Vector2( 3.41274, -40.0062 ), Vector2( 5.85345, -40.9274 ) ]
 }
+tracks/10/type = "value"
+tracks/10/path = NodePath("Sprite/Misc:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.05, 0.15, 0.2, 0.25, 0.35 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 5.20278, -50.6899 ), Vector2( 6.2, -51 ), Vector2( 4.478, -49.631 ), Vector2( 3.382, -48.782 ), Vector2( 2.885, -49.5 ), Vector2( 6.212, -50.976 ) ]
+}
 
 [sub_resource type="DynamicFont" id=4]
 size = 34
@@ -156,6 +168,7 @@ scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 3 )
 vframes = 2
 hframes = 7
+frame = 9
 
 [node name="Wings" type="Sprite" parent="Sprite"]
 position = Vector2( -1.5, -6.5 )
@@ -163,16 +176,20 @@ scale = Vector2( 0.4, 0.4 )
 texture = ExtResource( 1 )
 vframes = 2
 hframes = 7
+frame = 10
 
 [node name="Lens" type="Sprite" parent="Sprite"]
-position = Vector2( 7.84219, -41.38 )
+position = Vector2( 5.85345, -40.9274 )
 scale = Vector2( 0.1, 0.1 )
 texture = SubResource( 1 )
 
 [node name="Eyebrows" type="Sprite" parent="Sprite"]
-position = Vector2( 8.0553, -45.0487 )
+position = Vector2( 5.98127, -44.433 )
 scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 9 )
+
+[node name="Misc" type="Sprite" parent="Sprite"]
+position = Vector2( 6.212, -49.976 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1.75, -10.75 )

@@ -13,13 +13,13 @@ var time := 0.0
 
 var brows_index := 0
 var lens_index := 0
-var misc_index := 0
+var misc_index := 3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Sprite/Eyebrows.texture = load("res://Resources/Jook/Customize/eyebrows/SIDE " + str(brows_index) + ".png")
 	$Sprite/Lens.texture = load("res://Resources/Jook/Customize/lens/SIDE " + str(lens_index) + ".png")
-	# $AnimationPlayer.play("misc" + str(misc_index))
+	$Sprite/Misc.texture = load("res://Resources/Jook/Customize/misc/side" + str(misc_index) + ".png")
 	$AnimationPlayer.play("walk")
 
 func will_drop():
@@ -27,7 +27,7 @@ func will_drop():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	time += (delta / Engine.time_scale)
+	time += delta
 	if time > 2:
 		if time > 4:
 			$SpaceLabel.modulate.a = lerp($SpaceLabel.modulate.a, 0.0, delta)
