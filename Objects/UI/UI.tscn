@@ -1,14 +1,9 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Objects/UI/UI.gd" type="Script" id=1]
 [ext_resource path="res://Menus/MainMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Menus/SettingsMenu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Customize/Customize.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Resources/Cutscenes/cut1.webm" type="VideoStream" id=5]
-[ext_resource path="res://Resources/Cutscenes/part-2_1.webm" type="VideoStream" id=6]
-[ext_resource path="res://Objects/UI/Button.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Resources/Menus/Back.png" type="Texture" id=8]
-[ext_resource path="res://Resources/Cutscenes/part-3-_1_.webm" type="VideoStream" id=9]
 [ext_resource path="res://Menus/AboutMenu.tscn" type="PackedScene" id=10]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -37,58 +32,6 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="SecondPlayer" type="VideoPlayer" parent="hud/Control"]
-visible = false
-margin_right = 1927.0
-margin_bottom = 1090.0
-stream = ExtResource( 5 )
-volume_db = -10.0
-expand = false
-buffering_msec = 10
-bus = "Sfx"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="FirstPlayer" type="VideoPlayer" parent="hud/Control"]
-visible = false
-margin_right = 1927.0
-margin_bottom = 1090.0
-stream = ExtResource( 6 )
-volume_db = -10.0
-expand = false
-buffering_msec = 10
-bus = "Sfx"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="FinalPlayer" type="VideoPlayer" parent="hud/Control"]
-visible = false
-margin_right = 1927.0
-margin_bottom = 1090.0
-stream = ExtResource( 9 )
-volume_db = -10.0
-expand = false
-buffering_msec = 10
-bus = "Sfx"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Button" parent="hud/Control" instance=ExtResource( 7 )]
-margin_left = 1733.05
-margin_top = 974.088
-margin_right = -62.9526
-margin_bottom = -65.9119
-
-[node name="Label" parent="hud/Control/Button" index="0"]
-text = ""
-
-[node name="Back" type="Sprite" parent="hud/Control/Button"]
-position = Vector2( 77.1548, 37.3362 )
-texture = ExtResource( 8 )
-
 [node name="menus" type="CanvasLayer" parent="hud"]
 
 [node name="MainMenu" parent="hud/menus" instance=ExtResource( 2 )]
@@ -115,8 +58,3 @@ UiPath = NodePath("../../..")
 [node name="AboutMenu" parent="hud/menus" instance=ExtResource( 10 )]
 visible = false
 UiPath = NodePath("../../..")
-
-[node name="Tween" type="Tween" parent="."]
-[connection signal="pressed" from="hud/Control/Button" to="." method="_on_Button_pressed"]
-
-[editable path="hud/Control/Button"]

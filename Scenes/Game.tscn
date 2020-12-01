@@ -3196,7 +3196,7 @@ position = Vector2( 2344.53, -743.16 )
 connection_path = NodePath("../Teleporter2")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2133.26, 1217.79 )
+position = Vector2( 2186.6, 977.202 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -4409,42 +4409,25 @@ in_stream = ExtResource( 28 )
 out_stream = ExtResource( 27 )
 
 [node name="Tween" type="Tween" parent="."]
+
 [connection signal="body_entered" from="World/Space/Moon/Area2D4" to="Player/PlayerFly" method="_on_moon_body_entered"]
 
 [editable path="World/BreakableWalls/BreakableWall"]
-
 [editable path="World/Grass/Clutter5"]
-
 [editable path="World/Tree/BreakableWall3"]
-
 [editable path="World/Tree/BreakableWall5"]
-
 [editable path="World/Tree/Clutter6"]
-
 [editable path="World/Tree/Clutter7"]
-
 [editable path="World/Clutter/Clutter"]
-
 [editable path="World/Clutter/Clutter6"]
-
 [editable path="World/Clutter/Clutter4"]
-
 [editable path="World/Clutter/Clutter5"]
-
 [editable path="World/Clutter/Clutter7"]
-
 [editable path="World/Clutter/Clutter9"]
-
 [editable path="World/Clutter/Clutter8"]
-
 [editable path="World/Clutter/Clutter2"]
-
 [editable path="World/Clutter/Clutter3"]
-
 [editable path="World/Space/SpaceObj"]
-
 [editable path="World/Space/SpaceObj3"]
-
 [editable path="World/Space/SpaceObj2"]
-
 [editable path="World/Space/SpaceObj4"]

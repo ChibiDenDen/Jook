@@ -200,4 +200,4 @@ func _on_Player_body_entered(body: Node2D):
 func _on_moon_body_entered(body):
 	if !body.is_in_group("Player"):
 		return
-	get_tree().current_scene.get_node("UI").play_final()
+	get_tree().change_scene("res://Video3.tscn")

@@ -8,15 +8,11 @@
 
 config_version=4
 
-_global_script_classes=[  ]
-_global_script_class_icons={
-
-}
-
 [application]
 
 config/name="Jook"
-run/main_scene="res://Scenes/Game.tscn"
+run/main_scene="res://Video1.tscn"
+boot_splash/fullsize=false
 config/icon="res://icon.png"
 
 [display]
@@ -24,7 +20,8 @@ config/icon="res://icon.png"
 window/size/width=1920
 window/size/height=1080
 window/size/fullscreen=true
-window/stretch/mode="2d"
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [input]
 
