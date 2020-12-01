@@ -18,7 +18,8 @@ _global_script_class_icons={
 config/name="Jook"
 run/main_scene="res://Video1.tscn"
 boot_splash/fullsize=false
-config/icon="res://icon.png"
+config/icon="res://Resources/icon.png"
+config/windows_native_icon="res://Resources/icon.ico"
 
 [display]
 
