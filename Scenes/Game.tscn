@@ -1,4 +1,4 @@
-[gd_scene load_steps=141 format=2]
+[gd_scene load_steps=142 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Objects/Obstacles/Walls/Wall.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Objects/Obstacles/Walls/BreakableWall.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Objects/Obstacles/Water/Water.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Resources/Menus/Back.png" type="Texture" id=16]
 [ext_resource path="res://Objects/Teleport/Teleporter.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Objects/Obstacles/Walls/Grass.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Objects/Obstacles/Walls/PipeH1Side.tscn" type="PackedScene" id=19]
@@ -4410,24 +4411,47 @@ out_stream = ExtResource( 27 )
 
 [node name="Tween" type="Tween" parent="."]
 
+[node name="Back" type="Sprite" parent="."]
+position = Vector2( 1842.4, -129.211 )
+rotation = -2.18166
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 16 )
 [connection signal="body_entered" from="World/Space/Moon/Area2D4" to="Player/PlayerFly" method="_on_moon_body_entered"]
 
 [editable path="World/BreakableWalls/BreakableWall"]
+
 [editable path="World/Grass/Clutter5"]
+
 [editable path="World/Tree/BreakableWall3"]
+
 [editable path="World/Tree/BreakableWall5"]
+
 [editable path="World/Tree/Clutter6"]
+
 [editable path="World/Tree/Clutter7"]
+
 [editable path="World/Clutter/Clutter"]
+
 [editable path="World/Clutter/Clutter6"]
+
 [editable path="World/Clutter/Clutter4"]
+
 [editable path="World/Clutter/Clutter5"]
+
 [editable path="World/Clutter/Clutter7"]
+
 [editable path="World/Clutter/Clutter9"]
+
 [editable path="World/Clutter/Clutter8"]
+
 [editable path="World/Clutter/Clutter2"]
+
 [editable path="World/Clutter/Clutter3"]
+
 [editable path="World/Space/SpaceObj"]
+
 [editable path="World/Space/SpaceObj3"]
+
 [editable path="World/Space/SpaceObj2"]
+
 [editable path="World/Space/SpaceObj4"]
