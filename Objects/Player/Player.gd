@@ -27,7 +27,7 @@ var last_camera_zoom : Vector2
 var target_camera_zoom : float = 1.0
 var last_applied_force : Vector2
 var last_linear_velocity : Vector2
-export var survivable_hit_force := 80.0
+export var survivable_hit_force := 160.0
 
 export var use_fuel := true
 export var max_fuel := 50.0
@@ -47,6 +47,10 @@ var teleporting := false
 var brows_index := 0
 var lens_index := 0
 var misc_index := 3
+
+var move_up := false
+var move_left := false
+var move_right := false
 
 func teleport(target_pos : Vector2):
 	gravity_scale = 0
@@ -122,7 +126,7 @@ func _integrate_forces(state):
 	if crashed:
 		return
 
-	if active_input and Input.is_action_pressed("ui_up") and cur_fuel > 0 and !filling_fuel:
+	if active_input and (move_up or Input.is_action_pressed("ui_up")) and cur_fuel > 0 and !filling_fuel:
 		$AnimationPlayer.play("fly")
 		gravity_scale = 1
 		if use_fuel:
@@ -150,9 +154,9 @@ func _integrate_forces(state):
 		$Particles2D.emitting = false
 	last_applied_force = applied_force
 	var rotation_dir = 0
-	if active_input and Input.is_action_pressed("ui_right"):
+	if active_input and (move_right or Input.is_action_pressed("ui_right")):
 		rotation_dir += 1
-	if active_input and Input.is_action_pressed("ui_left"):
+	if active_input and (move_left or Input.is_action_pressed("ui_left")):
 		rotation_dir -= 1
 	applied_torque = rotation_dir * torque
 	target_camera_zoom = linear_velocity.length() / camera_zoom_scale
@@ -196,8 +200,15 @@ func _on_Player_body_entered(body: Node2D):
 	if force > survivable_hit_force:
 		get_hit()
 
-
 func _on_moon_body_entered(body):
 	if !body.is_in_group("Player"):
 		return
 	get_tree().change_scene("res://Video3.tscn")
+
+# Handle touch controls
+func update_moves(is_left := false, value := false):
+	if is_left:
+		move_left = value
+	else:
+		move_right = value
+	move_up = move_left and move_right

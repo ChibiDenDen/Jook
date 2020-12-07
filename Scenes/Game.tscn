@@ -3155,6 +3155,7 @@ centered = false
 
 [node name="UI" parent="." instance=ExtResource( 5 )]
 position = Vector2( 32.7579, -10.0793 )
+PlayerPath = NodePath("../Player/PlayerFly")
 
 [node name="Checkpoints" type="Node2D" parent="."]
 
@@ -3197,7 +3198,7 @@ position = Vector2( 2344.53, -743.16 )
 connection_path = NodePath("../Teleporter2")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2186.6, 977.202 )
+position = Vector2( 2152.66, 1146.91 )
 __meta__ = {
 "_edit_group_": true
 }

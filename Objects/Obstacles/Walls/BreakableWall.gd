@@ -1,7 +1,7 @@
 extends StaticBody2D
 
 
-export var break_force := 200.0
+export var break_force := 100.0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

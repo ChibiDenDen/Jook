@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Objects/UI/UI.gd" type="Script" id=1]
 [ext_resource path="res://Menus/MainMenu.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Menus/SettingsMenu.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/Customize/Customize.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Resources/Menus/Back.png" type="Texture" id=5]
 [ext_resource path="res://Menus/AboutMenu.tscn" type="PackedScene" id=10]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -28,6 +29,24 @@ margin_right = 240.0
 margin_bottom = 20.0
 custom_styles/fg = SubResource( 1 )
 percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MoveRight" type="TextureButton" parent="hud/Control"]
+margin_left = 1607.79
+margin_top = 908.168
+margin_right = 1722.79
+margin_bottom = 986.168
+texture_normal = ExtResource( 5 )
+
+[node name="MoveLeft" type="TextureButton" parent="hud/Control"]
+margin_left = 312.814
+margin_top = 908.168
+margin_right = 427.814
+margin_bottom = 986.168
+rect_scale = Vector2( -1, 1 )
+texture_normal = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -58,3 +77,7 @@ UiPath = NodePath("../../..")
 [node name="AboutMenu" parent="hud/menus" instance=ExtResource( 10 )]
 visible = false
 UiPath = NodePath("../../..")
+[connection signal="button_down" from="hud/Control/MoveRight" to="." method="_on_MoveRight_button_down"]
+[connection signal="button_up" from="hud/Control/MoveRight" to="." method="_on_MoveRight_button_up"]
+[connection signal="button_down" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_button_down"]
+[connection signal="button_up" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_button_up"]
