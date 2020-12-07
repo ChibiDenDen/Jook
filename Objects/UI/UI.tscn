@@ -33,23 +33,15 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MoveRight" type="TextureButton" parent="hud/Control"]
-margin_left = 1607.79
-margin_top = 908.168
-margin_right = 1722.79
-margin_bottom = 986.168
-texture_normal = ExtResource( 5 )
+[node name="MoveRight" type="TouchScreenButton" parent="hud/Control"]
+position = Vector2( 1623.16, 859.636 )
+scale = Vector2( 2, 2 )
+normal = ExtResource( 5 )
 
-[node name="MoveLeft" type="TextureButton" parent="hud/Control"]
-margin_left = 312.814
-margin_top = 908.168
-margin_right = 427.814
-margin_bottom = 986.168
-rect_scale = Vector2( -1, 1 )
-texture_normal = ExtResource( 5 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="MoveLeft" type="TouchScreenButton" parent="hud/Control"]
+position = Vector2( 320.361, 838.279 )
+scale = Vector2( -2, 2 )
+normal = ExtResource( 5 )
 
 [node name="menus" type="CanvasLayer" parent="hud"]
 
@@ -77,7 +69,7 @@ UiPath = NodePath("../../..")
 [node name="AboutMenu" parent="hud/menus" instance=ExtResource( 10 )]
 visible = false
 UiPath = NodePath("../../..")
-[connection signal="button_down" from="hud/Control/MoveRight" to="." method="_on_MoveRight_button_down"]
-[connection signal="button_up" from="hud/Control/MoveRight" to="." method="_on_MoveRight_button_up"]
-[connection signal="button_down" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_button_down"]
-[connection signal="button_up" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_button_up"]
+[connection signal="pressed" from="hud/Control/MoveRight" to="." method="_on_MoveRight_pressed"]
+[connection signal="released" from="hud/Control/MoveRight" to="." method="_on_MoveRight_released"]
+[connection signal="pressed" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_pressed"]
+[connection signal="released" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_released"]

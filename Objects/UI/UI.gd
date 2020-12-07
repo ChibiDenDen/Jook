@@ -47,3 +47,27 @@ func _on_MoveRight_button_up():
 	if player == null:
 		return
 	player.update_moves(false, false)
+
+
+func _on_MoveRight_pressed():
+	if player == null:
+		return
+	player.update_moves(false, true)
+
+
+func _on_MoveRight_released():
+	if player == null:
+		return
+	player.update_moves(false, false)
+
+
+func _on_MoveLeft_pressed():
+	if player == null:
+		return
+	player.update_moves(true, true)
+
+
+func _on_MoveLeft_released():
+	if player == null:
+		return
+	player.update_moves(true, false)
