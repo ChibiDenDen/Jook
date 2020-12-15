@@ -15,6 +15,7 @@ export var thrust = Vector2.UP * 300
 export var boost_thrust = 25
 export var torque = 5000
 export(NodePath) var last_checkpoint
+export var orig_gravity_scale := 1.0
 
 var crashed := false
 
@@ -76,6 +77,9 @@ func _ready():
 	else:
 		fuel_progress.visible = false
 	stop_fly()
+	# Phone Specific
+	if OS.get_name() == "Android":
+		max_camera_zoom = 1.0
 
 func reset(rotate_p := true):
 	cur_fuel = max_fuel
@@ -128,7 +132,7 @@ func _integrate_forces(state):
 
 	if active_input and (move_up or Input.is_action_pressed("ui_up")) and cur_fuel > 0 and !filling_fuel:
 		$AnimationPlayer.play("fly")
-		gravity_scale = 1
+		gravity_scale = orig_gravity_scale
 		if use_fuel:
 			cur_fuel = max(0, cur_fuel - (max_fuel * state.get_step()) / fuel_empty_time)
 		var cur_thrust = thrust

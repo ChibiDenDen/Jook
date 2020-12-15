@@ -3207,6 +3207,7 @@ __meta__ = {
 collision_layer = 35
 collision_mask = 2147483681
 last_checkpoint = NodePath("../../Checkpoints/Checkpoint")
+orig_gravity_scale = 0.5
 
 [node name="Anchor" type="Position2D" parent="Player"]
 script = ExtResource( 11 )
@@ -3229,7 +3230,7 @@ position = Vector2( 580.386, -55.0486 )
 scale = Vector2( 13.4735, 13.7382 )
 
 [node name="Water2" parent="Water2" instance=ExtResource( 15 )]
-position = Vector2( 1004.01, 1165.57 )
+position = Vector2( 1004.01, 1167.82 )
 scale = Vector2( 22.9415, 3.17396 )
 
 [node name="World" type="Node2D" parent="."]
@@ -4393,7 +4394,7 @@ bus = "Sfx"
 [node name="Events" type="Node2D" parent="."]
 
 [node name="EventTrigger" parent="Events" instance=ExtResource( 24 )]
-position = Vector2( 1264, -528 )
+position = Vector2( 1264, -463.739 )
 scale = Vector2( 20, 1 )
 in_stream = ExtResource( 25 )
 out_stream = ExtResource( 23 )
@@ -4405,7 +4406,7 @@ in_stream = ExtResource( 27 )
 out_stream = ExtResource( 25 )
 
 [node name="EventTrigger3" parent="Events" instance=ExtResource( 24 )]
-position = Vector2( 1264, -6264 )
+position = Vector2( 1264, -6179.3 )
 scale = Vector2( 20, 1 )
 in_stream = ExtResource( 28 )
 out_stream = ExtResource( 27 )
