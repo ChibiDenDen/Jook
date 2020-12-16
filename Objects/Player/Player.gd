@@ -144,6 +144,7 @@ func _integrate_forces(state):
 			cur_thrust *= boost_thrust
 			var farts = BoostFartsScene.instance()
 			add_child(farts)
+			farts.emitting = true
 			$Tween.interpolate_callback(farts, 1, "queue_free")
 			$Tween.start()
 		applied_force = cur_thrust.rotated(rotation)

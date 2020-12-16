@@ -1,12 +1,19 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Objects/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Resources/Jook/Anims/WINGS.png" type="Texture" id=2]
 [ext_resource path="res://Resources/Jook/Anims/BACK.png" type="Texture" id=3]
 [ext_resource path="res://Resources/Jook/Customize/misc/back2.png" type="Texture" id=4]
+[ext_resource path="res://Resources/FartParticle.png" type="Texture" id=5]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 30.0666
+
+[sub_resource type="Gradient" id=5]
+colors = PoolColorArray( 1, 1, 1, 0.784314, 1, 1, 1, 0 )
+
+[sub_resource type="GradientTexture" id=6]
+gradient = SubResource( 5 )
 
 [sub_resource type="ParticlesMaterial" id=2]
 flag_disable_z = true
@@ -16,9 +23,8 @@ gravity = Vector3( 0, 0, 0 )
 initial_velocity = 150.0
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
-angle = 5.0
-scale = 5.0
-color = Color( 0.831373, 0.831373, 0.831373, 0.792157 )
+scale = 0.04
+color_ramp = SubResource( 6 )
 
 [sub_resource type="Animation" id=3]
 resource_name = "fly"
@@ -182,9 +188,10 @@ one_shot = true
 [node name="Particles2D" type="Particles2D" parent="."]
 position = Vector2( 0.297302, 30.3248 )
 emitting = false
-amount = 20
+amount = 30
 local_coords = false
 process_material = SubResource( 2 )
+texture = ExtResource( 5 )
 
 [node name="Tween" type="Tween" parent="."]
 
