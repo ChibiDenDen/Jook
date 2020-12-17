@@ -98,9 +98,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Label3" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+margin_left = -128.0
+margin_top = -224.0
+margin_right = 122.0
+margin_bottom = -121.0
+custom_fonts/font = SubResource( 2 )
+text = "Press door to
+use Teleport"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/closed = SubResource( 3 )
 anims/enter = SubResource( 4 )
 anims/open = SubResource( 5 )
+
+[node name="Activate" type="TouchScreenButton" parent="."]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
+[connection signal="pressed" from="Activate" to="." method="_on_Activate_pressed"]

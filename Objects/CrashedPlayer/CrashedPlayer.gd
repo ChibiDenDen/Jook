@@ -15,12 +15,15 @@ var brows_index := 0
 var lens_index := 0
 var misc_index := 3
 
+var speedup := false
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Sprite/Eyebrows.texture = load("res://Resources/Jook/Customize/eyebrows/SIDE " + str(brows_index) + ".png")
 	$Sprite/Lens.texture = load("res://Resources/Jook/Customize/lens/SIDE " + str(lens_index) + ".png")
 	$Sprite/Misc.texture = load("res://Resources/Jook/Customize/misc/side" + str(misc_index) + ".png")
 	$AnimationPlayer.play("walk")
+	get_tree().current_scene.get_node("UI").change_time = true
 
 func will_drop():
 	return is_on_wall() or is_on_ceiling()
@@ -28,17 +31,19 @@ func will_drop():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	time += delta
+	var label := $SpaceLabel if OS.get_name() != "Android" else $TouchLabel
 	if time > 2:
 		if time > 4:
-			$SpaceLabel.modulate.a = lerp($SpaceLabel.modulate.a, 0.0, delta)
+			label.modulate.a = lerp(label.modulate.a, 0.0, delta)
 		else:
-			$SpaceLabel.modulate.a = lerp($SpaceLabel.modulate.a, 1.0, delta)
-	if Input.is_action_pressed("action"):
+			label.modulate.a = lerp(label.modulate.a, 1.0, delta)
+	if Input.is_action_pressed("action") or speedup:
 		Engine.time_scale = 4
 	else:
 		Engine.time_scale = 1
 	if time > 20:
-		$Label.modulate.a = lerp($Label.modulate.a, 1.0, delta)
+		label = $ResetLabel if OS.get_name() != "Android" else $ResetTouchLabel
+		label.modulate.a = lerp(label.modulate.a, 1.0, delta)
 		if Input.is_key_pressed(KEY_R):
 			player.global_position = player.get_node(player.last_checkpoint).global_position
 			player.set_process(true)
@@ -76,6 +81,7 @@ func _process(delta):
 	player.global_position = global_position - Vector2(0, 10)
 
 func respawn_player(checkpoint : Node2D):
+	set_process(false)
 	player.global_position = global_position - Vector2(0, 10)
 	player.set_process(true)
 	player.crashed = false
@@ -84,3 +90,9 @@ func respawn_player(checkpoint : Node2D):
 	player.last_checkpoint = player.get_path_to(checkpoint)
 	Engine.time_scale = 1
 	queue_free()
+
+func _on_SpeedUp_pressed():
+	speedup = true
+
+func _on_SpeedUp_released():
+	speedup = false
