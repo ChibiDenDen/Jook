@@ -181,6 +181,8 @@ func get_hit():
 	crashed_player.modulate = get_parent().modulate
 	crashed_player.player = self
 	get_tree().current_scene.call_deferred("add_child", crashed_player)
+	# Place them to be in front of bg and behind water
+	get_tree().current_scene.call_deferred("move_child", crashed_player, 1)
 	crashed_player.global_position = global_position
 	crashed_player.get_node("Sprite/Wings").self_modulate = $Wings.self_modulate
 	crashed = true
