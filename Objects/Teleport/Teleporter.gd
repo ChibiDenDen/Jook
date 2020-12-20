@@ -42,4 +42,6 @@ func _on_Area2D_body_exited(_body):
 
 
 func _on_Activate_pressed():
+	if !connection.unlocked:
+		return
 	teleport()

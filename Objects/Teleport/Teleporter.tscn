@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Resources/World/door/door1 (1).png" type="Texture" id=1]
 [ext_resource path="res://Objects/Teleport/Teleporter.gd" type="Script" id=2]
 [ext_resource path="res://NerkoOne-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Resources/World/door/door1 (2).png" type="Texture" id=4]
 [ext_resource path="res://Resources/World/door/door1 (3).png" type="Texture" id=5]
+[ext_resource path="res://Resources/Jook/Customize/misc/back3.png" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 64, 112 )
@@ -119,6 +120,9 @@ anims/enter = SubResource( 4 )
 anims/open = SubResource( 5 )
 
 [node name="Activate" type="TouchScreenButton" parent="."]
+position = Vector2( -64, -112 )
+scale = Vector2( 42.6667, 74.6667 )
+normal = ExtResource( 6 )
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]
 [connection signal="pressed" from="Activate" to="." method="_on_Activate_pressed"]
