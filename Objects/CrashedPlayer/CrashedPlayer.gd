@@ -23,7 +23,6 @@ func _ready():
 	$Sprite/Lens.texture = load("res://Resources/Jook/Customize/lens/SIDE " + str(lens_index) + ".png")
 	$Sprite/Misc.texture = load("res://Resources/Jook/Customize/misc/side" + str(misc_index) + ".png")
 	$AnimationPlayer.play("walk")
-	get_tree().current_scene.get_node("UI").change_time = true
 
 func will_drop():
 	return is_on_wall() or is_on_ceiling()

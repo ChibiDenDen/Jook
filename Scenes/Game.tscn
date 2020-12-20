@@ -1,4 +1,4 @@
-[gd_scene load_steps=142 format=2]
+[gd_scene load_steps=143 format=2]
 
 [ext_resource path="res://Objects/Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/Checkpoint/CheckPoint.tscn" type="PackedScene" id=2]
@@ -60,6 +60,7 @@
 [ext_resource path="res://Resources/World/planet.png" type="Texture" id=58]
 [ext_resource path="res://Resources/World/satelite.png" type="Texture" id=59]
 [ext_resource path="res://Resources/World/broken-12.png" type="Texture" id=60]
+[ext_resource path="res://Objects/Particles/Splash.tscn" type="PackedScene" id=61]
 
 [sub_resource type="Animation" id=1]
 resource_name = "apple"
@@ -3991,6 +3992,12 @@ position = Vector2( 272.032, 422.118 )
 position = Vector2( 120.032, 381.367 )
 lifetime = 0.5
 
+[node name="Splash" parent="World/Sewer/Node2D2" instance=ExtResource( 61 )]
+position = Vector2( 0.297302, 390.309 )
+lifetime = 0.5
+one_shot = false
+explosiveness = 0.5
+
 [node name="Clutter" type="Node2D" parent="World"]
 
 [node name="can" type="Sprite" parent="World/Clutter"]
@@ -4034,6 +4041,13 @@ texture = ExtResource( 52 )
 [node name="Node2D" parent="World/Clutter/Clutter6" instance=ExtResource( 54 )]
 position = Vector2( 161.547, 127.65 )
 lifetime = 0.89
+visibility_rect = Rect2( -100, -100, 400, 1000 )
+
+[node name="Splash2" parent="World/Clutter/Clutter6/Node2D" instance=ExtResource( 61 )]
+position = Vector2( 9.10968, 697.783 )
+lifetime = 0.9
+one_shot = false
+explosiveness = 1.0
 
 [node name="Clutter4" parent="World/Clutter" instance=ExtResource( 34 )]
 position = Vector2( 513.492, -90.402 )

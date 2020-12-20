@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Resources/FartParticle.png" type="Texture" id=1]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 0.0728989, 0.661287, 0.666504, 0.627451, 0.0802364, 0.507339, 0.662598, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+flag_disable_z = true
+direction = Vector3( 0, 1, 0 )
+spread = 90.0
+gravity = Vector3( 0, 200, 0 )
+initial_velocity = -100.0
+initial_velocity_random = 0.5
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+angle = 10.0
+angle_random = 1.0
+scale = 0.04
+color_ramp = SubResource( 2 )
+
+[node name="Splash" type="Particles2D"]
+position = Vector2( 0.297302, 30.3248 )
+amount = 50
+lifetime = 0.3
+one_shot = true
+local_coords = false
+process_material = SubResource( 3 )
+texture = ExtResource( 1 )
