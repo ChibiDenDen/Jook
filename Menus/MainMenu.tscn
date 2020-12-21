@@ -43,7 +43,7 @@ margin_left = -240.5
 margin_top = -400.0
 margin_right = 240.5
 margin_bottom = 400.0
-custom_constants/separation = 100
+custom_constants/separation = 60
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -60,9 +60,9 @@ text = "Play"
 [node name="CustomizeButton" parent="Menu" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 180.0
+margin_top = 140.0
 margin_right = 480.0
-margin_bottom = 260.0
+margin_bottom = 220.0
 
 [node name="Label" parent="Menu/CustomizeButton" index="0"]
 text = "Customize"
@@ -70,9 +70,9 @@ text = "Customize"
 [node name="SettingsButton" parent="Menu" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 360.0
+margin_top = 280.0
 margin_right = 480.0
-margin_bottom = 440.0
+margin_bottom = 360.0
 
 [node name="Label" parent="Menu/SettingsButton" index="0"]
 text = "Settings"
@@ -80,19 +80,29 @@ text = "Settings"
 [node name="AboutButton" parent="Menu" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 540.0
+margin_top = 420.0
 margin_right = 480.0
-margin_bottom = 620.0
+margin_bottom = 500.0
 
 [node name="Label" parent="Menu/AboutButton" index="0"]
 text = "About"
 
+[node name="HelpButton" parent="Menu" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 560.0
+margin_right = 480.0
+margin_bottom = 640.0
+
+[node name="Label" parent="Menu/HelpButton" index="0"]
+text = "Help"
+
 [node name="QuitButton" parent="Menu" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 720.0
+margin_top = 700.0
 margin_right = 480.0
-margin_bottom = 800.0
+margin_bottom = 780.0
 
 [node name="Label" parent="Menu/QuitButton" index="0"]
 size_flags_vertical = 1
@@ -107,5 +117,7 @@ text = "Quit"
 [editable path="Menu/SettingsButton"]
 
 [editable path="Menu/AboutButton"]
+
+[editable path="Menu/HelpButton"]
 
 [editable path="Menu/QuitButton"]

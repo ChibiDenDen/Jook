@@ -4,12 +4,9 @@
 [ext_resource path="res://Objects/UI/Button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Menus/Menu.gd" type="Script" id=3]
 [ext_resource path="res://NerkoOne-Regular.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Resources/Menus/Help.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 64
-font_data = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=2]
 size = 32
 font_data = ExtResource( 4 )
 
@@ -53,46 +50,41 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -233.5
-margin_top = -328.5
-margin_right = 233.5
-margin_bottom = 328.5
+margin_left = -233.0
+margin_top = -328.0
+margin_right = 234.0
+margin_bottom = 448.0
 custom_constants/separation = 100
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label2" type="Label" parent="Menu"]
-margin_right = 466.0
-margin_bottom = 79.0
+[node name="Help" type="Label" parent="Menu"]
+margin_right = 467.0
+margin_bottom = 126.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "About"
+text = "When wounded, Jook will keep
+falling and walking until it 
+touches a flag."
 align = 1
 valign = 1
 
-[node name="Label" type="Label" parent="Menu"]
-margin_top = 179.0
-margin_right = 466.0
-margin_bottom = 477.0
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "~Programming~
-Daivid Savernin Frank
-Roy Moore
-Dani Savernin Frank
-~Art~
-Yulia Zazovsky
-Oded Ohayon"
-align = 1
-valign = 1
+[node name="TextureRect" type="TextureRect" parent="Menu"]
+margin_top = 226.0
+margin_right = 467.0
+margin_bottom = 464.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="BackButton" parent="Menu" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 577.0
-margin_right = 466.0
-margin_bottom = 657.0
+margin_top = 564.0
+margin_right = 467.0
+margin_bottom = 644.0
 
 [node name="Label" parent="Menu/BackButton" index="0"]
 margin_left = 1.5874

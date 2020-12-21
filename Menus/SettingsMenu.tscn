@@ -1,75 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Menus/MenuBackground.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Objects/UI/Button.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Menus/Menu.gd" type="Script" id=3]
 [ext_resource path="res://Menus/MenuSlider.tscn" type="PackedScene" id=4]
-
-[sub_resource type="Animation" id=1]
-resource_name = "cry"
-length = 0.5
-step = 0.01
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.08, 0.16, 0.24, 0.32, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ null, null, null, null, null, null ]
-}
-
-[sub_resource type="Animation" id=2]
-resource_name = "idle"
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 4.43828 ),
-"update": 1,
-"values": [ null ]
-}
-
-[sub_resource type="Animation" id=3]
-length = 0.5
-loop = true
-step = 0.05
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
-"transitions": PoolRealArray( 1, 1, 1, 1 ),
-"update": 1,
-"values": [ null, null, null, null ]
-}
-
-[sub_resource type="Animation" id=4]
-length = 0.5
-loop = true
-step = 0.05
-tracks/0/type = "value"
-tracks/0/path = NodePath(".:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.25 ),
-"transitions": PoolRealArray( 1, 20.393 ),
-"update": 1,
-"values": [ null, null ]
-}
 
 [node name="SettingsMenu" type="Control"]
 anchor_right = 1.0
@@ -138,15 +72,6 @@ margin_left = 1.5874
 margin_right = 1.5874
 size_flags_vertical = 1
 text = "Back"
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 568, 208 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
-anims/cry = SubResource( 1 )
-anims/idle = SubResource( 2 )
-anims/nod = SubResource( 3 )
-anims/stressed = SubResource( 4 )
 
 [node name="dbg" type="Label" parent="."]
 margin_right = 40.0

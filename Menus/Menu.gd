@@ -10,6 +10,8 @@ export var UiPath : NodePath
 var Ui : UI
 export var AboutPath : NodePath
 var About : Control
+export var HelpPath : NodePath
+var Help : Control
 var player
 
 func _ready():
@@ -17,6 +19,7 @@ func _ready():
 	Customize = get_node_or_null(CustomizePath)
 	Ui = get_node_or_null(UiPath)
 	About = get_node_or_null(AboutPath)
+	Help = get_node_or_null(HelpPath)
 	player = Ui.get_parent().get_node("Player/PlayerFly")
 	for item in $Menu.get_children():
 		if item is Button:
@@ -40,5 +43,7 @@ func _on_pressed(text):
 			change_menu(Customize)
 		"About":
 			change_menu(About)
+		"Help":
+			change_menu(Help)
 		"Quit":
 			get_tree().quit()
