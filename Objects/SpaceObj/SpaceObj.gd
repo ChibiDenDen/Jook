@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 export var Dir := Vector2(0,0)
-export var speed := 250
+export var speed := 500
 
 var move_vec := Vector2(0,0)
 

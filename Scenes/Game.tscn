@@ -3199,7 +3199,7 @@ position = Vector2( 2344.53, -743.16 )
 connection_path = NodePath("../Teleporter2")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2152.66, 1146.91 )
+position = Vector2( 2119.53, 1200.76 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -4331,7 +4331,6 @@ position = Vector2( 444.06, -7302.35 )
 collision_layer = 48
 collision_mask = 48
 Dir = Vector2( 1, -1 )
-speed = 150
 
 [node name="Sprite" parent="World/Space/SpaceObj" index="0"]
 texture = ExtResource( 56 )
@@ -4347,7 +4346,6 @@ position = Vector2( 581, -9724.63 )
 collision_layer = 48
 collision_mask = 48
 Dir = Vector2( -1, 1 )
-speed = 150
 
 [node name="Sprite" parent="World/Space/SpaceObj3" index="0"]
 texture = ExtResource( 58 )
@@ -4369,7 +4367,6 @@ position = Vector2( 2213.67, -7551.09 )
 collision_layer = 48
 collision_mask = 48
 Dir = Vector2( -1, 1 )
-speed = 150
 
 [node name="Sprite" parent="World/Space/SpaceObj2" index="0"]
 texture = ExtResource( 57 )
@@ -4389,7 +4386,6 @@ position = Vector2( 363.137, -9000.77 )
 collision_layer = 48
 collision_mask = 48
 Dir = Vector2( -1, 1 )
-speed = 150
 
 [node name="AnimationPlayer" parent="World/Space/SpaceObj4" index="3"]
 anims/astronaut = SubResource( 78 )
