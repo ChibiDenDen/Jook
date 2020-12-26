@@ -4408,22 +4408,34 @@ bus = "Sfx"
 [node name="Events" type="Node2D" parent="."]
 
 [node name="EventTrigger" parent="Events" instance=ExtResource( 24 )]
-position = Vector2( 1264, -463.739 )
+position = Vector2( 1272.22, -732.79 )
 scale = Vector2( 20, 1 )
-in_stream = ExtResource( 25 )
-out_stream = ExtResource( 23 )
+pass_stream = ExtResource( 25 )
+
+[node name="EventTrigger5" parent="Events" instance=ExtResource( 24 )]
+position = Vector2( 1262.32, -3509.66 )
+scale = Vector2( 20, 1 )
+pass_stream = ExtResource( 25 )
+
+[node name="EventTrigger4" parent="Events" instance=ExtResource( 24 )]
+position = Vector2( 1262.32, -470.044 )
+scale = Vector2( 20, 1 )
+pass_stream = ExtResource( 23 )
 
 [node name="EventTrigger2" parent="Events" instance=ExtResource( 24 )]
-position = Vector2( 1238.67, -3496.68 )
+position = Vector2( 1261.36, -3615.11 )
 scale = Vector2( 20, 1 )
-in_stream = ExtResource( 27 )
-out_stream = ExtResource( 25 )
+pass_stream = ExtResource( 27 )
+
+[node name="EventTrigger6" parent="Events" instance=ExtResource( 24 )]
+position = Vector2( 1261.36, -6164.48 )
+scale = Vector2( 20, 1 )
+pass_stream = ExtResource( 27 )
 
 [node name="EventTrigger3" parent="Events" instance=ExtResource( 24 )]
-position = Vector2( 1264, -6179.3 )
+position = Vector2( 1264, -6296.77 )
 scale = Vector2( 20, 1 )
-in_stream = ExtResource( 28 )
-out_stream = ExtResource( 27 )
+pass_stream = ExtResource( 28 )
 
 [node name="Tween" type="Tween" parent="."]
 

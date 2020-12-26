@@ -2,9 +2,7 @@ extends Area2D
 
 
 
-export var in_stream : AudioStream
-export var out_stream : AudioStream
-var pass_bit := false
+export var pass_stream : AudioStream
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,6 +17,4 @@ func _on_EventTrigger_body_entered(body):
 	if !body.is_in_group("Player"):
 		return
 	var player = body
-	pass_bit = !pass_bit
 	get_tree().current_scene.on_trigger(self)
-
