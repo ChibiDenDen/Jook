@@ -4418,6 +4418,11 @@ position = Vector2( 1262.32, -470.044 )
 scale = Vector2( 20, 1 )
 pass_stream = ExtResource( 23 )
 
+[node name="EventTrigger7" parent="Events" instance=ExtResource( 24 )]
+position = Vector2( 1262.32, 1202.42 )
+scale = Vector2( 20, 1 )
+pass_stream = ExtResource( 23 )
+
 [node name="EventTrigger2" parent="Events" instance=ExtResource( 24 )]
 position = Vector2( 1261.36, -3615.11 )
 scale = Vector2( 20, 1 )
