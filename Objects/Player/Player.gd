@@ -82,6 +82,7 @@ func _ready():
 		max_camera_zoom = 1.0
 
 func reset(rotate_p := true):
+	$Particles2D.restart()
 	cur_fuel = max_fuel
 	fuel_progress.value = max_fuel
 	gravity_scale = 0
