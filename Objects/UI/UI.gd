@@ -13,6 +13,7 @@ func _ready():
 	if OS.get_name() != "Android":
 		$hud/Control/MoveLeft.visible = false
 		$hud/Control/MoveRight.visible = false
+		$hud/Control/Esc.visible = false
 
 func quit():
 	get_tree().quit()
@@ -74,3 +75,8 @@ func _on_MoveLeft_released():
 	if player == null:
 		return
 	player.update_moves(true, false)
+
+
+func _on_Esc_pressed():
+	player.stop_fly()
+	show()

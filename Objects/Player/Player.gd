@@ -137,7 +137,7 @@ func _integrate_forces(state):
 		if use_fuel:
 			cur_fuel = max(0, cur_fuel - (max_fuel * state.get_step()) / fuel_empty_time)
 		var cur_thrust = thrust
-		if last_applied_force == Vector2() and $BoostTimer.is_stopped():
+		if last_applied_force == Vector2() and use_fuel and $BoostTimer.is_stopped():
 			if use_fuel:
 				cur_fuel = max_fuel
 				fuel_progress.get_stylebox("fg").set_bg_color(RED_COLOR)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Objects/UI/UI.gd" type="Script" id=1]
 [ext_resource path="res://Menus/MainMenu.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Scenes/Customize/Customize.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Resources/Menus/Back.png" type="Texture" id=5]
 [ext_resource path="res://Menus/HelpMenu.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Resources/Menus/X.png" type="Texture" id=7]
 [ext_resource path="res://Menus/AboutMenu.tscn" type="PackedScene" id=10]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -26,8 +27,9 @@ __meta__ = {
 }
 
 [node name="Fuel" type="ProgressBar" parent="hud/Control"]
-margin_right = 240.0
-margin_bottom = 20.0
+visible = false
+margin_right = 68.0
+margin_bottom = 449.0
 custom_styles/fg = SubResource( 1 )
 percent_visible = false
 __meta__ = {
@@ -38,6 +40,10 @@ __meta__ = {
 position = Vector2( 1623.16, 859.636 )
 scale = Vector2( 2, 2 )
 normal = ExtResource( 5 )
+
+[node name="Esc" type="TouchScreenButton" parent="hud/Control"]
+position = Vector2( 1716.5, -31.3187 )
+normal = ExtResource( 7 )
 
 [node name="MoveLeft" type="TouchScreenButton" parent="hud/Control"]
 position = Vector2( 320.361, 838.279 )
@@ -77,5 +83,6 @@ visible = false
 UiPath = NodePath("../../..")
 [connection signal="pressed" from="hud/Control/MoveRight" to="." method="_on_MoveRight_pressed"]
 [connection signal="released" from="hud/Control/MoveRight" to="." method="_on_MoveRight_released"]
+[connection signal="pressed" from="hud/Control/Esc" to="." method="_on_Esc_pressed"]
 [connection signal="pressed" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_pressed"]
 [connection signal="released" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_released"]
