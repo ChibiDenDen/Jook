@@ -28,8 +28,8 @@ __meta__ = {
 
 [node name="Fuel" type="ProgressBar" parent="hud/Control"]
 visible = false
-margin_right = 68.0
-margin_bottom = 449.0
+margin_right = 240.0
+margin_bottom = 20.0
 custom_styles/fg = SubResource( 1 )
 percent_visible = false
 __meta__ = {
@@ -86,3 +86,5 @@ UiPath = NodePath("../../..")
 [connection signal="pressed" from="hud/Control/Esc" to="." method="_on_Esc_pressed"]
 [connection signal="pressed" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_pressed"]
 [connection signal="released" from="hud/Control/MoveLeft" to="." method="_on_MoveLeft_released"]
+
+[editable path="hud/menus/SettingsMenu"]

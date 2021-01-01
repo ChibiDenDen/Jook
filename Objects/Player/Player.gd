@@ -5,6 +5,9 @@ const CrashedPlayerScene := preload("res://Objects/CrashedPlayer/CrashedPlayer.t
 const CrashedPlayer := preload("res://Objects/CrashedPlayer/CrashedPlayer.gd")
 const BoostFartsScene := preload("res://Objects/Particles/BoostFarts.tscn")
 
+export var DifficultyPath : NodePath
+var DifficultySlider : Node
+
 onready var camera := get_node("../Anchor/Camera2D")
 
 # Declare member variables here. Examples:
@@ -23,7 +26,7 @@ export var camera_zoom_scale := 100
 export var camera_zoom_speed := 1
 export var min_camera_zoom := 0.7
 export var max_camera_zoom := 4.0/3.0
-export var zoom_step_thresh := 0.4
+export var zoom_step_thresh := 1.5
 var last_camera_zoom : Vector2
 var target_camera_zoom : float = 1.0
 var last_applied_force : Vector2
@@ -53,6 +56,37 @@ var move_up := false
 var move_left := false
 var move_right := false
 
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	var ui = get_tree().current_scene.get_node("UI")
+	gravity_scale = 0
+	fuel_progress = ui.get_fuel()
+	change_fuel_use()
+	stop_fly()
+	# Phone Specific
+	if OS.get_name() == "Android":
+		max_camera_zoom = 1.0
+	DifficultySlider = ui.get_node_or_null("hud/menus/SettingsMenu/Menu/Difficulty")
+	if DifficultySlider != null:
+		DifficultySlider.player = self
+
+
+func change_fuel_use():
+	if use_fuel:
+		fuel_progress.max_value = max_fuel
+	fuel_progress.visible = use_fuel
+
+func choose_difficulty(difficulty := 0):
+	use_fuel = false
+	change_fuel_use()
+	survivable_hit_force = 160.0
+	if difficulty >= 1:
+		use_fuel = true
+		change_fuel_use()
+	if difficulty >= 2:
+		survivable_hit_force = 80.0
+
+
 func teleport(target_pos : Vector2):
 	gravity_scale = 0
 	sleeping = true
@@ -67,19 +101,6 @@ func change_color(in_color):
 
 func stop_fly():
 	sleeping = true
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	gravity_scale = 0
-	fuel_progress = get_tree().current_scene.get_node("UI").get_fuel()
-	if use_fuel:
-		fuel_progress.max_value = max_fuel
-	else:
-		fuel_progress.visible = false
-	stop_fly()
-	# Phone Specific
-	if OS.get_name() == "Android":
-		max_camera_zoom = 1.0
 
 func reset(rotate_p := true):
 	$Particles2D.restart()

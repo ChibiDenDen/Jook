@@ -15,6 +15,7 @@ func _ready():
 		$hud/Control/MoveRight.visible = false
 		$hud/Control/Esc.visible = false
 
+
 func quit():
 	get_tree().quit()
 

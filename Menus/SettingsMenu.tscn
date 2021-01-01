@@ -60,12 +60,25 @@ margin_bottom = 260.0
 [node name="Label" parent="Menu/SfxVolume" index="0"]
 text = "Sfx Volume"
 
-[node name="BackButton" parent="Menu" instance=ExtResource( 2 )]
+[node name="Difficulty" parent="Menu" instance=ExtResource( 4 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 360.0
 margin_right = 466.0
 margin_bottom = 440.0
+max_value = 2.0
+value = 0.0
+volume = false
+
+[node name="Label" parent="Menu/Difficulty" index="0"]
+text = "Difficulty scale"
+
+[node name="BackButton" parent="Menu" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 540.0
+margin_right = 466.0
+margin_bottom = 620.0
 
 [node name="Label" parent="Menu/BackButton" index="0"]
 margin_left = 1.5874
@@ -80,5 +93,7 @@ margin_bottom = 14.0
 [editable path="Menu/MusicVolume"]
 
 [editable path="Menu/SfxVolume"]
+
+[editable path="Menu/Difficulty"]
 
 [editable path="Menu/BackButton"]

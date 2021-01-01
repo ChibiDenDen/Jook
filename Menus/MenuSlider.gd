@@ -1,16 +1,26 @@
 extends HSlider
 
+const Player := preload("res://Objects/Player/Player.gd")
+
 var OrigVolumes : Array
 const MUTE_VALUE = -30
+export var volume := true
+var player : Player
 
 func _ready():
 	self.connect("value_changed", self, "_on_value_changed", [])
+	if !volume:
+		return
 	for i in AudioServer.get_bus_count():
 		OrigVolumes.append(AudioServer.get_bus_volume_db(i))
 	_on_value_changed(5.0)
 
 func _on_value_changed(value : float):
-	_volume_changed(value)
+	if volume:
+		_volume_changed(value)
+		return
+	if player != null:
+		player.choose_difficulty(int(value))
 
 func _volume_changed(value : float):
 	var index := AudioServer.get_bus_index($Label.text.trim_suffix(" Volume"))
