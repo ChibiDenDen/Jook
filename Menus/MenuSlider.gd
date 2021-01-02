@@ -25,8 +25,8 @@ func display_help(value := 0):
 	$Help.text = HelpInc[value] if prev_value < value else HelpDec[prev_value]
 	$Help.visible = true
 	prev_value = value
-	$Tween.interpolate_property($Help, "modulate", $Help.modulate, Color(1,1,1,0), 2.0)
-	$Tween.interpolate_property($Help, "visible", true, false, 2.0)
+	$Tween.interpolate_property($Help, "modulate", $Help.modulate, Color(1,1,1,0), 6.0)
+	$Tween.interpolate_property($Help, "visible", true, false, 6.0)
 	$Tween.start()
 
 func _on_value_changed(value : float):

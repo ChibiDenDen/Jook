@@ -80,9 +80,9 @@ text = "Difficulty scale"
 
 [node name="Help" type="Label" parent="Menu/Difficulty"]
 margin_left = -11.621
-margin_top = -562.858
+margin_top = -530.858
 margin_right = 76.379
-margin_bottom = -488.858
+margin_bottom = -456.858
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.54902, 0.54902, 0.54902, 1 )
 __meta__ = {
