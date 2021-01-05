@@ -30,7 +30,7 @@ func will_drop():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	time += delta
-	var label := $SpaceLabel if OS.get_name() != "Android" else $TouchLabel
+	var label := $SpaceLabel if !(OS.get_name() in ["Android", "iOS"]) else $TouchLabel
 	if time > 2:
 		if time > 4:
 			label.modulate.a = lerp(label.modulate.a, 0.0, delta)
@@ -41,7 +41,7 @@ func _process(delta):
 	else:
 		Engine.time_scale = 1
 	if time > 20:
-		label = $ResetLabel if OS.get_name() != "Android" else $ResetTouchLabel
+		label = $ResetLabel if !(OS.get_name() in ["Android", "iOS"]) else $ResetTouchLabel
 		label.modulate.a = lerp(label.modulate.a, 1.0, delta)
 		if Input.is_key_pressed(KEY_R):
 			player.global_position = player.get_node(player.last_checkpoint).global_position

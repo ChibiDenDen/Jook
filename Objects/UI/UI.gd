@@ -10,7 +10,7 @@ var player : Player
 func _ready():
 	$hud/menus/MainMenu.visible = true
 	player = get_node_or_null(PlayerPath)
-	if OS.get_name() != "Android":
+	if !(OS.get_name() in ["Android", "iOS"]):
 		$hud/Control/MoveLeft.visible = false
 		$hud/Control/MoveRight.visible = false
 		$hud/Control/Esc.visible = false

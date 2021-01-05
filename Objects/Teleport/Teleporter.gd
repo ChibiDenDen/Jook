@@ -19,7 +19,7 @@ func teleport():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if OS.get_name() != "Android":
+	if !(OS.get_name() in ["Android", "iOS"]):
 		$Label.modulate.a = lerp($Label.modulate.a, 1.0 if (player_in and connection.unlocked) else 0.0, 0.2)
 	else:
 		$Label3.modulate.a = lerp($Label3.modulate.a, 1.0 if (player_in and connection.unlocked) else 0.0, 0.2)

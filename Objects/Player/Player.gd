@@ -10,10 +10,6 @@ var DifficultySlider : Node
 
 onready var camera := get_node("../Anchor/Camera2D")
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 export var thrust = Vector2.UP * 300
 export var boost_thrust = 25
 export var torque = 5000
@@ -64,12 +60,11 @@ func _ready():
 	change_fuel_use()
 	stop_fly()
 	# Phone Specific
-	if OS.get_name() == "Android":
+	if OS.get_name() in ["Android", "iOS"]:
 		max_camera_zoom = 1.0
 	DifficultySlider = ui.get_node_or_null("hud/menus/SettingsMenu/Menu/Difficulty")
 	if DifficultySlider != null:
 		DifficultySlider.player = self
-
 
 func change_fuel_use():
 	if use_fuel:
@@ -85,7 +80,6 @@ func choose_difficulty(difficulty := 0):
 		change_fuel_use()
 	if difficulty >= 2:
 		survivable_hit_force = 80.0
-
 
 func teleport(target_pos : Vector2):
 	gravity_scale = 0
