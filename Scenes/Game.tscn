@@ -3199,7 +3199,7 @@ position = Vector2( 2344.53, -743.16 )
 connection_path = NodePath("../Teleporter2")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2119.53, 1200.76 )
+position = Vector2( 2112, 1208 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -3455,7 +3455,7 @@ position = Vector2( -167.501, -3532.06 )
 position = Vector2( 240.039, -2691.5 )
 
 [node name="Checkpoint16" parent="World/Tree" instance=ExtResource( 2 )]
-position = Vector2( -1174.96, -3051.21 )
+position = Vector2( -1241.03, -3008.74 )
 
 [node name="Checkpoint9" parent="World/Tree" instance=ExtResource( 2 )]
 position = Vector2( -684.869, -2744.41 )
@@ -3482,7 +3482,7 @@ position = Vector2( -641.796, -4106.51 )
 rotation = 0.523599
 
 [node name="PipeH18" parent="World/Tree" instance=ExtResource( 50 )]
-position = Vector2( -1226.23, -3009.96 )
+position = Vector2( -1292.3, -2967.49 )
 rotation = 0.523599
 
 [node name="TreeV11" parent="World/Tree" instance=ExtResource( 30 )]
@@ -4034,7 +4034,7 @@ anims/tunacan = SubResource( 21 )
 anims/wrench = SubResource( 22 )
 
 [node name="sneil" type="Sprite" parent="World/Clutter/Clutter6"]
-position = Vector2( 1100.03, -141.027 )
+position = Vector2( 1100.03, -138.03 )
 rotation = 0.3735
 texture = ExtResource( 52 )
 
@@ -4067,7 +4067,7 @@ anims/tunacan = SubResource( 25 )
 anims/wrench = SubResource( 26 )
 
 [node name="Clutter5" parent="World/Clutter" instance=ExtResource( 34 )]
-position = Vector2( 333.496, -1917.63 )
+position = Vector2( 302.383, -1817.22 )
 rotation = -0.698132
 
 [node name="Sprite" parent="World/Clutter/Clutter5" index="0"]
