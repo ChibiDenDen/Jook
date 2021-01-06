@@ -3199,7 +3199,7 @@ position = Vector2( 2344.53, -743.16 )
 connection_path = NodePath("../Teleporter2")
 
 [node name="Player" type="Node2D" parent="."]
-position = Vector2( 2112, 1208 )
+position = Vector2( 2112, 1216 )
 __meta__ = {
 "_edit_group_": true
 }

@@ -35,6 +35,7 @@ func _on_pressed(text):
 		"Play":
 			player.sleeping = false
 			visible = false
+			Ui.playing = true
 		"Settings":
 			change_menu(Settings)
 		"Back":

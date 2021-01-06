@@ -72,6 +72,7 @@ func change_fuel_use():
 	fuel_progress.visible = use_fuel
 
 func choose_difficulty(difficulty := 0):
+	Global.difficulty = difficulty
 	use_fuel = false
 	change_fuel_use()
 	survivable_hit_force = 160.0

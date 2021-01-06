@@ -21,6 +21,10 @@ boot_splash/fullsize=false
 config/icon="res://Resources/icon.png"
 config/windows_native_icon="res://Resources/icon.ico"
 
+[autoload]
+
+Global="*res://Objects/Global.gd"
+
 [display]
 
 window/size/width=1920

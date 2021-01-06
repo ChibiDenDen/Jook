@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Objects/UI/UI.gd" type="Script" id=1]
 [ext_resource path="res://Menus/MainMenu.tscn" type="PackedScene" id=2]
@@ -7,10 +7,17 @@
 [ext_resource path="res://Resources/Menus/Back.png" type="Texture" id=5]
 [ext_resource path="res://Menus/HelpMenu.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Resources/Menus/X.png" type="Texture" id=7]
+[ext_resource path="res://NerkoOne-Regular.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://Menus/AboutMenu.tscn" type="PackedScene" id=10]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.67451, 0.141176, 0.141176, 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
 
 [node name="UI" type="Node2D"]
 script = ExtResource( 1 )
@@ -49,6 +56,17 @@ normal = ExtResource( 7 )
 position = Vector2( 320.361, 838.279 )
 scale = Vector2( -2, 2 )
 normal = ExtResource( 5 )
+
+[node name="Time" type="Label" parent="hud/Control"]
+margin_left = 64.0
+margin_top = 64.0
+margin_right = 104.0
+margin_bottom = 78.0
+custom_fonts/font = SubResource( 2 )
+text = "Time: 0.0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="menus" type="CanvasLayer" parent="hud"]
 
