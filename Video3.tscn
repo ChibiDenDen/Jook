@@ -28,8 +28,8 @@ func get_medal_name():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	$Medal.text = \"Medals: \\n\\t gold: {gold} \\n\\t silver: {silver} \\n\\t bronze: {bronze}\\n\\nYou Got : {medal}\".format(
-		{\"gold\": get_difficult_medal(gold_medal), \"silver\": get_difficult_medal(silver_medal), \"bronze\": get_difficult_medal(bronze_medal), \"medal\" : get_medal_name()})
+	$Medal.text = \"Medals: \\n\\t gold: {gold}s \\n\\t silver: {silver}s \\n\\t bronze: {bronze}s\\n\\nYour Time: {time} - {medal}!\".format(
+		{\"gold\": get_difficult_medal(gold_medal), \"silver\": get_difficult_medal(silver_medal), \"bronze\": get_difficult_medal(bronze_medal), \"time\" : Global.time_played, \"medal\" : get_medal_name()})
 
 func _on_VideoPlayer_finished():
 	get_tree().change_scene(\"res://Scenes/Game.tscn\")
